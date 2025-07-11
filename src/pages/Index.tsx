@@ -14,6 +14,43 @@ import serviceImage from "@/assets/service-image.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="bg-background border-b border-border/10 sticky top-0 z-50 backdrop-blur-sm bg-background/95">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <h1 className="text-2xl font-bold text-primary">CarDelivery</h1>
+            </div>
+            
+            {/* Navigation */}
+            <nav className="hidden lg:flex items-center space-x-8">
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">STARTSEITE</a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">KARRIERE</a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">AKTUELLES</a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">KONTAKT</a>
+            </nav>
+            
+            {/* Phone Number */}
+            <div className="hidden md:flex items-center">
+              <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
+                <Phone className="w-4 h-4 inline mr-2" />
+                040 5131580
+              </div>
+            </div>
+            
+            {/* Mobile Menu Button */}
+            <button className="lg:hidden p-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4 overflow-hidden">
         {/* Background Stripe Pattern */}
