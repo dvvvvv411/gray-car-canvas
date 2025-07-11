@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative bg-background py-12 px-4">
+      <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
@@ -30,11 +30,11 @@ const Index = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="max-w-4xl w-full">
+            <div className="max-w-6xl w-full">
               <img 
                 src={heroImage} 
                 alt="TransferCar Fahrzeugüberführungen" 
-                className="w-full h-auto shadow-lg"
+                className="w-full h-auto"
               />
             </div>
           </div>
