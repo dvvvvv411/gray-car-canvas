@@ -15,8 +15,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4">
-        <div className="container mx-auto">
+      <section className="relative py-12 px-4 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-gradient-to-b from-muted/20 to-background"></div>
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, hsl(211 100% 27%) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+        <div className="absolute inset-0 opacity-3" style={{
+          backgroundImage: `linear-gradient(45deg, transparent 40%, hsl(211 100% 27% / 0.05) 50%, transparent 60%)`,
+          backgroundSize: '80px 80px'
+        }}></div>
+        
+        <div className="container mx-auto relative z-10">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
               <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR FAHRZEUG-</em>
