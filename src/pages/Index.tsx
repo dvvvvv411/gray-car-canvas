@@ -15,25 +15,26 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary to-secondary py-20 px-4">
+      <section className="relative bg-background py-12 px-4">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white space-y-8">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                <em>IHR <span className="text-accent">SPEZIALIST</span> FÜR FAHRZEUG-</em>
-                <br />
-                <em>ÜBERFÜHRUNGEN</em>
-                <br />
-                <span className="text-xl md:text-2xl font-normal">
-                  IN DEUTSCHLAND UND EUROPA
-                </span>
-              </h1>
-            </div>
-            <div className="relative">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR FAHRZEUG-</em>
+              <br />
+              <em>ÜBERFÜHRUNGEN</em>
+              <br />
+              <span className="text-lg md:text-xl lg:text-2xl font-normal text-muted-foreground mt-2 block">
+                IN DEUTSCHLAND UND EUROPA
+              </span>
+            </h1>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="max-w-4xl w-full">
               <img 
                 src={heroImage} 
                 alt="TransferCar Fahrzeugüberführungen" 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto shadow-lg"
               />
             </div>
           </div>
