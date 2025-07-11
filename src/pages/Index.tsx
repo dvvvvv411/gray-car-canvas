@@ -15,7 +15,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4">
+      <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4 overflow-hidden">
+        {/* Background Stripe Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full bg-primary transform -skew-y-6 origin-top-left scale-150"></div>
+          <div className="absolute top-20 left-0 w-full h-32 bg-primary transform -skew-y-6 origin-top-left scale-150"></div>
+          <div className="absolute bottom-0 right-0 w-full h-64 bg-primary transform skew-y-6 origin-bottom-right scale-150"></div>
+        </div>
         <div className="container mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
