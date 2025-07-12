@@ -1,5 +1,5 @@
 
-import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "lucide-react";
+import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
@@ -13,6 +13,7 @@ import serviceImage from "@/assets/car-transfer-service.jpg";
 const pkwService = "https://i.imgur.com/15xt437.png";
 const lkwService = "https://i.imgur.com/6p3a1A6.png"; 
 const expressService = "https://i.imgur.com/AZ91CAT.png";
+const transferService = "/lovable-uploads/3614986f-2159-41bf-8601-71e8b75703c6.png";
 
 const Index = () => {
   return (
@@ -102,6 +103,10 @@ const Index = () => {
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
                   <span className="text-sm font-medium">Vollversichert</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
+                  <span className="text-sm font-medium">Transfer auf Fremdachse</span>
+                </div>
               </div>
               
               <Button 
@@ -183,6 +188,19 @@ const Index = () => {
                     "Sofort-Abholung möglich",
                     "Priority-Behandlung",
                     "Zeitgarantie inklusive"
+                  ]
+                },
+                {
+                  id: 4,
+                  title: "ÜBERFÜHRUNG AUF FREMDACHSE",
+                  description: "Professioneller Transport mit speziellen Transportern und Anhängern. Sichere Verladung und schonender Transport für Fahrzeuge aller Art.",
+                  image: transferService,
+                  buttonText: "Service anfragen",
+                  icon: ArrowLeftRight,
+                  features: [
+                    "Spezial-Transporter verfügbar",
+                    "Sichere Fahrzeugverladung",
+                    "Schadensfreier Transport"
                   ]
                 }
               ]}
@@ -296,6 +314,16 @@ const Index = () => {
                       <div className="text-sm text-white/70">Express & Standard-Optionen</div>
                     </div>
                   </div>
+                  
+                  <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
+                      <ArrowLeftRight className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-white">Überführung auf Fremdachse</div>
+                      <div className="text-sm text-white/70">Spezial-Transporter & Anhänger</div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -396,6 +424,7 @@ const Index = () => {
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</a></li>
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</a></li>
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Express-Service</a></li>
+                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</a></li>
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</a></li>
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</a></li>
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</a></li>
