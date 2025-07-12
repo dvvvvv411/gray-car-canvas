@@ -3,8 +3,6 @@ import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "luci
 import { Button } from "@/components/ui/button";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
-import { WaveOrange } from "@/components/WaveOrange";
-import { WaveDark } from "@/components/WaveDark";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -116,9 +114,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Orange Wave Divider */}
-        <WaveOrange />
       </section>
 
       {/* Modern Services Carousel Section */}
@@ -213,9 +208,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Dark Wave Divider */}
-        <WaveDark />
       </section>
 
       {/* Modern Service & Flexibility Section */}
