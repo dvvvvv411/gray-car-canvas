@@ -332,12 +332,12 @@ const translations = {
     'contact.service.title': 'Service-Hotline',
     'contact.service.consultation': 'Kostenlose Beratung',
     'contact.service.consultationText': 'Unverbindliche Erstberatung zu allen Dienstleistungen',
-    'contact.service.quotes': 'Sofort-Angebote',
-    'contact.service.quotesText': 'Direkte Kostenvoranschläge am Telefon',
-    'contact.service.express': 'Express-Buchung',
-    'contact.service.expressText': 'Kurzfristige Terminvereinbarung möglich',
-     'contact.service.languages': 'Mehrsprachiger Support',
-     'contact.service.languagesText': 'Deutsch, Englisch, Polnisch',
+     'contact.service.quotes': 'Sofort-Angebote',
+     'contact.service.quotesText': 'Direkte Kostenvoranschläge am Telefon',
+     'contact.service.booking': 'Express-Buchung',
+     'contact.service.bookingText': 'Kurzfristige Terminvereinbarung möglich',
+     'contact.service.multilingual': 'Mehrsprachiger Support',
+     'contact.service.multilingualText': 'Deutsch, Englisch, Polnisch',
      
      // Contact Form fields and placeholders
      'contact.form.name': 'Name',
