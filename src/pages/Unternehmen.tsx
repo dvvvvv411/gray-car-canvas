@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target, X, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -425,10 +426,9 @@ const Unternehmen = () => {
               {/* Legal Links */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
                 <span className="text-white/60">© 2025 Golze & Michel OHG</span>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">Impressum</a>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">Datenschutzerklärung</a>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">AGB</a>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">Haftungsausschluss</a>
+                <Link to="/impressum" className="text-white/80 hover:text-primary transition-colors">Impressum</Link>
+                <Link to="/datenschutz" className="text-white/80 hover:text-primary transition-colors">Datenschutzerklärung</Link>
+                <Link to="/agb" className="text-white/80 hover:text-primary transition-colors">AGB</Link>
               </div>
 
               {/* Social Media & Certifications */}

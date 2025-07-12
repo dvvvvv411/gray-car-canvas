@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle, X, Menu } from "lucide-react";
 import { KontaktForm } from "@/components/KontaktForm";
@@ -438,9 +439,9 @@ const Kontakt = () => {
                 © 2025 Golze & Michel OHG. Alle Rechte vorbehalten.
               </div>
               <div className="flex gap-6 text-sm">
-                <a href="#" className="text-white/60 hover:text-primary transition-colors">Impressum</a>
-                <a href="#" className="text-white/60 hover:text-primary transition-colors">Datenschutz</a>
-                <a href="#" className="text-white/60 hover:text-primary transition-colors">AGB</a>
+                <Link to="/impressum" className="text-white/60 hover:text-primary transition-colors">Impressum</Link>
+                <Link to="/datenschutz" className="text-white/60 hover:text-primary transition-colors">Datenschutz</Link>
+                <Link to="/agb" className="text-white/60 hover:text-primary transition-colors">AGB</Link>
               </div>
             </div>
           </div>
