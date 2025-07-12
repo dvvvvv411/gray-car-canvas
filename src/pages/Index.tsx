@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "luci
 import { Button } from "@/components/ui/button";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
+import { PartnersCarousel } from "@/components/PartnersCarousel";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -349,61 +350,9 @@ const Index = () => {
             </h2>
           </div>
 
-          {/* Partners Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            {/* Partner Logo 1 */}
-            <div className="group relative p-4 hover:scale-105 transition-all duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=120&fit=crop&crop=center"
-                alt="Technology Partner"
-                className="w-full h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-
-            {/* Partner Logo 2 */}
-            <div className="group relative p-4 hover:scale-105 transition-all duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=120&fit=crop&crop=center"
-                alt="Innovation Partner"
-                className="w-full h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-
-            {/* Partner Logo 3 */}
-            <div className="group relative p-4 hover:scale-105 transition-all duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=120&fit=crop&crop=center"
-                alt="Software Partner"
-                className="w-full h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-
-            {/* Partner Logo 4 */}
-            <div className="group relative p-4 hover:scale-105 transition-all duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=200&h=120&fit=crop&crop=center"
-                alt="Digital Partner"
-                className="w-full h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-
-            {/* Partner Logo 5 */}
-            <div className="group relative p-4 hover:scale-105 transition-all duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=200&h=120&fit=crop&crop=center"
-                alt="Development Partner"
-                className="w-full h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-
-            {/* Partner Logo 6 */}
-            <div className="group relative p-4 hover:scale-105 transition-all duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=200&h=120&fit=crop&crop=center"
-                alt="Business Partner"
-                className="w-full h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
+          {/* Partners Carousel */}
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <PartnersCarousel />
           </div>
         </div>
       </section>
