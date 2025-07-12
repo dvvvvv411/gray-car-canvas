@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
 // Logo images
-const logoLight = "/lovable-uploads/cbe16bd5-177a-4d01-8871-3d4c9d25f5e4.png"; // Orange "Car" logo for light backgrounds
-const logoDark = "/lovable-uploads/420b0aad-1aa9-446d-8d2a-4fe76b5ccb68.png"; // CarLogix logo for dark backgrounds
+const logoLight = "/lovable-uploads/cbe16bd5-177a-4d01-8871-3d4c9d25f5e4.png"; // Orange "Car" logo for dark backgrounds
+const logoDark = "/lovable-uploads/420b0aad-1aa9-446d-8d2a-4fe76b5ccb68.png"; // CarLogix logo for light backgrounds
 
 const Logo = () => {
   const [logoType, setLogoType] = useState<'light' | 'dark'>('dark');
@@ -110,14 +110,14 @@ const Logo = () => {
   return (
     <div ref={logoRef} className="flex-shrink-0">
       <img 
-        src={logoType === 'light' ? logoLight : logoDark}
+        src={logoType === 'light' ? logoDark : logoLight}
         alt="CarLogix Logo"
         className="h-8 w-auto transition-all duration-300 ease-in-out"
         loading="eager"
         onError={(e) => {
           console.warn('Logo failed to load:', e.currentTarget.src);
           // Fallback to the other logo if one fails
-          e.currentTarget.src = logoType === 'light' ? logoDark : logoLight;
+          e.currentTarget.src = logoType === 'light' ? logoLight : logoDark;
         }}
       />
     </div>
