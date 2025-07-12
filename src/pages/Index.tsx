@@ -233,9 +233,9 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Content Side */}
-            <div className="space-y-8 animate-fade-in-up flex flex-col justify-center" style={{ animationDelay: '0.2s' }}>
+            <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               {/* Company Description */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
                 <p className="text-lg text-white/90 leading-relaxed mb-6">
@@ -296,10 +296,30 @@ const Index = () => {
                 </div>
               </div>
 
+              <div className="pt-4">
+                <Button 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-200"
+                  size="lg"
+                >
+                  Mehr über uns erfahren
+                </Button>
+              </div>
+            </div>
+
+            {/* Image Side */}
+            <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <div className="relative w-full">
+                <img 
+                  src={serviceImage} 
+                  alt="TransferCar Service Excellence" 
+                  className="w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                />
+              </div>
+              
               {/* Additional Services */}
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6">
                 <h4 className="font-semibold text-white mb-4">Premium-Services:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   <div className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0" />
                     <span className="text-white/90 text-sm">Hol- und Bringservice</span>
@@ -313,29 +333,6 @@ const Index = () => {
                     <span className="text-white/90 text-sm">Platzlogistik</span>
                   </div>
                 </div>
-              </div>
-
-              <div className="pt-4">
-                <Button 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-200"
-                  size="lg"
-                >
-                  Mehr über uns erfahren
-                </Button>
-              </div>
-            </div>
-
-            {/* Image Side */}
-            <div className="relative animate-fade-in-up flex items-center" style={{ animationDelay: '0.4s' }}>
-              <div className="relative w-full">
-                {/* Glowing border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl"></div>
-                
-                <img 
-                  src={serviceImage} 
-                  alt="TransferCar Service Excellence" 
-                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
-                />
               </div>
             </div>
           </div>
