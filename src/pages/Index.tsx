@@ -208,71 +208,146 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Service & Flexibility Section */}
-      <section className="py-20 px-4 bg-primary">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-primary-foreground text-lg mb-2">FAHRZEUGÜBERFÜHRUNGEN MIT</p>
-            <h2 className="text-4xl font-bold text-accent">
-              <em>SERVICE & FLEXIBILITÄT</em>
+      {/* Modern Service & Flexibility Section */}
+      <section className="relative py-24 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-32 h-32 bg-accent/8 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-primary/8 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-4">
+              <Zap className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">FAHRZEUGÜBERFÜHRUNGEN MIT</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-white">SERVICE &</span>{" "}
+              <span className="text-primary">FLEXIBILITÄT</span>
             </h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+              Seit 1994 setzen wir Maßstäbe in der Fahrzeuglogistik – mit Innovation und Leidenschaft
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-primary-foreground space-y-6">
-              <p className="text-lg leading-relaxed">
-                TransferCar GmbH gehört zu den großen Dienstleistern im Bereich Fahrzeugüberführungen. 
-                Bereits seit 1994 sind wir für unsere Kunden in Deutschland und Europa unterwegs, 
-                24 Stunden pro Tag an 365 Tagen im Jahr. Serviceorientiert, flexibel und zuverlässig übernehmen wir für Sie:
-              </p>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Content Side */}
+            <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              {/* Company Description */}
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <p className="text-lg text-white/90 leading-relaxed mb-6">
+                  <strong className="text-white">TransferCar GmbH</strong> – Ihr digitaler Vorreiter in der Fahrzeuglogistik. 
+                  Mit über <span className="text-primary font-semibold">29 Jahren Erfahrung</span> kombinieren wir bewährte Expertise 
+                  mit modernsten Technologien für maximale Effizienz.
+                </p>
+                
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">24/7</div>
+                    <div className="text-xs text-white/70">Service</div>
+                  </div>
+                  <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">365</div>
+                    <div className="text-xs text-white/70">Tage/Jahr</div>
+                  </div>
+                  <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">EU</div>
+                    <div className="text-xs text-white/70">Weit</div>
+                  </div>
+                </div>
+              </div>
 
-              <div className="space-y-3">
-                <div className="flex items-center space-x-4">
-                  <Car className="w-5 h-5 text-accent" />
-                  <span>PKW – Überführung auf eigener Achse</span>
+              {/* Services List */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-white mb-6">Unsere Kernkompetenzen:</h3>
+                <div className="grid gap-4">
+                  <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
+                      <Car className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-white">PKW-Überführung auf eigener Achse</div>
+                      <div className="text-sm text-white/70">Intelligente Routenoptimierung</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
+                      <Truck className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-white">LKW-Überführung auf eigener Achse</div>
+                      <div className="text-sm text-white/70">Schwertransport-Expertise</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-white">KFZ-Überführung mit Transporter</div>
+                      <div className="text-sm text-white/70">Express & Standard-Optionen</div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <Truck className="w-5 h-5 text-accent" />
-                  <span>LKW – Überführung auf eigener Achse</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Zap className="w-5 h-5 text-accent" />
-                  <span>KFZ – Überführung mit Transporter</span>
+              </div>
+
+              {/* Additional Services */}
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6">
+                <h4 className="font-semibold text-white mb-4">Premium-Services:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-white/90 text-sm">Hol- und Bringservice</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-white/90 text-sm">Fuhrpark-Management</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-white/90 text-sm">Platzlogistik</span>
+                  </div>
                 </div>
               </div>
 
               <div className="pt-4">
-                <p className="mb-4">Außerdem bieten wir Ihnen folgende Leistungen an:</p>
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-4">
-                    <Check className="w-4 h-4 text-accent" />
-                    <span>Hol- und Bringservice</span>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <Check className="w-4 h-4 text-accent" />
-                    <span>Fuhrpark-Management</span>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <Check className="w-4 h-4 text-accent" />
-                    <span>Platzlogistik</span>
-                  </div>
-                </div>
+                <Button 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-200"
+                  size="lg"
+                >
+                  Mehr über uns erfahren
+                </Button>
               </div>
-
-              <Button 
-                className="mt-6 bg-accent hover:bg-accent/90 text-accent-foreground"
-                size="lg"
-              >
-                mehr
-              </Button>
             </div>
 
-            <div className="relative">
-              <img 
-                src={serviceImage} 
-                alt="TransferCar Service" 
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
+            {/* Image Side */}
+            <div className="relative animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <div className="relative">
+                {/* Glowing border effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl"></div>
+                
+                <img 
+                  src={serviceImage} 
+                  alt="TransferCar Service Excellence" 
+                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                />
+                
+                {/* Floating Stats Cards */}
+                <div className="absolute -top-6 -left-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 animate-glow-pulse">
+                  <div className="text-2xl font-bold text-primary">1994</div>
+                  <div className="text-xs text-white/80">Gegründet</div>
+                </div>
+                
+                <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 animate-glow-pulse" style={{ animationDelay: '1s' }}>
+                  <div className="text-2xl font-bold text-primary">100%</div>
+                  <div className="text-xs text-white/80">Versichert</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
