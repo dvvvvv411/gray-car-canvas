@@ -37,7 +37,7 @@ const partners = [
   },
   {
     name: "Riller & Schnauck",
-    logo: "/lovable-uploads/2c6f2c62-48df-40fb-a8be-90dfbd35f607.png"
+    logo: "/lovable-uploads/0cd51e06-af95-4802-ba1e-e2abcba0c6af.png"
   },
   {
     name: "Scout24",
@@ -99,7 +99,9 @@ export function PartnersCarousel() {
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="max-h-16 max-w-full object-contain"
+                  className={`object-contain ${
+                    partner.name === "ADAC" ? "max-h-20 max-w-full" : "max-h-16 max-w-full"
+                  }`}
                 />
               </div>
             </div>

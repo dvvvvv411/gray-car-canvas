@@ -336,7 +336,7 @@ const Index = () => {
       </section>
 
       {/* Partner Logos Section */}
-      <section className="relative py-12 px-4 bg-gradient-to-br from-muted/30 to-muted/50 overflow-hidden">
+      <section className="relative py-12 px-4 bg-white overflow-hidden">
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center mb-12 animate-fade-in-up">
