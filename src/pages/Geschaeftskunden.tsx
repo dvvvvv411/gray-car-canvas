@@ -194,21 +194,6 @@ const Geschaeftskunden = () => {
               </div>
             </div>
 
-            {/* SLA Garantien - Success Theme Card */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50 p-8 rounded-2xl shadow-lg border border-green-200 dark:border-green-800 hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">SLA-Garantien</h4>
-              <p className="text-muted-foreground text-center leading-relaxed mb-4">
-                Verbindliche Service Level Agreements mit garantierten Reaktions- und 
-                Lieferzeiten. Bei Nichteinhaltung erhalten Sie automatische Kompensation.
-              </p>
-              <div className="flex flex-wrap gap-2 justify-center">
-                <span className="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm rounded-full">Garantiert</span>
-                <span className="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm rounded-full">Kompensation</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
