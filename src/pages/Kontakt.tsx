@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle } from "lucide-react";
-import { ContactForm } from "@/components/ContactForm";
+import { KontaktForm } from "@/components/KontaktForm";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -166,9 +166,7 @@ const Kontakt = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-muted/20 rounded-2xl p-8 border border-border">
-            <ContactForm />
-          </div>
+          <KontaktForm />
         </div>
       </section>
 
