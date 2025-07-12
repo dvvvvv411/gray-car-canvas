@@ -16,11 +16,11 @@ const Logo = ({ className = "" }: LogoProps) => {
 
       // Alle Sektionen mit ihren Hintergründen definieren
       const sections = [
-        { start: 0, end: 800, isLight: false }, // Hero section - dunkler Hintergrund
-        { start: 800, end: 1600, isLight: true }, // Services section - heller Hintergrund (bg-white)
-        { start: 1600, end: 2400, isLight: false }, // Service & Flexibility section - dunkler Hintergrund
-        { start: 2400, end: 3000, isLight: true }, // Partners section - heller Hintergrund (bg-white)
-        { start: 3000, end: Infinity, isLight: false }, // Footer - dunkler Hintergrund
+        { start: 0, end: 800, isLight: false }, // Hero section - dunkler Hintergrund -> CarLogix Logo
+        { start: 800, end: 1600, isLight: true }, // Services section - heller Hintergrund -> Car Logo  
+        { start: 1600, end: 2400, isLight: false }, // Service & Flexibility section - dunkler Hintergrund -> CarLogix Logo
+        { start: 2400, end: 3000, isLight: true }, // Partners section - heller Hintergrund -> Car Logo
+        { start: 3000, end: Infinity, isLight: false }, // Footer - dunkler Hintergrund -> CarLogix Logo
       ];
 
       // Aktuelle Sektion basierend auf Scroll-Position finden
