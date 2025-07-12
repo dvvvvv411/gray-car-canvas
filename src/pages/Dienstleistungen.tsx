@@ -22,7 +22,7 @@ const Dienstleistungen = () => {
               <a href="/" className="text-white hover:text-primary transition-colors font-medium">STARTSEITE</a>
               <a href="/unternehmen" className="text-white hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
               <a href="/dienstleistungen" className="text-primary font-medium">DIENSTLEISTUNGEN</a>
-              <a href="#" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
+              <a href="/karriere" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">KONTAKT</a>

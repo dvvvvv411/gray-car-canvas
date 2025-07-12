@@ -1,11 +1,11 @@
-import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target } from "lucide-react";
+import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target, Heart, Coffee, UserPlus, Briefcase, GraduationCap, TrendingUpIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
-const Unternehmen = () => {
+const Karriere = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -20,9 +20,9 @@ const Unternehmen = () => {
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <a href="/" className="text-white hover:text-primary transition-colors font-medium">STARTSEITE</a>
-              <a href="/unternehmen" className="text-primary font-medium">UNTERNEHMEN</a>
+              <a href="/unternehmen" className="text-white hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
               <a href="/dienstleistungen" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
-              <a href="/karriere" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
+              <a href="/karriere" className="text-primary font-medium">KARRIERE</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">KONTAKT</a>
@@ -71,120 +71,140 @@ const Unternehmen = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>IHRE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>WAHL</span></em>
+              <em>KARRIERE BEI <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>TRANSFERCAR</span></em>
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Company Header Section */}
+      {/* Main Intro Section */}
       <section className="bg-background py-16 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            TRANSFERCAR – IHR EXPERTE FÜR FAHRZEUGÜBERFÜHRUNGEN
-          </h2>
-          <div className="w-24 h-1 bg-primary mx-auto"></div>
-        </div>
-      </section>
-
-      {/* Über uns Section */}
-      <section className="bg-background py-16 px-4">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
-                <Users className="w-4 h-4 text-primary" />
-                <span className="text-primary font-medium text-sm">ÜBER UNS</span>
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                Seit 1994 <span className="text-primary">vertrauenswürdig</span>
-              </h3>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  TransferCar GmbH wurde 1994 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
-                  für Fahrzeugüberführungen in Deutschland und Europa entwickelt. Mit über 29 Jahren Erfahrung 
-                  in der Branche haben wir uns einen Namen für Zuverlässigkeit, Effizienz und Kundenzufriedenheit gemacht.
-                </p>
-                <p>
-                  Unser Unternehmen hat sich von einem kleinen lokalen Dienstleister zu einem deutschlandweit 
-                  agierenden Marktführer entwickelt. Heute beschäftigen wir über 150 professionelle Fahrer 
-                  und verfügen über eine moderne Fahrzeugflotte, die es uns ermöglicht, auch die anspruchsvollsten 
-                  Transportaufgaben zu bewältigen.
-                </p>
-                <p>
-                  Innovation und Tradition gehen bei uns Hand in Hand. Während wir auf bewährte Methoden 
-                  und jahrzehntelange Erfahrung setzen, integrieren wir kontinuierlich neue Technologien 
-                  und Prozesse, um unseren Service stetig zu verbessern.
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/eb283bb3-4863-4839-acbf-940dd5ac8213.png" 
-                alt="Professioneller Fahrer" 
-                className="w-full h-auto rounded-2xl shadow-2xl border border-border"
-              />
-            </div>
+          <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-8">
+            <UserPlus className="w-4 h-4 text-primary" />
+            <span className="text-primary font-medium text-sm">VERSTÄRKUNG GESUCHT</span>
           </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+            WERDE TEIL UNSERES <span className="text-primary">TEAMS</span>
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Bei TransferCar suchen wir kontinuierlich motivierte Menschen, die unser Team verstärken möchten. 
+            Ob als Fahrer auf der Straße oder im Büro – bei uns findest du spannende Karrieremöglichkeiten 
+            in einem dynamischen und wachsenden Unternehmen.
+          </p>
         </div>
       </section>
 
-      {/* Zahlen Section */}
+      {/* Bereiche Section */}
       <section className="bg-muted/30 py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
-              <TrendingUp className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">ZAHLEN & FAKTEN</span>
+              <Briefcase className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">KARRIERECHANCEN</span>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-              Unsere <span className="text-primary">Erfolgsgeschichte</span>
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Vielfältige <span className="text-primary">Möglichkeiten</span>
             </h3>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">29+</div>
-              <div className="text-sm text-muted-foreground">Jahre Erfahrung</div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Fahrer */}
+            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Car className="w-8 h-8 text-primary" />
+              </div>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Fahrerteam</h4>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                Professionelle Fahrer für PKW- und LKW-Überführungen. Mit verschiedenen Führerscheinklassen 
+                und flexiblen Arbeitszeiten europaweit unterwegs.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2 justify-center">
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Führerschein CE</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Flexibel</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Europaweit</span>
+              </div>
             </div>
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">150+</div>
-              <div className="text-sm text-muted-foreground">Professionelle Fahrer</div>
+
+            {/* Büro */}
+            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-primary" />
+              </div>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Administration</h4>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                Disposition, Kundenbetreuung, Buchhaltung und Management. Organisiere Touren, 
+                betreue Kunden und sorge für reibungslose Abläufe.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2 justify-center">
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Disposition</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Kundenservice</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Organisation</span>
+              </div>
             </div>
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">3K+</div>
-              <div className="text-sm text-muted-foreground">Überführungen/Jahr</div>
-            </div>
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">99%</div>
-              <div className="text-sm text-muted-foreground">Kundenzufriedenheit</div>
+
+            {/* Werkstatt/Technik */}
+            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-8 h-8 text-primary" />
+              </div>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Technischer Bereich</h4>
+              <p className="text-muted-foreground text-center leading-relaxed">
+                Fahrzeugkontrolle, Wartung und technische Prüfungen. Stelle sicher, 
+                dass alle Fahrzeuge sicher und ordnungsgemäß überführt werden.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2 justify-center">
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Kontrolle</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Wartung</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Qualität</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service-Philosophie Section */}
+      {/* Benefits Section */}
       <section className="bg-background py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
-              <Target className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">UNSERE PHILOSOPHIE</span>
+              <Heart className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">DEINE VORTEILE</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Service & <span className="text-primary">Qualität</span> im Fokus
+              Warum <span className="text-primary">TransferCar?</span>
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-primary" />
+                <TrendingUp className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Sicherheit</h4>
-              <p className="text-muted-foreground">
-                Jeder Transport wird vollversichert durchgeführt. Unsere Fahrer sind speziell geschult 
-                und verfügen über jahrelange Erfahrung im sicheren Transport von Fahrzeugen.
+              <h4 className="text-lg font-semibold text-foreground mb-3">Wachstum</h4>
+              <p className="text-muted-foreground text-sm">
+                Seit 1994 kontinuierliches Wachstum und stabile Arbeitsplätze in einem zukunftssicheren Markt.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary" />
+              </div>
+              <h4 className="text-lg font-semibold text-foreground mb-3">Teamgeist</h4>
+              <p className="text-muted-foreground text-sm">
+                Familiäres Arbeitsklima mit über 250 Fahrern und einem engagierten Team im Büro.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <GraduationCap className="w-8 h-8 text-primary" />
+              </div>
+              <h4 className="text-lg font-semibold text-foreground mb-3">Weiterbildung</h4>
+              <p className="text-muted-foreground text-sm">
+                Regelmäßige Schulungen und Fortbildungen für alle Bereiche und Führerscheinklassen.
               </p>
             </div>
             
@@ -192,28 +212,69 @@ const Unternehmen = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Pünktlichkeit</h4>
-              <p className="text-muted-foreground">
-                Termine werden eingehalten. Durch intelligente Routenplanung und GPS-Tracking 
-                können wir präzise Ankunftszeiten garantieren und Sie jederzeit informieren.
-              </p>
-            </div>
-            
-            <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="w-8 h-8 text-primary" />
-              </div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Exzellenz</h4>
-              <p className="text-muted-foreground">
-                Höchste Qualitätsstandards in allen Bereichen. Von der ersten Anfrage bis zur 
-                Übergabe des Fahrzeugs – wir setzen auf Perfektion in jedem Detail.
+              <h4 className="text-lg font-semibold text-foreground mb-3">Flexibilität</h4>
+              <p className="text-muted-foreground text-sm">
+                Flexible Arbeitszeiten und die Möglichkeit, europaweit interessante Orte kennenzulernen.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-
+      {/* Contact Section */}
+      <section className="bg-muted/30 py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
+                <Mail className="w-4 h-4 text-primary" />
+                <span className="text-primary font-medium text-sm">BEWERBUNG</span>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                Starte deine <span className="text-primary">Karriere</span> bei uns
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Du möchtest Teil unseres erfolgreichen Teams werden? Dann freuen wir uns auf deine Bewerbung! 
+                  Egal ob als erfahrener Profi oder Quereinsteiger – wir bieten dir die Chance, 
+                  in einem dynamischen Umfeld zu wachsen.
+                </p>
+                <p>
+                  Sende uns einfach eine kurze Nachricht über das Kontaktformular und erzähle uns, 
+                  für welchen Bereich du dich interessierst. Wir melden uns zeitnah bei dir zurück 
+                  und besprechen die weiteren Schritte.
+                </p>
+                <div className="bg-background p-6 rounded-lg border border-border">
+                  <h4 className="font-semibold text-foreground mb-3">Was wir bieten:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Sichere Arbeitsplätze in einem wachsenden Unternehmen</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Faire Bezahlung und attraktive Sozialleistungen</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Moderne Arbeitsplätze und professionelle Ausstattung</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Kollegiales Arbeitsklima und flache Hierarchien</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-background p-8 rounded-2xl shadow-xl border border-border">
+              <h4 className="text-2xl font-bold text-foreground mb-6 text-center">Kontakt aufnehmen</h4>
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 px-4 overflow-hidden">
@@ -330,68 +391,36 @@ const Unternehmen = () => {
               </ul>
 
               {/* Newsletter Signup */}
-              <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-lg p-4">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4">
                 <h5 className="text-white font-medium mb-3">Newsletter</h5>
-                <p className="text-white/80 text-sm mb-4">
-                  Bleiben Sie über unsere neuesten Services informiert.
+                <p className="text-white/70 text-sm mb-4">
+                  Bleiben Sie auf dem Laufenden über unsere neuesten Services und Angebote.
                 </p>
                 <div className="flex gap-2">
                   <input 
                     type="email" 
-                    placeholder="Ihre E-Mail" 
+                    placeholder="Ihre E-Mail"
                     className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded text-white placeholder-white/60 text-sm focus:outline-none focus:border-primary"
                   />
                   <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <Mail className="w-4 h-4" />
+                    OK
                   </Button>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="mt-12 pt-8 border-t border-white/10">
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
-              
-              {/* Legal Links */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
-                <span className="text-white/60">© 2024 TransferCar GmbH</span>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">Impressum</a>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">Datenschutzerklärung</a>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">AGB</a>
-                <a href="#" className="text-white/80 hover:text-primary transition-colors">Haftungsausschluss</a>
+          {/* Bottom Footer */}
+          <div className="border-t border-white/20 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="text-white/60 text-sm">
+                © 2024 TransferCar GmbH. Alle Rechte vorbehalten.
               </div>
-
-              {/* Social Media & Certifications */}
-              <div className="flex items-center gap-6">
-                <div className="flex items-center gap-3">
-                  <span className="text-white/60 text-sm">Folgen Sie uns:</span>
-                  <div className="flex gap-2">
-                    <a href="#" className="w-8 h-8 bg-white/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition-colors">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="w-8 h-8 bg-white/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition-colors">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="w-8 h-8 bg-white/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition-colors">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+              <div className="flex gap-6 text-sm">
+                <a href="#" className="text-white/60 hover:text-primary transition-colors">Impressum</a>
+                <a href="#" className="text-white/60 hover:text-primary transition-colors">Datenschutz</a>
+                <a href="#" className="text-white/60 hover:text-primary transition-colors">AGB</a>
               </div>
-            </div>
-
-            {/* Location Reference */}
-            <div className="mt-6 text-center">
-              <p className="text-white/60 text-sm">
-                Standort Hamburg-Norderstedt • Bundesweit und europaweit im Einsatz
-              </p>
             </div>
           </div>
         </div>
@@ -400,4 +429,4 @@ const Unternehmen = () => {
   );
 };
 
-export default Unternehmen;
+export default Karriere;
