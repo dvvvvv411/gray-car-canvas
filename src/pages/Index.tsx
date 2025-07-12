@@ -52,33 +52,34 @@ const Index = () => {
         </div>
       </header>
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
-        {/* Video Background */}
-        <video 
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-        >
-          <source src="/src/assets/hero-video.mov" type="video/mp4" />
-        </video>
-        
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
-        
-        {/* Text Content */}
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-              <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR</em>
+      <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4 overflow-hidden">
+        {/* Background Stripe Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full bg-primary transform -skew-y-6 origin-top-left scale-150"></div>
+          <div className="absolute top-20 left-0 w-full h-32 bg-primary transform -skew-y-6 origin-top-left scale-150"></div>
+          <div className="absolute bottom-0 right-0 w-full h-64 bg-primary transform skew-y-6 origin-bottom-right scale-150"></div>
+        </div>
+        <div className="container mx-auto">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR FAHRZEUG-</em>
               <br />
-              <em>FAHRZEUGÜBERFÜHRUNGEN</em>
+              <em>ÜBERFÜHRUNGEN</em>
               <br />
-              <span className="text-lg md:text-xl lg:text-2xl font-normal mt-2 block">
+              <span className="text-lg md:text-xl lg:text-2xl font-normal text-muted-foreground mt-2 block">
                 IN DEUTSCHLAND UND EUROPA
               </span>
             </h1>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="max-w-6xl w-full">
+              <img 
+                src={heroImage} 
+                alt="TransferCar Fahrzeugüberführungen" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
