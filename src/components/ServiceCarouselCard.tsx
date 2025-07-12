@@ -16,7 +16,7 @@ export default function ServiceCarouselCard({
   features
 }: ServiceCarouselCardProps) {
   return (
-    <div className="relative group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:bg-white/10 hover:shadow-primary/20 hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] animate-fade-in">
+    <div className="relative group bg-gray-900/90 backdrop-blur-sm border border-gray-700/30 rounded-2xl overflow-hidden shadow-2xl hover:bg-gray-900/95 hover:shadow-primary/20 hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] animate-fade-in">
       {/* Glow Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       <div className="absolute inset-0 ring-1 ring-primary/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
