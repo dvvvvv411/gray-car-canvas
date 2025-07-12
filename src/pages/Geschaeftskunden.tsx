@@ -109,42 +109,47 @@ const Geschaeftskunden = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Automatische Status Updates */}
-            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Bell className="w-8 h-8 text-primary" />
+            {/* Automatische Status Updates - Featured Card */}
+            <div className="relative bg-gradient-to-br from-primary to-primary/80 p-8 rounded-2xl shadow-xl border border-primary/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 lg:col-span-2">
+              <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                <span className="text-white text-xs font-semibold">PREMIUM</span>
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Live Status-Updates</h4>
-              <p className="text-muted-foreground text-center leading-relaxed mb-4">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                <Bell className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-2xl font-bold text-white mb-4">Live Status-Updates</h4>
+              <p className="text-white/90 leading-relaxed mb-6">
                 Erhalten Sie automatische Benachrichtigungen über den aktuellen Status Ihrer Überführungen 
-                in Echtzeit via E-Mail, SMS oder über unser Business-Portal.
+                in Echtzeit via E-Mail, SMS oder über unser Business-Portal. Mit GPS-Tracking und 
+                voraussichtlichen Ankunftszeiten.
               </p>
-              <div className="flex flex-wrap gap-2 justify-center">
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Real-time</span>
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Multi-Channel</span>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full backdrop-blur-sm">Real-time</span>
+                <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full backdrop-blur-sm">GPS-Tracking</span>
+                <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full backdrop-blur-sm">Multi-Channel</span>
               </div>
             </div>
 
-            {/* Business Intelligence */}
-            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300">
+            {/* Business Intelligence - Dark Card */}
+            <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl shadow-lg border border-gray-800 hover:shadow-xl transition-all duration-300 hover:border-primary/50">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Detaillierte Berichte</h4>
-              <p className="text-muted-foreground text-center leading-relaxed mb-4">
+              <h4 className="text-xl font-semibold text-white mb-4 text-center">Detaillierte Berichte</h4>
+              <p className="text-gray-300 text-center leading-relaxed mb-4">
                 Umfassende Analysen und Reports über Ihre Transportkosten, Zeiten und Effizienz. 
                 Exportierbar in verschiedene Formate für Ihre Buchhaltung.
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Analytics</span>
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Export</span>
+                <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">Analytics</span>
+                <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">Export</span>
               </div>
             </div>
 
-            {/* Dedicated Account Manager */}
-            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Headphones className="w-8 h-8 text-primary" />
+            {/* Dedicated Account Manager - Light Card with Border */}
+            <div className="bg-background p-8 rounded-2xl shadow-lg border-2 border-primary/30 hover:shadow-xl transition-all duration-300 hover:border-primary">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                <Headphones className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Persönlicher Ansprechpartner</h4>
               <p className="text-muted-foreground text-center leading-relaxed mb-4">
@@ -157,10 +162,10 @@ const Geschaeftskunden = () => {
               </div>
             </div>
 
-            {/* API Integration */}
-            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Settings className="w-8 h-8 text-primary" />
+            {/* API Integration - Gradient Card */}
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/50 dark:to-cyan-950/50 p-8 rounded-2xl shadow-lg border border-blue-200 dark:border-blue-800 hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Settings className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold text-foreground mb-4 text-center">System-Integration</h4>
               <p className="text-muted-foreground text-center leading-relaxed mb-4">
@@ -168,13 +173,13 @@ const Geschaeftskunden = () => {
                 REST-APIs für vollautomatisierte Prozesse.
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">API</span>
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Automatisiert</span>
+                <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-sm rounded-full">API</span>
+                <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-sm rounded-full">Automatisiert</span>
               </div>
             </div>
 
-            {/* Flexible Abrechnung */}
-            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300">
+            {/* Flexible Abrechnung - Muted Card */}
+            <div className="bg-muted/50 p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:bg-muted/70">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Target className="w-8 h-8 text-primary" />
               </div>
@@ -189,10 +194,10 @@ const Geschaeftskunden = () => {
               </div>
             </div>
 
-            {/* SLA Garantien */}
-            <div className="bg-background p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="w-8 h-8 text-primary" />
+            {/* SLA Garantien - Success Theme Card */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50 p-8 rounded-2xl shadow-lg border border-green-200 dark:border-green-800 hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold text-foreground mb-4 text-center">SLA-Garantien</h4>
               <p className="text-muted-foreground text-center leading-relaxed mb-4">
@@ -200,8 +205,8 @@ const Geschaeftskunden = () => {
                 Lieferzeiten. Bei Nichteinhaltung erhalten Sie automatische Kompensation.
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Garantiert</span>
-                <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Kompensation</span>
+                <span className="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm rounded-full">Garantiert</span>
+                <span className="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm rounded-full">Kompensation</span>
               </div>
             </div>
           </div>
