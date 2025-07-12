@@ -53,34 +53,34 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-4">
       {/* Name & Phone Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="space-y-1">
           <label className="text-sm font-medium text-foreground">Name *</label>
           <Input
             placeholder="Ihr vollständiger Name"
             value={formData.name}
             onChange={(e) => handleInputChange("name", e.target.value)}
             required
-            className="h-12"
+            className="h-10"
           />
         </div>
-        <div className="space-y-2">
+        <div className="space-y-1">
           <label className="text-sm font-medium text-foreground">Telefonnummer</label>
           <Input
             type="tel"
             placeholder="Ihre Telefonnummer"
             value={formData.phone}
             onChange={(e) => handleInputChange("phone", e.target.value)}
-            className="h-12"
+            className="h-10"
           />
         </div>
       </div>
 
       {/* Email & Subject Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="space-y-1">
           <label className="text-sm font-medium text-foreground">E-Mail *</label>
           <Input
             type="email"
@@ -88,25 +88,25 @@ export const ContactForm = () => {
             value={formData.email}
             onChange={(e) => handleInputChange("email", e.target.value)}
             required
-            className="h-12"
+            className="h-10"
           />
         </div>
-        <div className="space-y-2">
+        <div className="space-y-1">
           <label className="text-sm font-medium text-foreground">Betreff</label>
           <Input
             placeholder="Betreff Ihrer Anfrage"
             value={formData.subject}
             onChange={(e) => handleInputChange("subject", e.target.value)}
-            className="h-12"
+            className="h-10"
           />
         </div>
       </div>
 
       {/* Interest Area */}
-      <div className="space-y-2">
+      <div className="space-y-1">
         <label className="text-sm font-medium text-foreground">Interessensbereich</label>
         <Select value={formData.interest} onValueChange={(value) => handleInputChange("interest", value)}>
-          <SelectTrigger className="h-12">
+          <SelectTrigger className="h-10">
             <SelectValue placeholder="Wählen Sie Ihren Interessensbereich" />
           </SelectTrigger>
           <SelectContent>
@@ -121,52 +121,25 @@ export const ContactForm = () => {
         </Select>
       </div>
 
-      {/* Experience */}
-      <div className="space-y-2">
-        <label className="text-sm font-medium text-foreground">Berufserfahrung</label>
-        <Select value={formData.experience} onValueChange={(value) => handleInputChange("experience", value)}>
-          <SelectTrigger className="h-12">
-            <SelectValue placeholder="Ihre Berufserfahrung in diesem Bereich" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="none">Berufseinsteiger</SelectItem>
-            <SelectItem value="1-2">1-2 Jahre</SelectItem>
-            <SelectItem value="3-5">3-5 Jahre</SelectItem>
-            <SelectItem value="5-10">5-10 Jahre</SelectItem>
-            <SelectItem value="10+">Über 10 Jahre</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
-
       {/* Message */}
-      <div className="space-y-2">
+      <div className="space-y-1">
         <label className="text-sm font-medium text-foreground">Nachricht *</label>
         <Textarea
           placeholder="Erzählen Sie uns von sich, Ihren Qualifikationen und warum Sie bei TransferCar arbeiten möchten..."
           value={formData.message}
           onChange={(e) => handleInputChange("message", e.target.value)}
-          className="min-h-32 resize-none"
+          className="min-h-24 resize-none"
           required
         />
       </div>
-
-      {/* Additional Info */}
-      <div className="bg-muted/50 p-4 rounded-lg space-y-3">
-        <h4 className="font-medium text-foreground">Wichtige Informationen</h4>
-        <div className="space-y-2 text-sm text-muted-foreground">
-          <p>• Für Fahrer-Positionen: Bitte erwähnen Sie Ihre Führerscheinklassen</p>
-          <p>• Verfügbarkeit: Wann können Sie frühestens anfangen?</p>
-          <p>• Arbeitszeit: Vollzeit, Teilzeit oder auf Abruf?</p>
-        </div>
-      </div>
       
       {/* Consent */}
-      <div className="flex items-start space-x-3 bg-background border border-border rounded-lg p-4">
+      <div className="flex items-start space-x-2 bg-background border border-border rounded-lg p-3">
         <Checkbox
           id="consent"
           checked={formData.consent}
           onCheckedChange={(checked) => handleInputChange("consent", checked as boolean)}
-          className="mt-1"
+          className="mt-0.5"
         />
         <div className="space-y-1">
           <label 
@@ -184,7 +157,7 @@ export const ContactForm = () => {
       {/* Submit Button */}
       <Button 
         type="submit" 
-        className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base"
+        className="w-full h-11 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
         size="lg"
       >
         Bewerbung absenden
