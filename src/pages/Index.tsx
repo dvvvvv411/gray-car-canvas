@@ -3,7 +3,6 @@ import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "luci
 import { Button } from "@/components/ui/button";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
-import { SmoothWave, DynamicWave, LayeredWave, MinimalWave } from "@/components/waves";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -117,14 +116,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Hero to Services Wave */}
-      <DynamicWave 
-        className="h-16 md:h-24 text-black"
-        topColor="hsl(0 0% 0%)"
-        bottomColor="hsl(20 100% 50%)"
-        animated={true}
-      />
-
       {/* Modern Services Carousel Section */}
       <section className="relative py-16 px-4 bg-gradient-to-br from-primary via-primary/90 to-accent overflow-hidden">
         {/* Background Elements */}
@@ -218,15 +209,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Services to Service & Flexibility Wave */}
-      <LayeredWave 
-        className="h-20 md:h-28"
-        topColor="hsl(20 100% 50%)"
-        bottomColor="hsl(222.2 84% 4.9%)"
-        accentColor="hsl(32 95% 55%)"
-        flip={true}
-      />
 
       {/* Modern Service & Flexibility Section */}
       <section className="relative py-24 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
@@ -352,13 +334,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Service & Flexibility to Partners Wave */}
-      <SmoothWave 
-        className="h-16 md:h-20"
-        topColor="hsl(222.2 84% 4.9%)"
-        bottomColor="hsl(210 40% 96.1%)"
-      />
-
       {/* Partner Logos Section */}
       <section className="relative py-12 px-4 bg-gradient-to-br from-muted/30 to-muted/50 overflow-hidden">
         <div className="container mx-auto relative z-10">
@@ -432,13 +407,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Partners to Footer Wave */}
-      <MinimalWave 
-        className="h-12 md:h-16"
-        color="hsl(222.2 84% 4.9%)"
-        height={80}
-      />
 
       {/* Comprehensive Footer */}
       <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white border-t border-white/10">
