@@ -1,7 +1,9 @@
 
 import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ServiceCard } from "@/components/ServiceCard";
+import ServiceCarouselCard from "@/components/ServiceCarouselCard";
 import { ContactForm } from "@/components/ContactForm";
 
 // Import images
@@ -138,52 +140,58 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Service Cards Grid */}
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <ServiceCard
-                title="PKW-ÜBERFÜHRUNG"
-                description="Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert."
-                image={pkwService}
-                buttonText="Mehr erfahren"
-                icon={Car}
-                features={[
-                  "Live GPS-Tracking",
-                  "Digitale Übergabe-Protokolle",
-                  "Flexible Terminplanung"
-                ]}
-              />
-            </div>
-            
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <ServiceCard
-                title="LKW-ÜBERFÜHRUNG"
-                description="Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf."
-                image={lkwService}
-                buttonText="Jetzt anfragen"
-                icon={Truck}
-                features={[
-                  "Spezialisierte LKW-Fahrer",
-                  "Schwertransport-Expertise",
-                  "Europaweites Netzwerk"
-                ]}
-              />
-            </div>
-            
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <ServiceCard
-                title="EXPRESS-LIEFERUNG"
-                description="Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten."
-                image={expressService}
-                buttonText="Express buchen"
-                icon={Zap}
-                features={[
-                  "Sofort-Abholung möglich",
-                  "Priority-Behandlung",
-                  "Zeitgarantie inklusive"
-                ]}
-              />
-            </div>
+          {/* Service Carousel */}
+          <div className="animate-fade-in-up max-w-5xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent className="-ml-4">
+                <CarouselItem className="pl-4">
+                  <ServiceCarouselCard
+                    title="PKW-ÜBERFÜHRUNG"
+                    description="Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert."
+                    image={pkwService}
+                    icon={Car}
+                    features={[
+                      "Live GPS-Tracking",
+                      "Digitale Übergabe-Protokolle",
+                      "Flexible Terminplanung"
+                    ]}
+                  />
+                </CarouselItem>
+                
+                <CarouselItem className="pl-4">
+                  <ServiceCarouselCard
+                    title="LKW-ÜBERFÜHRUNG"
+                    description="Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf."
+                    image={lkwService}
+                    icon={Truck}
+                    features={[
+                      "Spezialisierte LKW-Fahrer",
+                      "Schwertransport-Expertise",
+                      "Europaweites Netzwerk"
+                    ]}
+                  />
+                </CarouselItem>
+                
+                <CarouselItem className="pl-4">
+                  <ServiceCarouselCard
+                    title="EXPRESS-LIEFERUNG"
+                    description="Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten."
+                    image={expressService}
+                    icon={Zap}
+                    features={[
+                      "Sofort-Abholung möglich",
+                      "Priority-Behandlung",
+                      "Zeitgarantie inklusive"
+                    ]}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              
+              <div className="flex justify-center mt-8 gap-4">
+                <CarouselPrevious className="relative translate-y-0 translate-x-0 bg-card/90 backdrop-blur-sm border-border/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300" />
+                <CarouselNext className="relative translate-y-0 translate-x-0 bg-card/90 backdrop-blur-sm border-border/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300" />
+              </div>
+            </Carousel>
           </div>
           
           {/* Call to Action */}
