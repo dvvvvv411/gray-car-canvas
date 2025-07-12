@@ -75,22 +75,40 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/30 to-accent/20 rounded-3xl blur-2xl animate-glow-pulse"></div>
           
           <div className="relative z-10 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
               <em>IHR <span className="text-primary animate-specialist-glow">SPEZIALIST</span> FÜR</em>
               <br />
               <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
               <br />
-              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)' }}>
                 IN DEUTSCHLAND UND EUROPA
               </span>
             </h1>
             <div className="mt-8 animate-scale-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+              {/* Trust indicators */}
+              <div className="flex flex-wrap items-center justify-center gap-6 mb-6 text-white/80">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse"></div>
+                  <span className="text-sm font-medium">Seit 1994 vertrauenswürdig</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
+                  <span className="text-sm font-medium">24/7 Service</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
+                  <span className="text-sm font-medium">Vollversichert</span>
+                </div>
+              </div>
+              
               <Button 
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-glow-orange hover:shadow-glow-orange transition-all duration-300 transform hover:scale-105"
               >
                 Jetzt anfragen
               </Button>
+              
+              <p className="text-white/60 text-sm mt-4">Kostenlose Beratung • Schnelle Antwort • Faire Preise</p>
             </div>
           </div>
         </div>
