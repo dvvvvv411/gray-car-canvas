@@ -126,7 +126,7 @@ const Dienstleistungen = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/bd9a4a58-5afa-479b-ac59-cf309a375c59.png" 
+                src="/lovable-uploads/9fcae8d2-4eac-4283-96e1-87657043ea04.png" 
                 alt="PKW-Überführung" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
@@ -141,7 +141,7 @@ const Dienstleistungen = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative order-2 lg:order-1">
               <img 
-                src="/lovable-uploads/a1638340-f7b5-4e2b-8800-e9928561dd9a.png" 
+                src="/lovable-uploads/1ae8ace8-3395-48d9-a91c-5764290dbb19.png" 
                 alt="LKW-Überführung" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
@@ -202,7 +202,7 @@ const Dienstleistungen = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/0c5699e6-2528-4e98-a618-cb610b523c8f.png" 
+                src="/lovable-uploads/f3745d9f-aeed-4a82-8811-d5f42933c9eb.png" 
                 alt="Express-Service" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
@@ -217,7 +217,7 @@ const Dienstleistungen = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative order-2 lg:order-1">
               <img 
-                src="/lovable-uploads/551462fd-be4d-49a0-a2f8-a6a69a85cbf0.png" 
+                src="/lovable-uploads/d4d3dd38-eb97-4f00-bf98-f0c770b5db74.png" 
                 alt="Fahrzeugüberführung auf Fremdachse" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
