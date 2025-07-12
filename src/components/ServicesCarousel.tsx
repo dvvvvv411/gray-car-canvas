@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Car, Truck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 interface ServiceData {
   id: number;
@@ -9,6 +10,7 @@ interface ServiceData {
   description: string;
   image: string;
   buttonText: string;
+  buttonLink: string;
   icon: React.ComponentType<any>;
   features: string[];
 }
@@ -117,16 +119,19 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
                 <Button 
                   size="lg"
                   className="relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 group-hover/button:scale-105 shadow-lg hover:shadow-xl border-0"
+                  asChild
                 >
-                  <span className="relative z-10 flex items-center gap-2">
-                    {currentService.buttonText}
-                    <svg className="w-4 h-4 transition-transform duration-300 group-hover/button:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                  
-                  {/* Animated background */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover/button:translate-x-full transition-transform duration-1000"></div>
+                  <Link to={currentService.buttonLink}>
+                    <span className="relative z-10 flex items-center gap-2">
+                      {currentService.buttonText}
+                      <svg className="w-4 h-4 transition-transform duration-300 group-hover/button:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                    
+                    {/* Animated background */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover/button:translate-x-full transition-transform duration-1000"></div>
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -53,13 +53,13 @@ const Index = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                <a 
+                <Link 
                   key={item.href}
-                  href={item.href} 
+                  to={item.href} 
                   className={item.href === "/" ? "text-primary font-medium" : "text-white hover:text-primary transition-colors font-medium"}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
             
@@ -99,9 +99,9 @@ const Index = () => {
                   {/* Navigation Links */}
                   <nav className="space-y-4 mb-6">
                     {navigationItems.map((item) => (
-                      <a
+                      <Link
                         key={item.href}
-                        href={item.href}
+                        to={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`block py-3 px-4 rounded-lg text-lg font-medium transition-colors ${
                           item.href === "/" 
@@ -110,7 +110,7 @@ const Index = () => {
                         }`}
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     ))}
                   </nav>
                   
@@ -188,8 +188,9 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-glow-orange hover:shadow-glow-orange transition-all duration-300 transform hover:scale-105"
+                asChild
               >
-                Jetzt anfragen
+                <Link to="/kontakt">Jetzt anfragen</Link>
               </Button>
               
               <p className="text-white/60 text-sm mt-4">Kostenlose Beratung • Schnelle Antwort • Faire Preise</p>
@@ -233,6 +234,7 @@ const Index = () => {
                   description: "Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert.",
                   image: pkwService,
                   buttonText: "Mehr erfahren",
+                  buttonLink: "/dienstleistungen",
                   icon: Car,
                   features: [
                     "Live GPS-Tracking",
@@ -246,6 +248,7 @@ const Index = () => {
                   description: "Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf.",
                   image: lkwService,
                   buttonText: "Jetzt anfragen",
+                  buttonLink: "/kontakt",
                   icon: Truck,
                   features: [
                     "Spezialisierte LKW-Fahrer",
@@ -259,6 +262,7 @@ const Index = () => {
                   description: "Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten.",
                   image: expressService,
                   buttonText: "Express buchen",
+                  buttonLink: "/kontakt",
                   icon: Zap,
                   features: [
                     "Sofort-Abholung möglich",
@@ -272,6 +276,7 @@ const Index = () => {
                   description: "Professioneller Transport mit speziellen Transportern und Anhängern. Sichere Verladung und schonender Transport für Fahrzeuge aller Art.",
                   image: transferService,
                   buttonText: "Service anfragen",
+                  buttonLink: "/kontakt",
                   icon: ArrowLeftRight,
                   features: [
                     "Spezial-Transporter verfügbar",
@@ -489,13 +494,13 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-white mb-6">Unsere Services</h4>
               <ul className="space-y-3">
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</a></li>
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</a></li>
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Express-Service</a></li>
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</a></li>
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</a></li>
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</a></li>
-                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</a></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Express-Service</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</Link></li>
               </ul>
             </div>
 
@@ -551,10 +556,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-white mb-6">Quick Links</h4>
               <ul className="space-y-3 mb-8">
-                <li><a href="/unternehmen" className="text-white/80 hover:text-primary transition-colors">Über uns</a></li>
-                <li><a href="/karriere" className="text-white/80 hover:text-primary transition-colors">Karriere</a></li>
-                <li><a href="/geschaeftskunden" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">FAQ</a></li>
+                <li><Link to="/unternehmen" className="text-white/80 hover:text-primary transition-colors">Über uns</Link></li>
+                <li><Link to="/karriere" className="text-white/80 hover:text-primary transition-colors">Karriere</Link></li>
+                <li><Link to="/geschaeftskunden" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</Link></li>
+                <li><Link to="/kontakt" className="text-white/80 hover:text-primary transition-colors">FAQ</Link></li>
               </ul>
 
               {/* Newsletter Signup */}

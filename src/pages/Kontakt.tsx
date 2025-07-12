@@ -39,13 +39,13 @@ const Kontakt = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                <a 
+                <Link 
                   key={item.href}
-                  href={item.href} 
+                  to={item.href} 
                   className={item.href === "/kontakt" ? "text-primary font-medium" : "text-white hover:text-primary transition-colors font-medium"}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
             
@@ -84,9 +84,9 @@ const Kontakt = () => {
                 <div className="container mx-auto px-4 py-6">
                   <nav className="space-y-4 mb-6">
                     {navigationItems.map((item) => (
-                      <a
+                      <Link
                         key={item.href}
-                        href={item.href}
+                        to={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`block py-3 px-4 rounded-lg text-lg font-medium transition-colors ${
                           item.href === "/kontakt" 
@@ -95,7 +95,7 @@ const Kontakt = () => {
                         }`}
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     ))}
                   </nav>
                   

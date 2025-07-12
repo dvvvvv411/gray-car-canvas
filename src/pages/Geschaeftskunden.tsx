@@ -39,13 +39,13 @@ const Geschaeftskunden = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                <a 
+                <Link 
                   key={item.href}
-                  href={item.href} 
+                  to={item.href} 
                   className={item.href === "/geschaeftskunden" ? "text-primary font-medium" : "text-white hover:text-primary transition-colors font-medium"}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
             
@@ -403,13 +403,13 @@ const Geschaeftskunden = () => {
             <div>
               <h4 className="font-semibold text-white mb-6">Unsere Services</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Express-Service</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</a></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Express-Service</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</Link></li>
               </ul>
             </div>
 
@@ -465,11 +465,11 @@ const Geschaeftskunden = () => {
             <div>
               <h4 className="font-semibold text-white mb-6">Quick Links</h4>
               <ul className="space-y-3 mb-8">
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Über uns</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Karriere</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Aktuelles</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">FAQ</a></li>
+                <li><Link to="/unternehmen" className="text-white/80 hover:text-primary transition-colors">Über uns</Link></li>
+                <li><Link to="/karriere" className="text-white/80 hover:text-primary transition-colors">Karriere</Link></li>
+                <li><Link to="/geschaeftskunden" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</Link></li>
+                <li><Link to="/kontakt" className="text-white/80 hover:text-primary transition-colors">Kontakt</Link></li>
+                <li><Link to="/kontakt" className="text-white/80 hover:text-primary transition-colors">FAQ</Link></li>
               </ul>
 
               {/* Newsletter Signup */}
