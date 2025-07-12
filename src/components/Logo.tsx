@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Logo images
 const logoLight = "/lovable-uploads/cbe16bd5-177a-4d01-8871-3d4c9d25f5e4.png"; // Orange "Car" logo for dark backgrounds
@@ -18,6 +19,7 @@ const Logo = () => {
   const [logoType, setLogoType] = useState<'light' | 'dark'>('dark');
   const currentZoneRef = useRef<string>('HERO');
   const debounceTimeoutRef = useRef<NodeJS.Timeout>();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Preload images for smoother transitions
@@ -103,8 +105,9 @@ const Logo = () => {
       <img 
         src={logoType === 'light' ? logoDark : logoLight}
         alt="CarLogix Logo"
-        className="h-8 w-auto transition-all duration-300 ease-in-out"
+        className="h-12 w-auto transition-all duration-300 ease-in-out cursor-pointer hover:scale-105"
         loading="eager"
+        onClick={() => navigate('/')}
         onError={(e) => {
           console.warn('Logo failed to load:', e.currentTarget.src);
           // Fallback to the other logo if one fails
