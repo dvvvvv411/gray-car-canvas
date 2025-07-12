@@ -36,7 +36,7 @@ const Datenschutz = () => {
               10553 Berlin<br />
               Deutschland<br /><br />
               Geschäftsführer: Eugeniusz Rachuta<br />
-              E-Mail: info@transfercar.de
+              E-Mail: info@carlogix.de
             </p>
           </div>
 
