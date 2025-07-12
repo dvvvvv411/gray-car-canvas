@@ -424,7 +424,7 @@ const Unternehmen = () => {
               
               {/* Legal Links */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
-                <span className="text-white/60">© 2025 TransferCar GmbH</span>
+                <span className="text-white/60">© 2025 Golze & Michel OHG</span>
                 <a href="#" className="text-white/80 hover:text-primary transition-colors">Impressum</a>
                 <a href="#" className="text-white/80 hover:text-primary transition-colors">Datenschutzerklärung</a>
                 <a href="#" className="text-white/80 hover:text-primary transition-colors">AGB</a>

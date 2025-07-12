@@ -493,7 +493,7 @@ const Geschaeftskunden = () => {
           <div className="pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-white/60 text-sm">
-                © 2025 TransferCar GmbH. Alle Rechte vorbehalten.
+                © 2025 Golze & Michel OHG. Alle Rechte vorbehalten.
               </div>
               <div className="flex gap-6 text-sm">
                 <a href="#" className="text-white/60 hover:text-primary transition-colors">Datenschutz</a>
