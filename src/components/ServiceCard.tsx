@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Zap, Clock, Shield } from "lucide-react";
 
 interface ServiceCardProps {
   title: string;
@@ -72,14 +71,10 @@ export const ServiceCard = ({
         {/* CTA Button */}
         <Button 
           onClick={onButtonClick}
-          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground group/btn relative overflow-hidden mt-6"
+          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-110 transition-transform duration-200 mt-6"
           size="lg"
         >
-          <span className="relative z-10 flex items-center justify-center gap-2">
-            {buttonText}
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-          </span>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+          {buttonText}
         </Button>
       </CardContent>
       

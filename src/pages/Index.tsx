@@ -142,7 +142,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
             <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               <ServiceCard
-                title="PKW-TRANSPORT"
+                title="PKW-ÜBERFÜHRUNG"
                 description="Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert."
                 image={pkwService}
                 buttonText="Mehr erfahren"
@@ -157,7 +157,7 @@ const Index = () => {
             
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <ServiceCard
-                title="LKW-LOGISTICS"
+                title="LKW-ÜBERFÜHRUNG"
                 description="Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf."
                 image={lkwService}
                 buttonText="Jetzt anfragen"
@@ -172,7 +172,7 @@ const Index = () => {
             
             <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
               <ServiceCard
-                title="EXPRESS-RUSH"
+                title="EXPRESS-LIEFERUNG"
                 description="Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten."
                 image={expressService}
                 buttonText="Express buchen"
