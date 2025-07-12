@@ -37,8 +37,8 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
   return (
     <div className="relative w-full max-w-5xl mx-auto">
       {/* Main Card */}
-      <Card className="relative overflow-hidden bg-white/5 backdrop-blur-lg border border-white/20 shadow-2xl">
-        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-white/10"></div>
+      <Card className="relative overflow-hidden bg-black/90 backdrop-blur-sm border border-white/10 shadow-2xl">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/5"></div>
         
         <CardContent className="p-0">
           <div className="grid lg:grid-cols-2 gap-0 min-h-[300px]">
