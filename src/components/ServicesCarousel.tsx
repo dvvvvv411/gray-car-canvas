@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Car, Truck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -31,6 +31,15 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
+
+  // Auto-advance carousel every 6 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, services.length]);
 
   const currentService = services[currentIndex];
 
