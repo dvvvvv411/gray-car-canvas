@@ -55,7 +55,7 @@ const Index = () => {
       </header>
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden -mt-16 pt-16"
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden -mt-24 pt-24"
         style={{
           backgroundImage: `url(${heroBgNew})`
         }}
