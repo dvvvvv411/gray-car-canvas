@@ -5,7 +5,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 
 // Import images
-import newHeroBg from "@/assets/new-hero-bg.jpg";
+import heroBgNew from "@/assets/hero-background-new.webp";
 import pkwService from "@/assets/pkw-service.png";
 import lkwService from "@/assets/lkw-service.png";
 import expressService from "@/assets/express-service.png";
@@ -55,7 +55,7 @@ const Index = () => {
       <section 
         className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${newHeroBg})`
+          backgroundImage: `url(${heroBgNew})`
         }}
       >
         {/* Overlay for better text readability */}
