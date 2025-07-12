@@ -76,22 +76,15 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Organic Wave Transition */}
-        <div className="absolute left-1/2 top-0 w-32 h-full z-20 pointer-events-none">
-          <svg 
-            className="absolute -left-16 top-0 w-full h-full" 
-            viewBox="0 0 100 100" 
-            fill="none" 
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ transform: 'scaleX(-1)' }}
-          >
-            <path 
-              d="M0,0 C25,15 35,25 30,40 C25,55 35,65 40,80 C45,95 55,100 100,100 L100,0 Z" 
-              fill="hsl(var(--background))"
-              className="drop-shadow-sm"
-            />
-          </svg>
+        {/* Professional Diagonal Transition */}
+        <div className="absolute left-1/2 top-0 w-20 h-full z-20 pointer-events-none">
+          <div 
+            className="absolute -left-10 top-0 w-full h-full"
+            style={{
+              background: 'linear-gradient(120deg, hsl(var(--background)) 0%, hsl(var(--background)) 45%, transparent 50%)',
+              clipPath: 'polygon(0 0, 60% 0, 100% 100%, 0 100%)'
+            }}
+          />
         </div>
 
         {/* Right Side - Background Image */}
