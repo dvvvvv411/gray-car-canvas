@@ -329,7 +329,9 @@ const Dienstleistungen = () => {
           <div className="grid lg:grid-cols-4 gap-12 mb-12">
             {/* Company Info */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-white">TransferCar</h3>
+              <div className="mb-6">
+                <Logo />
+              </div>
               <p className="text-white/80 leading-relaxed mb-6">
                 Seit 1994 Ihr zuverlässiger Partner für professionelle Fahrzeugüberführungen 
                 in Deutschland und ganz Europa.

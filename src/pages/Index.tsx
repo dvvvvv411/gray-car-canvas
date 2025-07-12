@@ -458,7 +458,9 @@ const Index = () => {
             {/* Company Information */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">CarDelivery</h3>
+                <div className="mb-4">
+                  <Logo />
+                </div>
                 <p className="text-white/80 leading-relaxed">
                   Ihr vertrauensvoller Partner für Fahrzeugüberführungen seit 1994. 
                   Professionell, zuverlässig und europaweit für Sie im Einsatz.
