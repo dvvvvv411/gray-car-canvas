@@ -91,8 +91,6 @@ const translations = {
     'company.stats.eu': 'Weit',
     
     // Contact Form
-    'contact.title': 'KONTAKT AUFNEHMEN',
-    'contact.subtitle': 'Kostenlose Beratung für Ihre Fahrzeugüberführung',
     'contact.name': 'Name',
     'contact.email': 'E-Mail',
     'contact.phone': 'Telefon',

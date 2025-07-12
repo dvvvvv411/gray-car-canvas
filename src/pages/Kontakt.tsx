@@ -52,8 +52,9 @@ const Kontakt = () => {
               ))}
             </nav>
             
-            {/* Desktop Phone Number */}
-            <div className="hidden lg:flex items-center">
+            {/* Desktop Language Selector & Phone Number */}
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
                 040 5131580
@@ -144,10 +145,10 @@ const Kontakt = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>KONTAKT & <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>BERATUNG</span></em>
+              <em>{t('contact.hero.title')} <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>{t('contact.hero.highlight')}</span></em>
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)' }}>
-              Wir sind für Sie da - 24/7 erreichbar für alle Ihre Fragen rund um Fahrzeugüberführungen
+              {t('contact.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -157,12 +158,11 @@ const Kontakt = () => {
       <section className="bg-background py-16 px-4" data-logo-type="light">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            WIR SIND FÜR SIE DA
+            {t('contact.header.title')}
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Haben Sie Fragen zu unseren Dienstleistungen oder benötigen Sie ein individuelles Angebot? 
-            Unser erfahrenes Team steht Ihnen gerne zur Verfügung.
+            {t('contact.header.text')}
           </p>
         </div>
       </section>
@@ -176,13 +176,13 @@ const Kontakt = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Phone className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">Telefon</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">{t('contact.phone.title')}</h3>
               <div className="space-y-2">
                 <p className="text-2xl font-bold text-primary">040 5131580</p>
-                <p className="text-muted-foreground">24/7 Hotline</p>
+                <p className="text-muted-foreground">{t('contact.phone.subtitle')}</p>
                 <div className="flex items-center justify-center gap-2 mt-4">
                   <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span className="text-sm text-muted-foreground">Sofortige Beratung</span>
+                  <span className="text-sm text-muted-foreground">{t('contact.phone.feature')}</span>
                 </div>
               </div>
             </div>
@@ -192,13 +192,13 @@ const Kontakt = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Mail className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">E-Mail</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">{t('contact.email.title')}</h3>
               <div className="space-y-2">
                 <p className="text-lg font-medium text-primary">info@carlogix.de</p>
-                <p className="text-muted-foreground">Schnelle Antwort garantiert</p>
+                <p className="text-muted-foreground">{t('contact.email.subtitle')}</p>
                 <div className="flex items-center justify-center gap-2 mt-4">
                   <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span className="text-sm text-muted-foreground">Antwort binnen 2h</span>
+                  <span className="text-sm text-muted-foreground">{t('contact.email.feature')}</span>
                 </div>
               </div>
             </div>
@@ -208,14 +208,14 @@ const Kontakt = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">Standort</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">{t('contact.location.title')}</h3>
               <div className="space-y-2">
                 <p className="font-medium text-foreground">Beusselstr. 44 N-Q</p>
                 <p className="font-medium text-foreground">10553 Berlin</p>
-                <p className="text-muted-foreground">Deutschland</p>
+                <p className="text-muted-foreground">{t('contact.location.country')}</p>
                 <div className="flex items-center justify-center gap-2 mt-4">
                   <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span className="text-sm text-muted-foreground">Persönliche Beratung</span>
+                  <span className="text-sm text-muted-foreground">{t('contact.location.feature')}</span>
                 </div>
               </div>
             </div>
@@ -229,13 +229,13 @@ const Kontakt = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <MessageSquare className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">KONTAKTFORMULAR</span>
+              <span className="text-primary font-medium text-sm">{t('contact.form.badge')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Schreiben Sie <span className="text-primary">uns</span>
+              {t('contact.form.title')} <span className="text-primary">{t('contact.form.highlight')}</span>
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Nutzen Sie unser Kontaktformular für detaillierte Anfragen. Wir melden uns schnellstmöglich bei Ihnen zurück.
+              {t('contact.form.text')}
             </p>
           </div>
 
@@ -254,24 +254,24 @@ const Kontakt = () => {
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-border">
               <div className="flex items-center gap-3 mb-6">
                 <Clock className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">Öffnungszeiten</h3>
+                <h3 className="text-2xl font-bold text-foreground">{t('contact.hours.title')}</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-border/50">
-                  <span className="text-muted-foreground">Montag - Freitag:</span>
-                  <span className="font-semibold text-foreground">8:00 - 18:00 Uhr</span>
+                  <span className="text-muted-foreground">{t('contact.hours.monFri')}</span>
+                  <span className="font-semibold text-foreground">{t('contact.hours.monFriTime')}</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border/50">
-                  <span className="text-muted-foreground">Samstag:</span>
-                  <span className="font-semibold text-foreground">9:00 - 16:00 Uhr</span>
+                  <span className="text-muted-foreground">{t('contact.hours.sat')}</span>
+                  <span className="font-semibold text-foreground">{t('contact.hours.satTime')}</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border/50">
-                  <span className="text-muted-foreground">Sonntag:</span>
-                  <span className="font-semibold text-muted-foreground">Geschlossen</span>
+                  <span className="text-muted-foreground">{t('contact.hours.sun')}</span>
+                  <span className="font-semibold text-muted-foreground">{t('contact.hours.sunTime')}</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
-                  <span className="text-muted-foreground">Notfall-Hotline:</span>
-                  <span className="font-semibold text-primary">24/7 verfügbar</span>
+                  <span className="text-muted-foreground">{t('contact.hours.emergency')}</span>
+                  <span className="font-semibold text-primary">{t('contact.hours.emergencyTime')}</span>
                 </div>
               </div>
             </div>
@@ -280,35 +280,35 @@ const Kontakt = () => {
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-border">
               <div className="flex items-center gap-3 mb-6">
                 <HeadphonesIcon className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">Service-Hotline</h3>
+                <h3 className="text-2xl font-bold text-foreground">{t('contact.service.title')}</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <p className="font-medium text-foreground">Kostenlose Beratung</p>
-                    <p className="text-sm text-muted-foreground">Unverbindliche Erstberatung zu allen Dienstleistungen</p>
+                    <p className="font-medium text-foreground">{t('contact.service.consultation')}</p>
+                    <p className="text-sm text-muted-foreground">{t('contact.service.consultationText')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <p className="font-medium text-foreground">Sofort-Angebote</p>
-                    <p className="text-sm text-muted-foreground">Direkte Kostenvoranschläge am Telefon</p>
+                    <p className="font-medium text-foreground">{t('contact.service.quotes')}</p>
+                    <p className="text-sm text-muted-foreground">{t('contact.service.quotesText')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <p className="font-medium text-foreground">Express-Buchung</p>
-                    <p className="text-sm text-muted-foreground">Kurzfristige Terminvereinbarung möglich</p>
+                    <p className="font-medium text-foreground">{t('contact.service.booking')}</p>
+                    <p className="text-sm text-muted-foreground">{t('contact.service.bookingText')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <p className="font-medium text-foreground">Mehrsprachiger Support</p>
-                    <p className="text-sm text-muted-foreground">Deutsch, Englisch, Polnisch</p>
+                    <p className="font-medium text-foreground">{t('contact.service.multilingual')}</p>
+                    <p className="text-sm text-muted-foreground">{t('contact.service.multilingualText')}</p>
                   </div>
                 </div>
               </div>
