@@ -31,7 +31,7 @@ const Index = () => {
             <nav className="hidden lg:flex items-center space-x-8">
               <a href="/" className="text-primary font-medium">STARTSEITE</a>
               <a href="/unternehmen" className="text-white hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
-              <a href="/dienstleistungen" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
