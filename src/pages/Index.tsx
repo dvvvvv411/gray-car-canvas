@@ -15,23 +15,23 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-background border-b border-border/10 sticky top-0 z-50 backdrop-blur-sm bg-background/95">
+      <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-primary">CarDelivery</h1>
+              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
             </div>
             
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">STARTSEITE</a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">KARRIERE</a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">AKTUELLES</a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">KONTAKT</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">STARTSEITE</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
+              <a href="#" className="text-white hover:text-primary transition-colors font-medium">KONTAKT</a>
             </nav>
             
             {/* Phone Number */}
@@ -43,7 +43,7 @@ const Index = () => {
             </div>
             
             {/* Mobile Menu Button */}
-            <button className="lg:hidden p-2">
+            <button className="lg:hidden p-2 text-white">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
