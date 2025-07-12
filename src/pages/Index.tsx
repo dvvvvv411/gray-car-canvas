@@ -26,9 +26,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden -mt-24 pt-24"
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
           backgroundImage: `url(${heroBgNew})`
         }}
