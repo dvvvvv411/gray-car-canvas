@@ -11,7 +11,7 @@ import serviceImage from "@/assets/car-transfer-service.jpg";
 // Direct Imgur URLs
 const pkwService = "https://i.imgur.com/15xt437.png";
 const lkwService = "https://i.imgur.com/6p3a1A6.png"; 
-const expressService = "https://i.imgur.com/AtkiSrV.png";
+const expressService = "https://i.imgur.com/AZ91CAT.png";
 
 const Index = () => {
   return (
