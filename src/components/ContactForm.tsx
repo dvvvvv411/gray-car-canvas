@@ -8,8 +8,10 @@ import { Progress } from "@/components/ui/progress";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle, Loader2 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const ContactForm = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -31,8 +33,8 @@ export const ContactForm = () => {
     e.preventDefault();
     if (!formData.consent) {
       toast({
-        title: "Datenschutz",
-        description: "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
+        title: t('contact.form.errorTitle'),
+        description: t('contact.form.errorText'),
         variant: "destructive"
       });
       return;
@@ -89,9 +91,9 @@ export const ContactForm = () => {
       {/* Name & Phone Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="space-y-1">
-          <label className="text-sm font-medium text-foreground">Name *</label>
+          <label className="text-sm font-medium text-foreground">{t('contact.form.name')} *</label>
           <Input
-            placeholder="Ihr vollständiger Name"
+            placeholder={t('contact.form.namePlaceholder')}
             value={formData.name}
             onChange={(e) => handleInputChange("name", e.target.value)}
             required
@@ -99,10 +101,10 @@ export const ContactForm = () => {
           />
         </div>
         <div className="space-y-1">
-          <label className="text-sm font-medium text-foreground">Telefonnummer</label>
+          <label className="text-sm font-medium text-foreground">{t('contact.form.phone')}</label>
           <Input
             type="tel"
-            placeholder="Ihre Telefonnummer"
+            placeholder={t('contact.form.phonePlaceholder')}
             value={formData.phone}
             onChange={(e) => handleInputChange("phone", e.target.value)}
             className="h-10"
@@ -113,10 +115,10 @@ export const ContactForm = () => {
       {/* Email & Subject Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="space-y-1">
-          <label className="text-sm font-medium text-foreground">E-Mail *</label>
+          <label className="text-sm font-medium text-foreground">{t('contact.form.email')} *</label>
           <Input
             type="email"
-            placeholder="ihre.email@beispiel.de"
+            placeholder={t('contact.form.emailPlaceholder')}
             value={formData.email}
             onChange={(e) => handleInputChange("email", e.target.value)}
             required
@@ -124,9 +126,9 @@ export const ContactForm = () => {
           />
         </div>
         <div className="space-y-1">
-          <label className="text-sm font-medium text-foreground">Betreff</label>
+          <label className="text-sm font-medium text-foreground">{t('contact.form.subject')}</label>
           <Input
-            placeholder="Betreff Ihrer Anfrage"
+            placeholder={t('contact.form.subjectPlaceholder')}
             value={formData.subject}
             onChange={(e) => handleInputChange("subject", e.target.value)}
             className="h-10"
@@ -136,28 +138,27 @@ export const ContactForm = () => {
 
       {/* Interest Area */}
       <div className="space-y-1">
-        <label className="text-sm font-medium text-foreground">Interessensbereich</label>
+        <label className="text-sm font-medium text-foreground">{t('contact.form.serviceType')}</label>
         <Select value={formData.interest} onValueChange={(value) => handleInputChange("interest", value)}>
           <SelectTrigger className="h-10">
-            <SelectValue placeholder="Wählen Sie Ihren Interessensbereich" />
+            <SelectValue placeholder={t('contact.form.serviceTypePlaceholder')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="driver">Fahrer (PKW/LKW)</SelectItem>
-            <SelectItem value="office">Büro/Administration</SelectItem>
-            <SelectItem value="dispatch">Disposition</SelectItem>
-            <SelectItem value="customer-service">Kundenbetreuung</SelectItem>
-            <SelectItem value="technical">Technischer Bereich</SelectItem>
-            <SelectItem value="management">Management</SelectItem>
-            <SelectItem value="other">Sonstiges</SelectItem>
+            <SelectItem value="pkw-transport">{t('contact.form.options.pkwTransport')}</SelectItem>
+            <SelectItem value="lkw-transport">{t('contact.form.options.lkwTransport')}</SelectItem>
+            <SelectItem value="express-service">{t('contact.form.options.expressService')}</SelectItem>
+            <SelectItem value="general-inquiry">{t('contact.form.options.generalInquiry')}</SelectItem>
+            <SelectItem value="partnership">{t('contact.form.options.partnership')}</SelectItem>
+            <SelectItem value="other">{t('contact.form.options.other')}</SelectItem>
           </SelectContent>
         </Select>
       </div>
 
       {/* Message */}
       <div className="space-y-1">
-        <label className="text-sm font-medium text-foreground">Nachricht *</label>
+        <label className="text-sm font-medium text-foreground">{t('contact.form.message')} *</label>
         <Textarea
-          placeholder="Erzählen Sie uns von sich, Ihren Qualifikationen und warum Sie bei CarLogix arbeiten möchten..."
+          placeholder={t('contact.form.messagePlaceholder')}
           value={formData.message}
           onChange={(e) => handleInputChange("message", e.target.value)}
           className="min-h-24 resize-none"
@@ -178,10 +179,10 @@ export const ContactForm = () => {
             htmlFor="consent" 
             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
           >
-            Datenschutzerklärung akzeptieren *
+            {t('contact.form.consent')} *
           </label>
           <p className="text-xs text-muted-foreground">
-            Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der Datenschutzerklärung zu.
+            {t('contact.form.consentText')}
           </p>
         </div>
       </div>
@@ -191,7 +192,7 @@ export const ContactForm = () => {
         <div className="space-y-3">
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Loader2 className="h-4 w-4 animate-spin" />
-            Bewerbung wird versendet...
+            {t('contact.form.sendingText')}
           </div>
           <Progress value={loadingProgress} className="h-2" />
         </div>
@@ -207,15 +208,15 @@ export const ContactForm = () => {
         {isLoading ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            Wird gesendet...
+            {t('contact.form.sendingButton')}
           </>
         ) : (
-          "Bewerbung absenden"
+          t('contact.form.sendButton')
         )}
       </Button>
 
       <p className="text-xs text-muted-foreground text-center">
-        Wir melden uns innerhalb von 2-3 Werktagen bei Ihnen zurück.
+        {t('contact.form.responseTime')}
       </p>
 
       {/* Success Dialog */}
@@ -225,9 +226,9 @@ export const ContactForm = () => {
             <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
               <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
             </div>
-            <DialogTitle className="text-xl font-semibold">Bewerbung erfolgreich versendet!</DialogTitle>
+            <DialogTitle className="text-xl font-semibold">{t('contact.form.successTitle')}</DialogTitle>
             <DialogDescription className="text-center text-muted-foreground">
-              Vielen Dank für Ihre Bewerbung. Wir haben Ihre Unterlagen erhalten und melden uns innerhalb von 2-3 Werktagen bei Ihnen zurück.
+              {t('contact.form.successText')}
             </DialogDescription>
           </DialogHeader>
         </DialogContent>

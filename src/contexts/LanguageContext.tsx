@@ -689,12 +689,12 @@ const translations = {
     'contact.service.title': 'Service Hotline',
     'contact.service.consultation': 'Free consultation',
     'contact.service.consultationText': 'Non-binding initial consultation on all services',
-    'contact.service.quotes': 'Instant quotes',
-    'contact.service.quotesText': 'Direct cost estimates by phone',
-     'contact.service.express': 'Express booking',
-     'contact.service.expressText': 'Short-term appointment scheduling possible',
-     'contact.service.languages': 'Multilingual support',
-     'contact.service.languagesText': 'German, English, Polish',
+     'contact.service.quotes': 'Instant quotes',
+     'contact.service.quotesText': 'Direct cost estimates by phone',
+     'contact.service.booking': 'Express booking',
+     'contact.service.bookingText': 'Short-term appointment scheduling possible',
+     'contact.service.multilingual': 'Multilingual support',
+     'contact.service.multilingualText': 'German, English, Polish',
      
      // Contact Form fields and placeholders
      'contact.form.name': 'Name',
