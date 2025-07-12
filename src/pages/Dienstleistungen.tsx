@@ -1,7 +1,6 @@
 import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
-import Logo from "@/components/Logo";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -12,9 +11,11 @@ const Dienstleistungen = () => {
       {/* Header */}
       <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Logo />
+            <div className="flex-shrink-0">
+              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
+            </div>
             
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">

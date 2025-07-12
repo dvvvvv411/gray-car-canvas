@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 
 // Logo images
 const logoLight = "/lovable-uploads/cbe16bd5-177a-4d01-8871-3d4c9d25f5e4.png"; // Orange "Car" logo for dark backgrounds
@@ -101,23 +100,17 @@ const Logo = () => {
 
   return (
     <div className="flex-shrink-0">
-      <Link 
-        to="/" 
-        className="inline-block transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent rounded"
-        aria-label="Go to homepage"
-      >
-        <img 
-          src={logoType === 'light' ? logoDark : logoLight}
-          alt="CarLogix Logo"
-          className="h-18 w-auto transition-all duration-300 ease-in-out cursor-pointer"
-          loading="eager"
-          onError={(e) => {
-            console.warn('Logo failed to load:', e.currentTarget.src);
-            // Fallback to the other logo if one fails
-            e.currentTarget.src = logoType === 'light' ? logoLight : logoDark;
-          }}
-        />
-      </Link>
+      <img 
+        src={logoType === 'light' ? logoDark : logoLight}
+        alt="CarLogix Logo"
+        className="h-8 w-auto transition-all duration-300 ease-in-out"
+        loading="eager"
+        onError={(e) => {
+          console.warn('Logo failed to load:', e.currentTarget.src);
+          // Fallback to the other logo if one fails
+          e.currentTarget.src = logoType === 'light' ? logoLight : logoDark;
+        }}
+      />
     </div>
   );
 };
