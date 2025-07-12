@@ -120,7 +120,7 @@ const Unternehmen = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/bd9a4a58-5afa-479b-ac59-cf309a375c59.png" 
+                src="/lovable-uploads/eb283bb3-4863-4839-acbf-940dd5ac8213.png" 
                 alt="Professioneller Fahrer" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
