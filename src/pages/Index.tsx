@@ -341,7 +341,7 @@ const Index = () => {
               {/* Company Description */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
                 <p className="text-lg text-white/90 leading-relaxed mb-6">
-                  <strong className="text-white">TransferCar GmbH</strong> – Ihr digitaler Vorreiter in der Fahrzeuglogistik. 
+                  <strong className="text-white">CarLogix</strong> – Ihr digitaler Vorreiter in der Fahrzeuglogistik. 
                   Mit über <span className="text-primary font-semibold">41 Jahren Erfahrung</span> kombinieren wir bewährte Expertise 
                   mit modernsten Technologien für maximale Effizienz.
                 </p>

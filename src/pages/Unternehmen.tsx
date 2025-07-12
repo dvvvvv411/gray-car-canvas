@@ -150,7 +150,7 @@ const Unternehmen = () => {
       <section className="bg-background py-16 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            TRANSFERCAR – IHR EXPERTE FÜR FAHRZEUGÜBERFÜHRUNGEN
+            CARLOGIX – IHR EXPERTE FÜR FAHRZEUGÜBERFÜHRUNGEN
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
@@ -170,7 +170,7 @@ const Unternehmen = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  TransferCar GmbH wurde 1984 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
+                  CarLogix wurde 1984 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
                   für Fahrzeugüberführungen in Deutschland und Europa entwickelt. Mit über 41 Jahren Erfahrung
                   in der Branche haben wir uns einen Namen für Zuverlässigkeit, Effizienz und Kundenzufriedenheit gemacht.
                 </p>

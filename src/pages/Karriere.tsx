@@ -141,7 +141,7 @@ const Karriere = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>KARRIERE BEI <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>TRANSFERCAR</span></em>
+              <em>KARRIERE BEI <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>CARLOGIX</span></em>
             </h1>
           </div>
         </div>
@@ -159,7 +159,7 @@ const Karriere = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Bei TransferCar suchen wir kontinuierlich motivierte Menschen, die unser Team verstärken möchten. 
+            Bei CarLogix suchen wir kontinuierlich motivierte Menschen, die unser Team verstärken möchten. 
             Ob als Fahrer auf der Straße oder im Büro – bei uns findest du spannende Karrieremöglichkeiten 
             in einem dynamischen und wachsenden Unternehmen.
           </p>
@@ -243,7 +243,7 @@ const Karriere = () => {
               <span className="text-primary font-medium text-sm">DEINE VORTEILE</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Warum <span className="text-primary">TransferCar?</span>
+              Warum <span className="text-primary">CarLogix?</span>
             </h3>
           </div>
           

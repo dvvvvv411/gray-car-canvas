@@ -157,7 +157,7 @@ export const ContactForm = () => {
       <div className="space-y-1">
         <label className="text-sm font-medium text-foreground">Nachricht *</label>
         <Textarea
-          placeholder="Erzählen Sie uns von sich, Ihren Qualifikationen und warum Sie bei TransferCar arbeiten möchten..."
+          placeholder="Erzählen Sie uns von sich, Ihren Qualifikationen und warum Sie bei CarLogix arbeiten möchten..."
           value={formData.message}
           onChange={(e) => handleInputChange("message", e.target.value)}
           className="min-h-24 resize-none"
