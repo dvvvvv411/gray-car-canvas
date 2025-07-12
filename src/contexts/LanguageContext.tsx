@@ -372,7 +372,7 @@ const translations = {
      'contact.form.options.partnership': 'Partnerschaft',
      'contact.form.options.other': 'Sonstiges'
    },
-  
+
   en: {
     // Navigation
     'nav.home': 'HOME',
@@ -729,7 +729,7 @@ const translations = {
      'contact.form.options.partnership': 'Partnership',
      'contact.form.options.other': 'Other'
    },
-  
+
   fr: {
     // Navigation
     'nav.home': 'ACCUEIL',
@@ -918,52 +918,9 @@ const translations = {
      'contact.form.options.expressService': 'Service express',
      'contact.form.options.generalInquiry': 'Demande générale',
      'contact.form.options.partnership': 'Partenariat',
-     'contact.form.options.other': 'Autre',
-
-     // Company page translations
-     'company.hero.title': 'À PROPOS DE NOTRE',
-     'company.hero.highlight': 'ENTREPRISE',
-     'company.header.title': 'CARLOGIX – VOTRE EXPERT POUR LE TRANSPORT DE VÉHICULES',
-     'company.about.badge': 'À PROPOS',
-     'company.about.title': 'Depuis 1984',
-     'company.about.highlight': 'digne de confiance',
-     'company.about.text1': 'CarLogix a été fondée en 1984 et s\'est depuis développée en l\'une des entreprises leaders pour le transport de véhicules en Allemagne et en Europe. Avec plus de 41 ans d\'expérience dans le secteur, nous nous sommes fait un nom pour la fiabilité, l\'efficacité et la satisfaction client.',
-     'company.about.text2': 'Notre entreprise s\'est développée d\'un petit prestataire local à un leader du marché opérant dans toute l\'Allemagne. Aujourd\'hui, nous employons plus de 150 conducteurs professionnels et disposons d\'une flotte de véhicules moderne qui nous permet de gérer même les tâches de transport les plus exigeantes.',
-     'company.about.text3': 'Innovation et tradition vont de pair chez nous. Tandis que nous nous appuyons sur des méthodes éprouvées et des décennies d\'expérience, nous intégrons continuellement de nouvelles technologies et processus pour améliorer constamment notre service.',
-     'company.stats.badge': 'CHIFFRES & FAITS',
-     'company.stats.title': 'Notre',
-     'company.stats.highlight': 'Histoire de succès',
-     'company.stats.years': 'Années d\'expérience',
-     'company.stats.drivers': 'Conducteurs professionnels',
-     'company.stats.transfers': 'Transports/An',
-     'company.stats.satisfaction': 'Satisfaction client',
-     'company.philosophy.badge': 'NOTRE PHILOSOPHIE',
-     'company.philosophy.title': 'Service &',
-     'company.philosophy.highlight': 'Qualité',
-     'company.philosophy.subtitle': 'en focus',
-     'company.safety.title': 'Sécurité',
-     'company.safety.text': 'Chaque transport est effectué entièrement assuré. Nos conducteurs sont spécialement formés et ont des années d\'expérience dans le transport sûr de véhicules.',
-     'company.punctuality.title': 'Ponctualité',
-     'company.punctuality.text': 'Les rendez-vous sont respectés. Grâce à une planification d\'itinéraire intelligente et au suivi GPS, nous pouvons garantir des heures d\'arrivée précises et vous tenir informé en permanence.',
-     'company.excellence.title': 'Excellence',
-     'company.excellence.text': 'Standards de qualité les plus élevés dans tous les domaines. De la première demande à la remise du véhicule – nous misons sur la perfection dans chaque détail.',
-
-     // Contact Page
-     'contact.hero.title': 'Contact',
-     'contact.hero.subtitle': 'Nous sommes là pour vous',
-     'contact.info.title': 'Informations de contact',
-     'contact.info.subtitle': 'Contactez-nous',
-     'contact.service.title': 'Hotline Service',
-     'contact.service.consultation': 'Conseil gratuit',
-     'contact.service.consultationText': 'Consultation initiale non contraignante pour tous les services',
-     'contact.service.quotes': 'Devis instantanés',
-     'contact.service.quotesText': 'Estimations de coûts directes par téléphone',
-     'contact.service.booking': 'Réservation express',
-     'contact.service.bookingText': 'Planification de rendez-vous à court terme possible',
-     'contact.service.multilingual': 'Support multilingue',
-     'contact.service.multilingualText': 'Allemand, Anglais, Polonais'
+     'contact.form.options.other': 'Autre'
    },
-  
+
   es: {
     // Navigation
     'nav.home': 'INICIO',
@@ -1152,52 +1109,9 @@ const translations = {
      'contact.form.options.expressService': 'Servicio express',
      'contact.form.options.generalInquiry': 'Consulta general',
      'contact.form.options.partnership': 'Asociación',
-     'contact.form.options.other': 'Otro',
+     'contact.form.options.other': 'Otro'
+  },
 
-     // Company page translations
-     'company.hero.title': 'SOBRE NUESTRA',
-     'company.hero.highlight': 'EMPRESA',
-     'company.header.title': 'CARLOGIX – SU EXPERTO PARA TRANSFERENCIAS DE VEHÍCULOS',
-     'company.about.badge': 'SOBRE NOSOTROS',
-     'company.about.title': 'Desde 1984',
-     'company.about.highlight': 'confiable',
-     'company.about.text1': 'CarLogix fue fundada en 1984 y desde entonces se ha desarrollado en una de las empresas líderes para transferencias de vehículos en Alemania y Europa. Con más de 41 años de experiencia en la industria, nos hemos hecho un nombre por confiabilidad, eficiencia y satisfacción del cliente.',
-     'company.about.text2': 'Nuestra empresa ha evolucionado de un pequeño proveedor de servicios local a un líder del mercado que opera en toda Alemania. Hoy empleamos a más de 150 conductores profesionales y tenemos una flota de vehículos moderna que nos permite manejar incluso las tareas de transporte más exigentes.',
-     'company.about.text3': 'Innovación y tradición van de la mano con nosotros. Mientras confiamos en métodos probados y décadas de experiencia, integramos continuamente nuevas tecnologías y procesos para mejorar constantemente nuestro servicio.',
-     'company.stats.badge': 'CIFRAS Y DATOS',
-     'company.stats.title': 'Nuestra',
-     'company.stats.highlight': 'Historia de éxito',
-     'company.stats.years': 'Años de experiencia',
-     'company.stats.drivers': 'Conductores profesionales',
-     'company.stats.transfers': 'Transferencias/Año',
-     'company.stats.satisfaction': 'Satisfacción del cliente',
-     'company.philosophy.badge': 'NUESTRA FILOSOFÍA',
-     'company.philosophy.title': 'Servicio y',
-     'company.philosophy.highlight': 'Calidad',
-     'company.philosophy.subtitle': 'en foco',
-     'company.safety.title': 'Seguridad',
-     'company.safety.text': 'Cada transporte se realiza completamente asegurado. Nuestros conductores están especialmente entrenados y tienen años de experiencia en el transporte seguro de vehículos.',
-     'company.punctuality.title': 'Puntualidad',
-     'company.punctuality.text': 'Las citas se mantienen. A través de planificación inteligente de rutas y seguimiento GPS, podemos garantizar tiempos de llegada precisos y mantenerle informado en todo momento.',
-     'company.excellence.title': 'Excelencia',
-     'company.excellence.text': 'Los más altos estándares de calidad en todas las áreas. Desde la primera consulta hasta la entrega del vehículo – apostamos por la perfección en cada detalle.',
-
-     // Contact Page
-     'contact.hero.title': 'Contacto',
-     'contact.hero.subtitle': 'Estamos aquí para usted',
-     'contact.info.title': 'Información de contacto',
-     'contact.info.subtitle': 'Póngase en contacto con nosotros',
-     'contact.service.title': 'Hotline de servicio',
-     'contact.service.consultation': 'Consulta gratuita',
-     'contact.service.consultationText': 'Consulta inicial no vinculante para todos los servicios',
-     'contact.service.quotes': 'Cotizaciones instantáneas',
-     'contact.service.quotesText': 'Estimaciones de costos directos por teléfono',
-     'contact.service.booking': 'Reserva express',
-     'contact.service.bookingText': 'Programación de citas a corto plazo posible',
-     'contact.service.multilingual': 'Soporte multilingüe',
-     'contact.service.multilingualText': 'Alemán, Inglés, Polaco'
-   },
-  
   it: {
     // Navigation
     'nav.home': 'HOME',
@@ -1268,7 +1182,7 @@ const translations = {
     'company.description': 'Il vostro pioniere digitale nella logistica dei veicoli. Con oltre 41 anni di esperienza, combiniamo competenza comprovata con le ultime tecnologie per la massima efficienza.',
     'company.stats.service': 'Servizio',
     'company.stats.days': 'Giorni/Anno',
-    'company.stats.eu': 'Ampio',
+    'company.stats.eu': 'Vasto',
     
     // Contact Form
     'contact.title': 'METTERSI IN CONTATTO',
@@ -1293,9 +1207,9 @@ const translations = {
     'partners.title2': 'PARTNER',
     
     // Company Info Section (Extended)
-    'company.info.description': 'Il vostro partner di fiducia per i trasferimenti di veicoli dal 1984. Professionale, affidabile e operativo in tutta Europa per voi.',
+    'company.info.description': 'Il vostro partner di fiducia per trasferimenti di veicoli dal 1984. Professionale, affidabile e operativo in tutta Europa per voi.',
     'company.info.years': 'In attività da 41 anni',
-    'company.info.insured': 'Completamente assicurato e autorizzato',
+    'company.info.insured': 'Completamente assicurati e autorizzati',
     'company.info.certified': 'Certificato ISO 9001',
     
     // Premium Services
@@ -1386,52 +1300,9 @@ const translations = {
      'contact.form.options.expressService': 'Servizio express',
      'contact.form.options.generalInquiry': 'Richiesta generale',
      'contact.form.options.partnership': 'Partnership',
-     'contact.form.options.other': 'Altro',
+     'contact.form.options.other': 'Altro'
+  },
 
-     // Company page translations
-     'company.hero.title': 'SULLA NOSTRA',
-     'company.hero.highlight': 'AZIENDA',
-     'company.header.title': 'CARLOGIX – IL VOSTRO ESPERTO PER TRASFERIMENTI VEICOLI',
-     'company.about.badge': 'CHI SIAMO',
-     'company.about.title': 'Dal 1984',
-     'company.about.highlight': 'affidabile',
-     'company.about.text1': 'CarLogix è stata fondata nel 1984 e da allora si è sviluppata in una delle aziende leader per trasferimenti di veicoli in Germania e Europa. Con oltre 41 anni di esperienza nel settore, ci siamo fatti un nome per affidabilità, efficienza e soddisfazione del cliente.',
-     'company.about.text2': 'La nostra azienda si è evoluta da un piccolo fornitore di servizi locale a un leader di mercato che opera in tutta la Germania. Oggi impieghiamo oltre 150 conducenti professionali e abbiamo una flotta di veicoli moderna che ci consente di gestire anche i compiti di trasporto più impegnativi.',
-     'company.about.text3': 'Innovazione e tradizione vanno di pari passo con noi. Mentre facciamo affidamento su metodi collaudati e decenni di esperienza, integriamo continuamente nuove tecnologie e processi per migliorare costantemente il nostro servizio.',
-     'company.stats.badge': 'CIFRE E FATTI',
-     'company.stats.title': 'La nostra',
-     'company.stats.highlight': 'Storia di successo',
-     'company.stats.years': 'Anni di esperienza',
-     'company.stats.drivers': 'Conducenti professionali',
-     'company.stats.transfers': 'Trasferimenti/Anno',
-     'company.stats.satisfaction': 'Soddisfazione del cliente',
-     'company.philosophy.badge': 'LA NOSTRA FILOSOFIA',
-     'company.philosophy.title': 'Servizio e',
-     'company.philosophy.highlight': 'Qualità',
-     'company.philosophy.subtitle': 'in focus',
-     'company.safety.title': 'Sicurezza',
-     'company.safety.text': 'Ogni trasporto viene effettuato completamente assicurato. I nostri conducenti sono appositamente addestrati e hanno anni di esperienza nel trasporto sicuro di veicoli.',
-     'company.punctuality.title': 'Puntualità',
-     'company.punctuality.text': 'Gli appuntamenti vengono rispettati. Attraverso la pianificazione intelligente del percorso e il tracking GPS, possiamo garantire tempi di arrivo precisi e tenervi informati in ogni momento.',
-     'company.excellence.title': 'Eccellenza',
-     'company.excellence.text': 'I più alti standard di qualità in tutte le aree. Dalla prima richiesta alla consegna del veicolo – puntiamo sulla perfezione in ogni dettaglio.',
-
-     // Contact Page
-     'contact.hero.title': 'Contatto',
-     'contact.hero.subtitle': 'Siamo qui per voi',
-     'contact.info.title': 'Informazioni di contatto',
-     'contact.info.subtitle': 'Mettetevi in contatto con noi',
-     'contact.service.title': 'Hotline servizio',
-     'contact.service.consultation': 'Consulenza gratuita',
-     'contact.service.consultationText': 'Consulenza iniziale non vincolante per tutti i servizi',
-     'contact.service.quotes': 'Preventivi istantanei',
-     'contact.service.quotesText': 'Stime dei costi dirette per telefono',
-     'contact.service.booking': 'Prenotazione express',
-     'contact.service.bookingText': 'Programmazione appuntamenti a breve termine possibile',
-     'contact.service.multilingual': 'Supporto multilingue',
-     'contact.service.multilingualText': 'Tedesco, Inglese, Polacco'
-   },
-  
   nl: {
     // Navigation
     'nav.home': 'HOME',
@@ -1445,7 +1316,7 @@ const translations = {
     'hero.title1': 'UW',
     'hero.title2': 'KEUZE',
     'hero.title3': 'VOOR',
-    'hero.title4': 'VOERTUIG-OVERBRENGINGEN',
+    'hero.title4': 'VOERTUIGOVERBRENGINGEN',
     'hero.subtitle': 'IN DUITSLAND EN EUROPA',
     'hero.trust1': 'Betrouwbaar sinds 1984',
     'hero.trust2': '24/7 Service',
@@ -1457,7 +1328,7 @@ const translations = {
     // Services Section
     'services.badge': 'ONZE EXPERTISE',
     'services.title1': 'MODERNE',
-    'services.title2': 'VOERTUIG DIENSTEN',
+    'services.title2': 'VOERTUIGDIENSTEN',
     'services.subtitle': 'Digitale processen, echte expertise – uw voertuigen in de beste handen',
     
     // Service Cards
@@ -1466,26 +1337,26 @@ const translations = {
     'service.pkw.feature1': 'Live GPS-tracking',
     'service.pkw.feature2': 'Digitale overdracht protocollen',
     'service.pkw.feature3': 'Flexibele planning',
-    'service.pkw.button': 'Meer weten',
+    'service.pkw.button': 'Meer informatie',
     
     'service.lkw.title': 'VRACHTWAGEN OVERBRENGING',
-    'service.lkw.description': 'Professionele overbrenging van zware voertuigen met de nieuwste technologie. Speciaal getrainde chauffeurs en adaptieve logistieke oplossingen voor elke behoefte.',
+    'service.lkw.description': 'Professionele overbrenging van zware voertuigen met state-of-the-art technologie. Speciaal getrainde chauffeurs en adaptieve logistieke oplossingen voor elke behoefte.',
     'service.lkw.feature1': 'Gespecialiseerde vrachtwagenchauffeurs',
-    'service.lkw.feature2': 'Zwaar transport expertise',
-    'service.lkw.feature3': 'Europa-breed netwerk',
+    'service.lkw.feature2': 'Zware transport expertise',
+    'service.lkw.feature3': 'Europees netwerk',
     'service.lkw.button': 'Nu aanvragen',
     
     'service.express.title': 'EXPRESS LEVERING',
-    'service.express.description': 'Als het echt urgent is – onze high-speed service maakt het mogelijk. Directe start, direct transport, gegarandeerde aankomsttijden.',
-    'service.express.feature1': 'Directe ophaling mogelijk',
+    'service.express.description': 'Wanneer het echt urgent is – onze snelle service maakt het mogelijk. Onmiddellijke start, direct transport, gegarandeerde aankomsttijden.',
+    'service.express.feature1': 'Onmiddellijke ophaal mogelijk',
     'service.express.feature2': 'Prioriteitsbehandeling',
     'service.express.feature3': 'Tijdgarantie inbegrepen',
     'service.express.button': 'Express boeken',
     
     'service.transfer.title': 'TRANSPORT DOOR DERDEN',
-    'service.transfer.description': 'Professioneel transport met speciale transporteurs en aanhangwagens. Veilige lading en voorzichtig transport voor voertuigen van alle soorten.',
-    'service.transfer.feature1': 'Speciale transporteurs beschikbaar',
-    'service.transfer.feature2': 'Veilige voertuig belading',
+    'service.transfer.description': 'Professioneel transport met speciale carriers en trailers. Veilige lading en zachte transport voor voertuigen van alle soorten.',
+    'service.transfer.feature1': 'Speciale carriers beschikbaar',
+    'service.transfer.feature2': 'Veilige voertuiglading',
     'service.transfer.feature3': 'Schadevrij transport',
     'service.transfer.button': 'Service aanvragen',
     
@@ -1495,10 +1366,10 @@ const translations = {
     'features.express': 'Express service',
     
     // Company Section
-    'company.badge': 'VOERTUIG OVERBRENGINGEN MET',
+    'company.badge': 'VOERTUIGOVERBRENGINGEN MET',
     'company.title1': 'SERVICE &',
     'company.title2': 'FLEXIBILITEIT',
-    'company.subtitle': 'Sinds 1984 zetten we standaarden in voertuiglogistiek – met innovatie en passie',
+    'company.subtitle': 'Sinds 1984 stellen we standaarden in voertuiglogistiek – met innovatie en passie',
     'company.description': 'Uw digitale pionier in voertuiglogistiek. Met meer dan 41 jaar ervaring combineren we bewezen expertise met de nieuwste technologieën voor maximale efficiëntie.',
     'company.stats.service': 'Service',
     'company.stats.days': 'Dagen/Jaar',
@@ -1506,13 +1377,13 @@ const translations = {
     
     // Contact Form
     'contact.title': 'CONTACT OPNEMEN',
-    'contact.subtitle': 'Gratis advies voor uw voertuig overbrenging',
+    'contact.subtitle': 'Gratis advies voor uw voertuigoverbrenging',
     'contact.name': 'Naam',
     'contact.email': 'Email',
     'contact.phone': 'Telefoon',
     'contact.message': 'Bericht',
     'contact.send': 'Bericht verzenden',
-    'contact.privacy': 'Door te verzenden, gaat u akkoord met ons privacybeleid.',
+    'contact.privacy': 'Door verzenden gaat u akkoord met ons privacybeleid.',
     
     // Footer
     'footer.company': 'Bedrijf',
@@ -1522,14 +1393,14 @@ const translations = {
     'footer.rights': 'Alle rechten voorbehouden.',
     
     // Partners Section
-    'partners.badge': 'VERTROUWDE PARTNERSHIPS',
+    'partners.badge': 'BETROUWBARE PARTNERSCHAPPEN',
     'partners.title1': 'ONZE',
     'partners.title2': 'PARTNERS',
     
     // Company Info Section (Extended)
-    'company.info.description': 'Uw vertrouwde partner voor voertuig overbrengingen sinds 1984. Professioneel, betrouwbaar en operationeel in heel Europa voor u.',
-    'company.info.years': '41 jaar in het bedrijf',
-    'company.info.insured': 'Volledig verzekerd en gelicentieerd',
+    'company.info.description': 'Uw vertrouwde partner voor voertuigoverbrengingen sinds 1984. Professioneel, betrouwbaar en actief in heel Europa voor u.',
+    'company.info.years': '41 jaar in bedrijf',
+    'company.info.insured': 'Volledig verzekerd & gelicentieerd',
     'company.info.certified': 'ISO 9001 gecertificeerd',
     
     // Premium Services
@@ -1540,13 +1411,13 @@ const translations = {
     
     // Company Section Extended
     'company.competence.title': 'Onze Kerncompetenties',
-    'company.competence.network': 'Europa-breed Netwerk',
-    'company.competence.network.desc': 'Sterke partnerships en logistieke centra',
+    'company.competence.network': 'Europees Netwerk',
+    'company.competence.network.desc': 'Sterke partnerschappen & logistieke centra',
     'company.competence.technology': 'Nieuwste Technologie',
-    'company.competence.technology.desc': 'GPS-tracking en digitale processen',
-    'company.competence.experience': 'Decennia aan Ervaring',
+    'company.competence.technology.desc': 'GPS-tracking & digitale processen',
+    'company.competence.experience': 'Decennia van Ervaring',
     'company.competence.experience.desc': 'Meer dan 41 jaar branche-expertise',
-    'company.competence.special': 'Speciale transporteurs en aanhangwagens',
+    'company.competence.special': 'Speciale carriers & trailers',
     
     // Footer Extended
     'footer.services.title': 'Onze Diensten',
@@ -1582,7 +1453,7 @@ const translations = {
     'footer.newsletter.placeholder': 'Uw email',
     
     'footer.social.follow': 'Volg ons:',
-    'footer.location': 'Locatie Hamburg-Norderstedt • Nationale en Europese operaties',
+    'footer.location': 'Locatie Hamburg-Norderstedt • Landelijke en Europese activiteiten',
     
      'footer.legal.company': '© 2025 Golze & Michel OHG',
      'footer.legal.imprint': 'Impressum',
@@ -1603,68 +1474,25 @@ const translations = {
      'contact.form.emailPlaceholder': 'uw.email@voorbeeld.nl',
      'contact.form.phonePlaceholder': 'Uw telefoonnummer',
      'contact.form.companyPlaceholder': 'Uw bedrijf (optioneel)',
-     'contact.form.subjectPlaceholder': 'Onderwerp van uw aanvraag',
+     'contact.form.subjectPlaceholder': 'Onderwerp van uw vraag',
      'contact.form.serviceTypePlaceholder': 'Selecteer een servicegebied',
-     'contact.form.messagePlaceholder': 'Beschrijf uw aanvraag of vertel ons hoe we u kunnen helpen...',
+     'contact.form.messagePlaceholder': 'Beschrijf uw vraag of vertel ons hoe we u kunnen helpen...',
      'contact.form.consentText': 'Ik ga akkoord met de verwerking van mijn persoonlijke gegevens volgens het privacybeleid.',
      'contact.form.sendButton': 'Bericht verzenden',
      'contact.form.sendingButton': 'Verzenden...',
      'contact.form.sendingText': 'Bericht wordt verzonden...',
      'contact.form.responseTime': 'We nemen binnen 24 uur contact met u op.',
      'contact.form.successTitle': 'Bericht succesvol verzonden!',
-     'contact.form.successText': 'Dank u voor uw aanvraag. We hebben uw bericht ontvangen en nemen binnen 24 uur contact met u op.',
+     'contact.form.successText': 'Dank u voor uw vraag. We hebben uw bericht ontvangen en nemen binnen 24 uur contact met u op.',
      'contact.form.errorTitle': 'Privacy',
-     'contact.form.errorText': 'Accepteer het privacybeleid.',
+     'contact.form.errorText': 'Accepteer alstublieft het privacybeleid.',
      'contact.form.options.pkwTransport': 'Auto transport',
      'contact.form.options.lkwTransport': 'Vrachtwagen transport',
      'contact.form.options.expressService': 'Express service',
-     'contact.form.options.generalInquiry': 'Algemene aanvraag',
+     'contact.form.options.generalInquiry': 'Algemene vraag',
      'contact.form.options.partnership': 'Partnerschap',
-     'contact.form.options.other': 'Anders',
-
-     // Company page translations
-     'company.hero.title': 'OVER ONS',
-     'company.hero.highlight': 'BEDRIJF',
-     'company.header.title': 'CARLOGIX – UW EXPERT VOOR VOERTUIGOVERBRENGINGEN',
-     'company.about.badge': 'OVER ONS',
-     'company.about.title': 'Sinds 1984',
-     'company.about.highlight': 'betrouwbaar',
-     'company.about.text1': 'CarLogix werd opgericht in 1984 en heeft zich sindsdien ontwikkeld tot een van de leidende bedrijven voor voertuigoverbrengingen in Duitsland en Europa. Met meer dan 41 jaar ervaring in de industrie hebben we ons een naam gemaakt voor betrouwbaarheid, efficiëntie en klanttevredenheid.',
-     'company.about.text2': 'Ons bedrijf is geëvolueerd van een kleine lokale dienstverlener tot een landelijke marktleider. Vandaag hebben we meer dan 150 professionele chauffeurs in dienst en beschikken we over een moderne voertuigvloot die ons in staat stelt om zelfs de meest veeleisende transporttaken aan te kunnen.',
-     'company.about.text3': 'Innovatie en traditie gaan bij ons hand in hand. Terwijl we vertrouwen op bewezen methoden en decennia van ervaring, integreren we voortdurend nieuwe technologieën en processen om onze service constant te verbeteren.',
-     'company.stats.badge': 'CIJFERS & FEITEN',
-     'company.stats.title': 'Ons',
-     'company.stats.highlight': 'Succesverhaal',
-     'company.stats.years': 'Jaar ervaring',
-     'company.stats.drivers': 'Professionele chauffeurs',
-     'company.stats.transfers': 'Overbrengingen/Jaar',
-     'company.stats.satisfaction': 'Klanttevredenheid',
-     'company.philosophy.badge': 'ONZE FILOSOFIE',
-     'company.philosophy.title': 'Service &',
-     'company.philosophy.highlight': 'Kwaliteit',
-     'company.philosophy.subtitle': 'in focus',
-     'company.safety.title': 'Veiligheid',
-     'company.safety.text': 'Elk transport wordt volledig verzekerd uitgevoerd. Onze chauffeurs zijn speciaal getraind en hebben jarenlange ervaring in het veilig transporteren van voertuigen.',
-     'company.punctuality.title': 'Stiptheid',
-     'company.punctuality.text': 'Afspraken worden nagekomen. Door intelligente routeplanning en GPS-tracking kunnen we precieze aankomsttijden garanderen en u te allen tijde op de hoogte houden.',
-     'company.excellence.title': 'Excellentie',
-     'company.excellence.text': 'Hoogste kwaliteitsnormen op alle gebieden. Van de eerste aanvraag tot de overdracht van het voertuig – we streven naar perfectie in elk detail.',
-
-     // Contact Page
-     'contact.hero.title': 'Contact',
-     'contact.hero.subtitle': 'Wij zijn er voor u',
-     'contact.info.title': 'Contactinformatie',
-     'contact.info.subtitle': 'Neem contact met ons op',
-     'contact.service.title': 'Service Hotline',
-     'contact.service.consultation': 'Gratis advies',
-     'contact.service.consultationText': 'Vrijblijvend eerste advies voor alle diensten',
-     'contact.service.quotes': 'Directe offertes',
-     'contact.service.quotesText': 'Directe kostenramingen per telefoon',
-     'contact.service.booking': 'Express booking',
-     'contact.service.bookingText': 'Afspraakplanning op korte termijn mogelijk',
-     'contact.service.multilingual': 'Meertalige ondersteuning',
-     'contact.service.multilingualText': 'Duits, Engels, Pools'
-   }
+     'contact.form.options.other': 'Anders'
+  }
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
