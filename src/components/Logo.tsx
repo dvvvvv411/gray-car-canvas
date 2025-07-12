@@ -105,7 +105,7 @@ const Logo = () => {
       <img 
         src={logoType === 'light' ? logoDark : logoLight}
         alt="CarLogix Logo"
-        className="h-12 w-auto transition-all duration-300 ease-in-out cursor-pointer hover:scale-105"
+        className="h-20 w-auto transition-all duration-300 ease-in-out cursor-pointer hover:scale-105"
         loading="eager"
         onClick={() => navigate('/')}
         onError={(e) => {
