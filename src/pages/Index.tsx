@@ -5,7 +5,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 
 // Import images
-import heroImage from "@/assets/hero-image.png";
+import heroBackground from "@/assets/hero-background.jpg";
 import pkwService from "@/assets/pkw-service.png";
 import lkwService from "@/assets/lkw-service.png";
 import expressService from "@/assets/express-service.png";
@@ -52,34 +52,29 @@ const Index = () => {
         </div>
       </header>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-muted/20 to-background py-12 px-4 overflow-hidden">
-        {/* Background Stripe Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-full h-full bg-primary transform -skew-y-6 origin-top-left scale-150"></div>
-          <div className="absolute top-20 left-0 w-full h-32 bg-primary transform -skew-y-6 origin-top-left scale-150"></div>
-          <div className="absolute bottom-0 right-0 w-full h-64 bg-primary transform skew-y-6 origin-bottom-right scale-150"></div>
-        </div>
-        <div className="container mx-auto">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+      <section 
+        className="relative min-h-[80vh] flex items-center justify-center py-12 px-4 overflow-hidden"
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
               <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR FAHRZEUG-</em>
               <br />
               <em>ÜBERFÜHRUNGEN</em>
               <br />
-              <span className="text-lg md:text-xl lg:text-2xl font-normal text-muted-foreground mt-2 block">
+              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/80 mt-2 block">
                 IN DEUTSCHLAND UND EUROPA
               </span>
             </h1>
-          </div>
-          
-          <div className="flex justify-center">
-            <div className="max-w-6xl w-full">
-              <img 
-                src={heroImage} 
-                alt="TransferCar Fahrzeugüberführungen" 
-                className="w-full h-auto"
-              />
-            </div>
           </div>
         </div>
       </section>
