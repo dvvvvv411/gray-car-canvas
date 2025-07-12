@@ -213,7 +213,7 @@ const AGB = () => {
             Telefon: 040 5131580<br />
             E-Mail: info@carlogix.de<br />
             <br />
-            Stand: {new Date().toLocaleDateString('de-DE')}
+            
           </p>
         </div>
       </div>

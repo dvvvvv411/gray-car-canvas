@@ -194,7 +194,7 @@ const Datenschutz = () => {
             </p>
           </div>
 
-          <p className="text-muted-foreground mt-8">Stand: {new Date().toLocaleDateString('de-DE')}</p>
+          
         </div>
       </div>
 
