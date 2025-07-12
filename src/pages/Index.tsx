@@ -1,7 +1,7 @@
 
 import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ServiceCard } from "@/components/ServiceCard";
+import { ServiceCarousel } from "@/components/ServiceCarousel";
 import { ContactForm } from "@/components/ContactForm";
 
 // Import images
@@ -114,92 +114,89 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Modern Services Section */}
-      <section className="relative py-24 px-4 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
+      {/* Modern Services Section - Orange Background with Carousel */}
+      <section className="relative py-24 px-4 bg-gradient-to-br from-orange-500 via-primary to-orange-600 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-1/4 w-24 h-24 bg-primary/5 rounded-full blur-3xl animate-glow-pulse"></div>
-          <div className="absolute bottom-20 right-1/3 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-20 left-1/4 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-20 right-1/3 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-black/10 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
         </div>
         
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
-              <Zap className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">UNSERE EXPERTISE</span>
+            <div className="inline-flex items-center gap-2 bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-4">
+              <Zap className="w-4 h-4 text-white" />
+              <span className="text-white font-medium text-sm">UNSERE EXPERTISE</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-foreground">MODERNSTE</span>{" "}
-              <span className="text-primary">FAHRZEUG-SERVICES</span>
+              <span className="text-white">MODERNSTE</span>{" "}
+              <span className="text-black">FAHRZEUG-SERVICES</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Digitale Prozesse, echte Expertise – Ihre Fahrzeuge in den besten Händen
             </p>
           </div>
           
-          {/* Service Cards Grid */}
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <ServiceCard
-                title="PKW-ÜBERFÜHRUNG"
-                description="Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert."
-                image={pkwService}
-                buttonText="Mehr erfahren"
-                icon={Car}
-                features={[
-                  "Live GPS-Tracking",
-                  "Digitale Übergabe-Protokolle",
-                  "Flexible Terminplanung"
-                ]}
-              />
-            </div>
-            
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <ServiceCard
-                title="LKW-ÜBERFÜHRUNG"
-                description="Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf."
-                image={lkwService}
-                buttonText="Jetzt anfragen"
-                icon={Truck}
-                features={[
-                  "Spezialisierte LKW-Fahrer",
-                  "Schwertransport-Expertise",
-                  "Europaweites Netzwerk"
-                ]}
-              />
-            </div>
-            
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <ServiceCard
-                title="EXPRESS-LIEFERUNG"
-                description="Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten."
-                image={expressService}
-                buttonText="Express buchen"
-                icon={Zap}
-                features={[
-                  "Sofort-Abholung möglich",
-                  "Priority-Behandlung",
-                  "Zeitgarantie inklusive"
-                ]}
-              />
-            </div>
+          {/* Service Carousel */}
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <ServiceCarousel 
+              services={[
+                {
+                  title: "PKW-ÜBERFÜHRUNG",
+                  description: "Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert.",
+                  image: pkwService,
+                  buttonText: "Mehr erfahren",
+                  icon: Car,
+                  features: [
+                    "Live GPS-Tracking",
+                    "Digitale Übergabe-Protokolle",
+                    "Flexible Terminplanung"
+                  ]
+                },
+                {
+                  title: "LKW-ÜBERFÜHRUNG",
+                  description: "Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf.",
+                  image: lkwService,
+                  buttonText: "Jetzt anfragen",
+                  icon: Truck,
+                  features: [
+                    "Spezialisierte LKW-Fahrer",
+                    "Schwertransport-Expertise",
+                    "Europaweites Netzwerk"
+                  ]
+                },
+                {
+                  title: "EXPRESS-LIEFERUNG",
+                  description: "Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten.",
+                  image: expressService,
+                  buttonText: "Express buchen",
+                  icon: Zap,
+                  features: [
+                    "Sofort-Abholung möglich",
+                    "Priority-Behandlung",
+                    "Zeitgarantie inklusive"
+                  ]
+                }
+              ]}
+            />
           </div>
           
           {/* Call to Action */}
           <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="inline-flex items-center gap-4 bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6">
-              <div className="flex items-center gap-2 text-primary">
+            <div className="inline-flex items-center gap-4 bg-black/30 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
+              <div className="flex items-center gap-2 text-white">
                 <Clock className="w-5 h-5" />
                 <span className="font-semibold">24/7 verfügbar</span>
               </div>
-              <div className="w-px h-6 bg-border"></div>
-              <div className="flex items-center gap-2 text-primary">
+              <div className="w-px h-6 bg-white/20"></div>
+              <div className="flex items-center gap-2 text-white">
                 <Shield className="w-5 h-5" />
                 <span className="font-semibold">Vollversichert</span>
               </div>
-              <div className="w-px h-6 bg-border"></div>
-              <div className="flex items-center gap-2 text-primary">
+              <div className="w-px h-6 bg-white/20"></div>
+              <div className="flex items-center gap-2 text-white">
                 <Zap className="w-5 h-5" />
                 <span className="font-semibold">Express-Service</span>
               </div>
