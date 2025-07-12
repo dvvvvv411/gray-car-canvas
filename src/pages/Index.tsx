@@ -369,15 +369,15 @@ const Index = () => {
 
               {/* Services List */}
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white mb-6">Unsere Kernkompetenzen:</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">{t('company.competence.title')}</h3>
                 <div className="grid gap-4">
                   <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
                     <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
                       <Car className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">PKW-Überführung auf eigener Achse</div>
-                      <div className="text-sm text-white/70">Intelligente Routenoptimierung</div>
+                      <div className="font-semibold text-white">{t('company.competence.network')}</div>
+                      <div className="text-sm text-white/70">{t('company.competence.network.desc')}</div>
                     </div>
                   </div>
                   
@@ -386,8 +386,8 @@ const Index = () => {
                       <Truck className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">LKW-Überführung auf eigener Achse</div>
-                      <div className="text-sm text-white/70">Schwertransport-Expertise</div>
+                      <div className="font-semibold text-white">{t('company.competence.technology')}</div>
+                      <div className="text-sm text-white/70">{t('company.competence.technology.desc')}</div>
                     </div>
                   </div>
                   
@@ -396,8 +396,8 @@ const Index = () => {
                       <ArrowLeftRight className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Überführung auf Fremdachse</div>
-                      <div className="text-sm text-white/70">Spezial-Transporter & Anhänger</div>
+                      <div className="font-semibold text-white">{t('company.competence.experience')}</div>
+                      <div className="text-sm text-white/70">{t('company.competence.experience.desc')}</div>
                     </div>
                   </div>
                 </div>
@@ -418,19 +418,19 @@ const Index = () => {
 
               {/* Premium Services Card - moved from left column */}
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6">
-                <h4 className="font-semibold text-white mb-4">Premium-Services:</h4>
+                <h4 className="font-semibold text-white mb-4">{t('premium.title')}</h4>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-white/90 text-sm">Hol- und Bringservice</span>
+                    <span className="text-white/90 text-sm">{t('premium.pickup')}</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-white/90 text-sm">Fuhrpark-Management</span>
+                    <span className="text-white/90 text-sm">{t('premium.fleet')}</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-white/90 text-sm">Platzlogistik</span>
+                    <span className="text-white/90 text-sm">{t('premium.logistics')}</span>
                   </div>
                 </div>
               </div>
@@ -446,11 +446,11 @@ const Index = () => {
           <div className="text-center mb-12 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border mb-4">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span className="text-muted-foreground font-medium text-sm">VERTRAUENSVOLLE PARTNERSCHAFTEN</span>
+              <span className="text-muted-foreground font-medium text-sm">{t('partners.badge')}</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="text-foreground">UNSERE</span>{" "}
-              <span className="text-primary">PARTNER</span>
+              <span className="text-foreground">{t('partners.title1')}</span>{" "}
+              <span className="text-primary">{t('partners.title2')}</span>
             </h2>
           </div>
 
@@ -473,8 +473,7 @@ const Index = () => {
                   <Logo />
                 </div>
                  <p className="text-white/80 leading-relaxed">
-                   Ihr vertrauensvoller Partner für Fahrzeugüberführungen seit 1984. 
-                   Professionell, zuverlässig und europaweit für Sie im Einsatz.
+                   {t('company.info.description')}
                  </p>
               </div>
               
@@ -482,49 +481,49 @@ const Index = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-white/80">Seit 41 Jahren im Geschäft</span>
+                  <span className="text-sm text-white/80">{t('company.info.years')}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-white/80">Vollversichert & lizenziert</span>
+                  <span className="text-sm text-white/80">{t('company.info.insured')}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-white/80">ISO 9001 zertifiziert</span>
+                  <span className="text-sm text-white/80">{t('company.info.certified')}</span>
                 </div>
               </div>
             </div>
 
             {/* Services */}
             <div>
-              <h4 className="font-semibold text-white mb-6">Unsere Services</h4>
+              <h4 className="font-semibold text-white mb-6">{t('footer.services.title')}</h4>
               <ul className="space-y-3">
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</Link></li>
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</Link></li>
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Express-Service</Link></li>
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</Link></li>
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</Link></li>
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</Link></li>
-                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.pkw')}</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.lkw')}</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.express')}</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.transfer')}</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.pickup')}</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.fleet')}</Link></li>
+                <li><Link to="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">{t('footer.services.logistics')}</Link></li>
               </ul>
             </div>
 
             {/* Contact Information */}
             <div>
-              <h4 className="font-semibold text-white mb-6">Kontakt</h4>
+              <h4 className="font-semibold text-white mb-6">{t('footer.contact.title')}</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-white font-medium">040 5131580</div>
-                    <div className="text-white/60 text-sm">24/7 Hotline</div>
+                    <div className="text-white/60 text-sm">{t('footer.contact.hotline')}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-white">info@carlogix.de</div>
-                    <div className="text-white/60 text-sm">Schnelle Antwort garantiert</div>
+                    <div className="text-white/60 text-sm">{t('footer.contact.email.response')}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -532,26 +531,26 @@ const Index = () => {
                   <div>
                     <div className="text-white">Beusselstr. 44 N-Q</div>
                     <div className="text-white">10553 Berlin</div>
-                    <div className="text-white/60 text-sm">Deutschland</div>
+                    <div className="text-white/60 text-sm">{t('footer.contact.address')}</div>
                   </div>
                 </div>
               </div>
 
               {/* Business Hours */}
               <div className="mt-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4">
-                <h5 className="text-white font-medium mb-3">Öffnungszeiten</h5>
+                <h5 className="text-white font-medium mb-3">{t('footer.hours.title')}</h5>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-white/80">Mo - Fr:</span>
-                    <span className="text-white">8:00 - 18:00</span>
+                    <span className="text-white/80">{t('footer.hours.weekdays')}</span>
+                    <span className="text-white">{t('footer.hours.weekdays.time')}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-white/80">Sa:</span>
-                    <span className="text-white">9:00 - 16:00</span>
+                    <span className="text-white/80">{t('footer.hours.saturday')}</span>
+                    <span className="text-white">{t('footer.hours.saturday.time')}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-white/80">Notfall:</span>
-                    <span className="text-primary">24/7</span>
+                    <span className="text-white/80">{t('footer.hours.emergency')}</span>
+                    <span className="text-primary">{t('footer.hours.emergency.time')}</span>
                   </div>
                 </div>
               </div>
@@ -559,24 +558,24 @@ const Index = () => {
 
             {/* Quick Links & Newsletter */}
             <div>
-              <h4 className="font-semibold text-white mb-6">Quick Links</h4>
+              <h4 className="font-semibold text-white mb-6">{t('footer.quicklinks.title')}</h4>
               <ul className="space-y-3 mb-8">
-                <li><Link to="/unternehmen" className="text-white/80 hover:text-primary transition-colors">Über uns</Link></li>
-                <li><Link to="/karriere" className="text-white/80 hover:text-primary transition-colors">Karriere</Link></li>
-                <li><Link to="/geschaeftskunden" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</Link></li>
-                <li><Link to="/kontakt" className="text-white/80 hover:text-primary transition-colors">FAQ</Link></li>
+                <li><Link to="/unternehmen" className="text-white/80 hover:text-primary transition-colors">{t('footer.quicklinks.about')}</Link></li>
+                <li><Link to="/karriere" className="text-white/80 hover:text-primary transition-colors">{t('footer.quicklinks.career')}</Link></li>
+                <li><Link to="/geschaeftskunden" className="text-white/80 hover:text-primary transition-colors">{t('footer.quicklinks.business')}</Link></li>
+                <li><Link to="/kontakt" className="text-white/80 hover:text-primary transition-colors">{t('footer.quicklinks.faq')}</Link></li>
               </ul>
 
               {/* Newsletter Signup */}
               <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-lg p-4">
-                <h5 className="text-white font-medium mb-3">Newsletter</h5>
+                <h5 className="text-white font-medium mb-3">{t('footer.newsletter.title')}</h5>
                 <p className="text-white/80 text-sm mb-4">
-                  Bleiben Sie über unsere neuesten Services informiert.
+                  {t('footer.newsletter.description')}
                 </p>
                 <div className="flex gap-2">
                   <input 
                     type="email" 
-                    placeholder="Ihre E-Mail" 
+                    placeholder={t('footer.newsletter.placeholder')} 
                     className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded text-white placeholder-white/60 text-sm focus:outline-none focus:border-primary"
                   />
                   <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -593,16 +592,16 @@ const Index = () => {
               
               {/* Legal Links */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
-                <span className="text-white/60">© 2025 Golze & Michel OHG</span>
-                <Link to="/impressum" className="text-white/80 hover:text-primary transition-colors">Impressum</Link>
-                <Link to="/datenschutz" className="text-white/80 hover:text-primary transition-colors">Datenschutzerklärung</Link>
-                <Link to="/agb" className="text-white/80 hover:text-primary transition-colors">AGB</Link>
+                <span className="text-white/60">{t('footer.legal.company')}</span>
+                <Link to="/impressum" className="text-white/80 hover:text-primary transition-colors">{t('footer.legal.imprint')}</Link>
+                <Link to="/datenschutz" className="text-white/80 hover:text-primary transition-colors">{t('footer.legal.privacy')}</Link>
+                <Link to="/agb" className="text-white/80 hover:text-primary transition-colors">{t('footer.legal.terms')}</Link>
               </div>
 
               {/* Social Media & Certifications */}
               <div className="flex items-center gap-6">
                 <div className="flex items-center gap-3">
-                  <span className="text-white/60 text-sm">Folgen Sie uns:</span>
+                  <span className="text-white/60 text-sm">{t('footer.social.follow')}</span>
                   <div className="flex gap-2">
                     <a href="#" className="w-8 h-8 bg-white/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition-colors">
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -627,7 +626,7 @@ const Index = () => {
             {/* Location Reference */}
             <div className="mt-6 text-center">
               <p className="text-white/60 text-sm">
-                Standort Hamburg-Norderstedt • Bundesweit und europaweit im Einsatz
+                {t('footer.location')}
               </p>
             </div>
           </div>

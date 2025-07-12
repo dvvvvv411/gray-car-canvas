@@ -105,7 +105,75 @@ const translations = {
     'footer.services': 'Services',
     'footer.contact': 'Kontakt',
     'footer.legal': 'Rechtliches',
-    'footer.rights': 'Alle Rechte vorbehalten.'
+    'footer.rights': 'Alle Rechte vorbehalten.',
+    
+    // Partners Section
+    'partners.badge': 'VERTRAUENSVOLLE PARTNERSCHAFTEN',
+    'partners.title1': 'UNSERE',
+    'partners.title2': 'PARTNER',
+    
+    // Company Info Section (Extended)
+    'company.info.description': 'Ihr vertrauensvoller Partner für Fahrzeugüberführungen seit 1984. Professionell, zuverlässig und europaweit für Sie im Einsatz.',
+    'company.info.years': 'Seit 41 Jahren im Geschäft',
+    'company.info.insured': 'Vollversichert & lizenziert',
+    'company.info.certified': 'ISO 9001 zertifiziert',
+    
+    // Premium Services
+    'premium.title': 'Premium-Services:',
+    'premium.pickup': 'Hol- und Bringservice',
+    'premium.fleet': 'Fuhrpark-Management',
+    'premium.logistics': 'Platzlogistik',
+    
+    // Company Section Extended
+    'company.competence.title': 'Unsere Kernkompetenzen',
+    'company.competence.network': 'Europaweites Netzwerk',
+    'company.competence.network.desc': 'Starke Partnerschaften & Logistikzentren',
+    'company.competence.technology': 'Modernste Technologie',
+    'company.competence.technology.desc': 'GPS-Tracking & digitale Prozesse',
+    'company.competence.experience': 'Jahrzehntelange Erfahrung',
+    'company.competence.experience.desc': 'Über 41 Jahre Branchenexpertise',
+    'company.competence.special': 'Spezial-Transporter & Anhänger',
+    
+    // Footer Extended
+    'footer.services.title': 'Unsere Services',
+    'footer.services.pkw': 'PKW-Überführung',
+    'footer.services.lkw': 'LKW-Überführung',
+    'footer.services.express': 'Express-Service',
+    'footer.services.transfer': 'Überführung auf Fremdachse',
+    'footer.services.pickup': 'Hol- und Bringservice',
+    'footer.services.fleet': 'Fuhrpark-Management',
+    'footer.services.logistics': 'Platzlogistik',
+    
+    'footer.contact.title': 'Kontakt',
+    'footer.contact.hotline': '24/7 Hotline',
+    'footer.contact.email.response': 'Schnelle Antwort garantiert',
+    'footer.contact.address': 'Deutschland',
+    
+    'footer.hours.title': 'Öffnungszeiten',
+    'footer.hours.weekdays': 'Mo - Fr:',
+    'footer.hours.saturday': 'Sa:',
+    'footer.hours.emergency': 'Notfall:',
+    'footer.hours.weekdays.time': '8:00 - 18:00',
+    'footer.hours.saturday.time': '9:00 - 16:00',
+    'footer.hours.emergency.time': '24/7',
+    
+    'footer.quicklinks.title': 'Quick Links',
+    'footer.quicklinks.about': 'Über uns',
+    'footer.quicklinks.career': 'Karriere',
+    'footer.quicklinks.business': 'Geschäftskunden',
+    'footer.quicklinks.faq': 'FAQ',
+    
+    'footer.newsletter.title': 'Newsletter',
+    'footer.newsletter.description': 'Bleiben Sie über unsere neuesten Services informiert.',
+    'footer.newsletter.placeholder': 'Ihre E-Mail',
+    
+    'footer.social.follow': 'Folgen Sie uns:',
+    'footer.location': 'Standort Hamburg-Norderstedt • Bundesweit und europaweit im Einsatz',
+    
+    'footer.legal.company': '© 2025 Golze & Michel OHG',
+    'footer.legal.imprint': 'Impressum',
+    'footer.legal.privacy': 'Datenschutzerklärung',
+    'footer.legal.terms': 'AGB'
   },
   
   en: {
@@ -195,7 +263,75 @@ const translations = {
     'footer.services': 'Services',
     'footer.contact': 'Contact',
     'footer.legal': 'Legal',
-    'footer.rights': 'All rights reserved.'
+    'footer.rights': 'All rights reserved.',
+    
+    // Partners Section
+    'partners.badge': 'TRUSTED PARTNERSHIPS',
+    'partners.title1': 'OUR',
+    'partners.title2': 'PARTNERS',
+    
+    // Company Info Section (Extended)
+    'company.info.description': 'Your trusted partner for vehicle transfers since 1984. Professional, reliable and operating throughout Europe for you.',
+    'company.info.years': 'In business for 41 years',
+    'company.info.insured': 'Fully insured & licensed',
+    'company.info.certified': 'ISO 9001 certified',
+    
+    // Premium Services
+    'premium.title': 'Premium Services:',
+    'premium.pickup': 'Pick-up and delivery service',
+    'premium.fleet': 'Fleet management',
+    'premium.logistics': 'Location logistics',
+    
+    // Company Section Extended
+    'company.competence.title': 'Our Core Competencies',
+    'company.competence.network': 'Europe-wide Network',
+    'company.competence.network.desc': 'Strong partnerships & logistics centers',
+    'company.competence.technology': 'Latest Technology',
+    'company.competence.technology.desc': 'GPS tracking & digital processes',
+    'company.competence.experience': 'Decades of Experience',
+    'company.competence.experience.desc': 'Over 41 years of industry expertise',
+    'company.competence.special': 'Special carriers & trailers',
+    
+    // Footer Extended
+    'footer.services.title': 'Our Services',
+    'footer.services.pkw': 'Car transfer',
+    'footer.services.lkw': 'Truck transfer',
+    'footer.services.express': 'Express service',
+    'footer.services.transfer': 'Third-party transport',
+    'footer.services.pickup': 'Pick-up and delivery service',
+    'footer.services.fleet': 'Fleet management',
+    'footer.services.logistics': 'Location logistics',
+    
+    'footer.contact.title': 'Contact',
+    'footer.contact.hotline': '24/7 Hotline',
+    'footer.contact.email.response': 'Quick response guaranteed',
+    'footer.contact.address': 'Germany',
+    
+    'footer.hours.title': 'Opening Hours',
+    'footer.hours.weekdays': 'Mon - Fri:',
+    'footer.hours.saturday': 'Sat:',
+    'footer.hours.emergency': 'Emergency:',
+    'footer.hours.weekdays.time': '8:00 - 18:00',
+    'footer.hours.saturday.time': '9:00 - 16:00',
+    'footer.hours.emergency.time': '24/7',
+    
+    'footer.quicklinks.title': 'Quick Links',
+    'footer.quicklinks.about': 'About us',
+    'footer.quicklinks.career': 'Career',
+    'footer.quicklinks.business': 'Business customers',
+    'footer.quicklinks.faq': 'FAQ',
+    
+    'footer.newsletter.title': 'Newsletter',
+    'footer.newsletter.description': 'Stay informed about our latest services.',
+    'footer.newsletter.placeholder': 'Your email',
+    
+    'footer.social.follow': 'Follow us:',
+    'footer.location': 'Location Hamburg-Norderstedt • Nationwide and European operations',
+    
+    'footer.legal.company': '© 2025 Golze & Michel OHG',
+    'footer.legal.imprint': 'Imprint',
+    'footer.legal.privacy': 'Privacy Policy',
+    'footer.legal.terms': 'Terms & Conditions'
   },
   
   fr: {
@@ -285,7 +421,75 @@ const translations = {
     'footer.services': 'Services',
     'footer.contact': 'Contact',
     'footer.legal': 'Juridique',
-    'footer.rights': 'Tous droits réservés.'
+    'footer.rights': 'Tous droits réservés.',
+    
+    // Partners Section
+    'partners.badge': 'PARTENARIATS DE CONFIANCE',
+    'partners.title1': 'NOS',
+    'partners.title2': 'PARTENAIRES',
+    
+    // Company Info Section (Extended)
+    'company.info.description': 'Votre partenaire de confiance pour les transferts de véhicules depuis 1984. Professionnel, fiable et opérant dans toute l\'Europe pour vous.',
+    'company.info.years': 'En activité depuis 41 ans',
+    'company.info.insured': 'Entièrement assuré et agréé',
+    'company.info.certified': 'Certifié ISO 9001',
+    
+    // Premium Services
+    'premium.title': 'Services Premium:',
+    'premium.pickup': 'Service d\'enlèvement et de livraison',
+    'premium.fleet': 'Gestion de flotte',
+    'premium.logistics': 'Logistique d\'emplacement',
+    
+    // Company Section Extended
+    'company.competence.title': 'Nos Compétences Clés',
+    'company.competence.network': 'Réseau Européen',
+    'company.competence.network.desc': 'Partenariats solides et centres logistiques',
+    'company.competence.technology': 'Technologie de Pointe',
+    'company.competence.technology.desc': 'Suivi GPS et processus numériques',
+    'company.competence.experience': 'Des Décennies d\'Expérience',
+    'company.competence.experience.desc': 'Plus de 41 ans d\'expertise sectorielle',
+    'company.competence.special': 'Transporteurs et remorques spéciaux',
+    
+    // Footer Extended
+    'footer.services.title': 'Nos Services',
+    'footer.services.pkw': 'Transfert de voiture',
+    'footer.services.lkw': 'Transfert de camion',
+    'footer.services.express': 'Service express',
+    'footer.services.transfer': 'Transport par tiers',
+    'footer.services.pickup': 'Service d\'enlèvement et de livraison',
+    'footer.services.fleet': 'Gestion de flotte',
+    'footer.services.logistics': 'Logistique d\'emplacement',
+    
+    'footer.contact.title': 'Contact',
+    'footer.contact.hotline': 'Hotline 24/7',
+    'footer.contact.email.response': 'Réponse rapide garantie',
+    'footer.contact.address': 'Allemagne',
+    
+    'footer.hours.title': 'Heures d\'ouverture',
+    'footer.hours.weekdays': 'Lun - Ven:',
+    'footer.hours.saturday': 'Sam:',
+    'footer.hours.emergency': 'Urgence:',
+    'footer.hours.weekdays.time': '8:00 - 18:00',
+    'footer.hours.saturday.time': '9:00 - 16:00',
+    'footer.hours.emergency.time': '24/7',
+    
+    'footer.quicklinks.title': 'Liens Rapides',
+    'footer.quicklinks.about': 'À propos de nous',
+    'footer.quicklinks.career': 'Carrière',
+    'footer.quicklinks.business': 'Clients professionnels',
+    'footer.quicklinks.faq': 'FAQ',
+    
+    'footer.newsletter.title': 'Newsletter',
+    'footer.newsletter.description': 'Restez informé de nos derniers services.',
+    'footer.newsletter.placeholder': 'Votre email',
+    
+    'footer.social.follow': 'Suivez-nous:',
+    'footer.location': 'Emplacement Hambourg-Norderstedt • Opérations nationales et européennes',
+    
+    'footer.legal.company': '© 2025 Golze & Michel OHG',
+    'footer.legal.imprint': 'Mentions légales',
+    'footer.legal.privacy': 'Politique de confidentialité',
+    'footer.legal.terms': 'Conditions générales'
   },
   
   es: {
@@ -375,7 +579,75 @@ const translations = {
     'footer.services': 'Servicios',
     'footer.contact': 'Contacto',
     'footer.legal': 'Legal',
-    'footer.rights': 'Todos los derechos reservados.'
+    'footer.rights': 'Todos los derechos reservados.',
+    
+    // Partners Section
+    'partners.badge': 'ASOCIACIONES DE CONFIANZA',
+    'partners.title1': 'NUESTROS',
+    'partners.title2': 'SOCIOS',
+    
+    // Company Info Section (Extended)
+    'company.info.description': 'Su socio de confianza para transferencias de vehículos desde 1984. Profesional, confiable y operando en toda Europa para usted.',
+    'company.info.years': 'En el negocio por 41 años',
+    'company.info.insured': 'Completamente asegurado y licenciado',
+    'company.info.certified': 'Certificado ISO 9001',
+    
+    // Premium Services
+    'premium.title': 'Servicios Premium:',
+    'premium.pickup': 'Servicio de recogida y entrega',
+    'premium.fleet': 'Gestión de flota',
+    'premium.logistics': 'Logística de ubicación',
+    
+    // Company Section Extended
+    'company.competence.title': 'Nuestras Competencias Principales',
+    'company.competence.network': 'Red Europea',
+    'company.competence.network.desc': 'Asociaciones sólidas y centros logísticos',
+    'company.competence.technology': 'Última Tecnología',
+    'company.competence.technology.desc': 'Seguimiento GPS y procesos digitales',
+    'company.competence.experience': 'Décadas de Experiencia',
+    'company.competence.experience.desc': 'Más de 41 años de experiencia en la industria',
+    'company.competence.special': 'Transportistas y remolques especiales',
+    
+    // Footer Extended
+    'footer.services.title': 'Nuestros Servicios',
+    'footer.services.pkw': 'Transferencia de coche',
+    'footer.services.lkw': 'Transferencia de camión',
+    'footer.services.express': 'Servicio express',
+    'footer.services.transfer': 'Transporte por terceros',
+    'footer.services.pickup': 'Servicio de recogida y entrega',
+    'footer.services.fleet': 'Gestión de flota',
+    'footer.services.logistics': 'Logística de ubicación',
+    
+    'footer.contact.title': 'Contacto',
+    'footer.contact.hotline': 'Línea directa 24/7',
+    'footer.contact.email.response': 'Respuesta rápida garantizada',
+    'footer.contact.address': 'Alemania',
+    
+    'footer.hours.title': 'Horarios de Apertura',
+    'footer.hours.weekdays': 'Lun - Vie:',
+    'footer.hours.saturday': 'Sáb:',
+    'footer.hours.emergency': 'Emergencia:',
+    'footer.hours.weekdays.time': '8:00 - 18:00',
+    'footer.hours.saturday.time': '9:00 - 16:00',
+    'footer.hours.emergency.time': '24/7',
+    
+    'footer.quicklinks.title': 'Enlaces Rápidos',
+    'footer.quicklinks.about': 'Sobre nosotros',
+    'footer.quicklinks.career': 'Carrera',
+    'footer.quicklinks.business': 'Clientes empresariales',
+    'footer.quicklinks.faq': 'FAQ',
+    
+    'footer.newsletter.title': 'Boletín',
+    'footer.newsletter.description': 'Manténgase informado sobre nuestros últimos servicios.',
+    'footer.newsletter.placeholder': 'Su email',
+    
+    'footer.social.follow': 'Síguenos:',
+    'footer.location': 'Ubicación Hamburgo-Norderstedt • Operaciones nacionales y europeas',
+    
+    'footer.legal.company': '© 2025 Golze & Michel OHG',
+    'footer.legal.imprint': 'Aviso legal',
+    'footer.legal.privacy': 'Política de privacidad',
+    'footer.legal.terms': 'Términos y condiciones'
   },
   
   it: {
@@ -465,7 +737,75 @@ const translations = {
     'footer.services': 'Servizi',
     'footer.contact': 'Contatto',
     'footer.legal': 'Legale',
-    'footer.rights': 'Tutti i diritti riservati.'
+    'footer.rights': 'Tutti i diritti riservati.',
+    
+    // Partners Section
+    'partners.badge': 'PARTNERSHIP AFFIDABILI',
+    'partners.title1': 'I NOSTRI',
+    'partners.title2': 'PARTNER',
+    
+    // Company Info Section (Extended)
+    'company.info.description': 'Il vostro partner di fiducia per i trasferimenti di veicoli dal 1984. Professionale, affidabile e operativo in tutta Europa per voi.',
+    'company.info.years': 'In attività da 41 anni',
+    'company.info.insured': 'Completamente assicurato e autorizzato',
+    'company.info.certified': 'Certificato ISO 9001',
+    
+    // Premium Services
+    'premium.title': 'Servizi Premium:',
+    'premium.pickup': 'Servizio di ritiro e consegna',
+    'premium.fleet': 'Gestione flotta',
+    'premium.logistics': 'Logistica di posizione',
+    
+    // Company Section Extended
+    'company.competence.title': 'Le Nostre Competenze Principali',
+    'company.competence.network': 'Rete Europea',
+    'company.competence.network.desc': 'Partnership solide e centri logistici',
+    'company.competence.technology': 'Tecnologia Avanzata',
+    'company.competence.technology.desc': 'Tracciamento GPS e processi digitali',
+    'company.competence.experience': 'Decenni di Esperienza',
+    'company.competence.experience.desc': 'Oltre 41 anni di competenza nel settore',
+    'company.competence.special': 'Trasportatori e rimorchi speciali',
+    
+    // Footer Extended
+    'footer.services.title': 'I Nostri Servizi',
+    'footer.services.pkw': 'Trasferimento auto',
+    'footer.services.lkw': 'Trasferimento camion',
+    'footer.services.express': 'Servizio express',
+    'footer.services.transfer': 'Trasporto tramite terzi',
+    'footer.services.pickup': 'Servizio di ritiro e consegna',
+    'footer.services.fleet': 'Gestione flotta',
+    'footer.services.logistics': 'Logistica di posizione',
+    
+    'footer.contact.title': 'Contatto',
+    'footer.contact.hotline': 'Hotline 24/7',
+    'footer.contact.email.response': 'Risposta rapida garantita',
+    'footer.contact.address': 'Germania',
+    
+    'footer.hours.title': 'Orari di Apertura',
+    'footer.hours.weekdays': 'Lun - Ven:',
+    'footer.hours.saturday': 'Sab:',
+    'footer.hours.emergency': 'Emergenza:',
+    'footer.hours.weekdays.time': '8:00 - 18:00',
+    'footer.hours.saturday.time': '9:00 - 16:00',
+    'footer.hours.emergency.time': '24/7',
+    
+    'footer.quicklinks.title': 'Link Rapidi',
+    'footer.quicklinks.about': 'Chi siamo',
+    'footer.quicklinks.career': 'Carriera',
+    'footer.quicklinks.business': 'Clienti aziendali',
+    'footer.quicklinks.faq': 'FAQ',
+    
+    'footer.newsletter.title': 'Newsletter',
+    'footer.newsletter.description': 'Rimanete informati sui nostri ultimi servizi.',
+    'footer.newsletter.placeholder': 'La vostra email',
+    
+    'footer.social.follow': 'Seguiteci:',
+    'footer.location': 'Sede Amburgo-Norderstedt • Operazioni nazionali ed europee',
+    
+    'footer.legal.company': '© 2025 Golze & Michel OHG',
+    'footer.legal.imprint': 'Impressum',
+    'footer.legal.privacy': 'Politica sulla privacy',
+    'footer.legal.terms': 'Termini e condizioni'
   },
   
   nl: {
@@ -555,7 +895,75 @@ const translations = {
     'footer.services': 'Diensten',
     'footer.contact': 'Contact',
     'footer.legal': 'Juridisch',
-    'footer.rights': 'Alle rechten voorbehouden.'
+    'footer.rights': 'Alle rechten voorbehouden.',
+    
+    // Partners Section
+    'partners.badge': 'VERTROUWDE PARTNERSHIPS',
+    'partners.title1': 'ONZE',
+    'partners.title2': 'PARTNERS',
+    
+    // Company Info Section (Extended)
+    'company.info.description': 'Uw vertrouwde partner voor voertuig overbrengingen sinds 1984. Professioneel, betrouwbaar en operationeel in heel Europa voor u.',
+    'company.info.years': '41 jaar in het bedrijf',
+    'company.info.insured': 'Volledig verzekerd en gelicentieerd',
+    'company.info.certified': 'ISO 9001 gecertificeerd',
+    
+    // Premium Services
+    'premium.title': 'Premium Diensten:',
+    'premium.pickup': 'Ophaal- en bezorgservice',
+    'premium.fleet': 'Vlootbeheer',
+    'premium.logistics': 'Locatie logistiek',
+    
+    // Company Section Extended
+    'company.competence.title': 'Onze Kerncompetenties',
+    'company.competence.network': 'Europa-breed Netwerk',
+    'company.competence.network.desc': 'Sterke partnerships en logistieke centra',
+    'company.competence.technology': 'Nieuwste Technologie',
+    'company.competence.technology.desc': 'GPS-tracking en digitale processen',
+    'company.competence.experience': 'Decennia aan Ervaring',
+    'company.competence.experience.desc': 'Meer dan 41 jaar branche-expertise',
+    'company.competence.special': 'Speciale transporteurs en aanhangwagens',
+    
+    // Footer Extended
+    'footer.services.title': 'Onze Diensten',
+    'footer.services.pkw': 'Auto overbrenging',
+    'footer.services.lkw': 'Vrachtwagen overbrenging',
+    'footer.services.express': 'Express service',
+    'footer.services.transfer': 'Transport door derden',
+    'footer.services.pickup': 'Ophaal- en bezorgservice',
+    'footer.services.fleet': 'Vlootbeheer',
+    'footer.services.logistics': 'Locatie logistiek',
+    
+    'footer.contact.title': 'Contact',
+    'footer.contact.hotline': '24/7 Hotline',
+    'footer.contact.email.response': 'Snelle reactie gegarandeerd',
+    'footer.contact.address': 'Duitsland',
+    
+    'footer.hours.title': 'Openingstijden',
+    'footer.hours.weekdays': 'Ma - Vr:',
+    'footer.hours.saturday': 'Za:',
+    'footer.hours.emergency': 'Noodgeval:',
+    'footer.hours.weekdays.time': '8:00 - 18:00',
+    'footer.hours.saturday.time': '9:00 - 16:00',
+    'footer.hours.emergency.time': '24/7',
+    
+    'footer.quicklinks.title': 'Snelle Links',
+    'footer.quicklinks.about': 'Over ons',
+    'footer.quicklinks.career': 'Carrière',
+    'footer.quicklinks.business': 'Zakelijke klanten',
+    'footer.quicklinks.faq': 'FAQ',
+    
+    'footer.newsletter.title': 'Nieuwsbrief',
+    'footer.newsletter.description': 'Blijf op de hoogte van onze nieuwste diensten.',
+    'footer.newsletter.placeholder': 'Uw email',
+    
+    'footer.social.follow': 'Volg ons:',
+    'footer.location': 'Locatie Hamburg-Norderstedt • Nationale en Europese operaties',
+    
+    'footer.legal.company': '© 2025 Golze & Michel OHG',
+    'footer.legal.imprint': 'Impressum',
+    'footer.legal.privacy': 'Privacybeleid',
+    'footer.legal.terms': 'Algemene voorwaarden'
   }
 };
 

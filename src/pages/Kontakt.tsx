@@ -4,20 +4,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle, X, Menu } from "lucide-react";
 import { KontaktForm } from "@/components/KontaktForm";
 import Logo from "@/components/Logo";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
 const Kontakt = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navigationItems = [
-    { href: "/", label: "STARTSEITE" },
-    { href: "/unternehmen", label: "UNTERNEHMEN" },
-    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
-    { href: "/karriere", label: "KARRIERE" },
-    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
-    { href: "/kontakt", label: "KONTAKT" }
+    { href: "/", label: t('nav.home') },
+    { href: "/unternehmen", label: t('nav.company') },
+    { href: "/dienstleistungen", label: t('nav.services') },
+    { href: "/karriere", label: t('nav.career') },
+    { href: "/geschaeftskunden", label: t('nav.business') },
+    { href: "/kontakt", label: t('nav.contact') }
   ];
 
   return (
