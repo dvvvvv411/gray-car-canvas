@@ -89,7 +89,7 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
                 Premium Service
               </div>
 
-              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 tracking-tight group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 tracking-tight group-hover:text-primary transition-colors duration-300">
                 {currentService.title}
               </h3>
               
