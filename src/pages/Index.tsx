@@ -307,16 +307,6 @@ const Index = () => {
                   
                   <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
                     <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
-                      <Zap className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-white">KFZ-Überführung mit Transporter</div>
-                      <div className="text-sm text-white/70">Express & Standard-Optionen</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
-                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
                       <ArrowLeftRight className="w-6 h-6 text-primary" />
                     </div>
                     <div>
