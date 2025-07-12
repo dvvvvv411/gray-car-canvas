@@ -116,7 +116,7 @@ const Unternehmen = () => {
 
       {/* Hero Section - Half Size */}
       <section 
-        className="relative h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden -mt-16 pt-16"
+        className="relative h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden -mt-24 pt-24"
         style={{
           backgroundImage: `url(${heroBgNew})`
         }}
