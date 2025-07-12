@@ -13,7 +13,7 @@ import serviceImage from "@/assets/car-transfer-service.jpg";
 const pkwService = "https://i.imgur.com/15xt437.png";
 const lkwService = "https://i.imgur.com/6p3a1A6.png"; 
 const expressService = "https://i.imgur.com/AZ91CAT.png";
-const transferService = "/lovable-uploads/3614986f-2159-41bf-8601-71e8b75703c6.png";
+const transferService = "/lovable-uploads/7b4b99bf-4817-4336-8a94-b32ba65768eb.png";
 
 const Index = () => {
   return (
