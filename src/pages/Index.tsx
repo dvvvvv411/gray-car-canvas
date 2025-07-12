@@ -52,30 +52,45 @@ const Index = () => {
         </div>
       </header>
       {/* Hero Section */}
-      <section 
-        className="relative min-h-[80vh] flex items-center justify-center py-12 px-4 overflow-hidden"
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-        
-        <div className="container mx-auto relative z-10">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-              <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR FAHRZEUG-</em>
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+        {/* Left Side - White Background */}
+        <div className="w-1/2 h-full bg-white relative z-10 flex items-center justify-center py-20 px-8">
+          <div className="max-w-xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground mb-6">
+              <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR</em>
               <br />
-              <em>ÜBERFÜHRUNGEN</em>
+              <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
               <br />
-              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/80 mt-2 block">
+              <span className="text-base md:text-lg lg:text-xl font-normal text-muted-foreground mt-4 block">
                 IN DEUTSCHLAND UND EUROPA
               </span>
             </h1>
+            <div className="mt-8">
+              <Button 
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold"
+              >
+                Jetzt anfragen
+              </Button>
+            </div>
           </div>
+        </div>
+
+        {/* Gradient Transition Overlay */}
+        <div className="absolute left-1/2 top-0 w-32 h-full bg-gradient-to-r from-white via-white/70 to-transparent z-20"></div>
+
+        {/* Right Side - Background Image */}
+        <div 
+          className="absolute right-0 top-0 w-1/2 h-full"
+          style={{
+            backgroundImage: `url(${heroBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* Subtle Dark Overlay for better contrast */}
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </section>
 
