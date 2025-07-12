@@ -5,41 +5,73 @@ interface LogoProps {
 }
 
 const Logo = ({ className = "" }: LogoProps) => {
-  const [useWhiteLogo, setUseWhiteLogo] = useState(true);
+  const [isLightBackground, setIsLightBackground] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const sectionId = entry.target.id;
-            // Use black logo for light sections, white logo for dark sections
-            const lightSections = ['services-section', 'contact-section'];
-            setUseWhiteLogo(!lightSections.includes(sectionId));
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Trigger when 50% of the section is visible
-        rootMargin: '-80px 0px' // Account for header height
-      }
-    );
+    // Funktion zur Bestimmung der Hintergrundfarbe der aktuellen Sektion
+    const detectBackgroundColor = () => {
+      const scrollY = window.scrollY;
+      const headerHeight = 80; // Header-Höhe berücksichtigen
+      const currentScrollPosition = scrollY + headerHeight + 100; // Etwas unter dem Header
 
-    // Observe all sections
-    const sections = document.querySelectorAll('section[id]');
-    sections.forEach((section) => observer.observe(section));
+      // Alle Sektionen mit ihren Hintergründen definieren
+      const sections = [
+        { start: 0, end: 800, isLight: false }, // Hero section - dunkler Hintergrund
+        { start: 800, end: 1600, isLight: true }, // Services section - heller Hintergrund (bg-white)
+        { start: 1600, end: 2400, isLight: false }, // Service & Flexibility section - dunkler Hintergrund
+        { start: 2400, end: 3000, isLight: true }, // Partners section - heller Hintergrund (bg-white)
+        { start: 3000, end: Infinity, isLight: false }, // Footer - dunkler Hintergrund
+      ];
+
+      // Aktuelle Sektion basierend auf Scroll-Position finden
+      const currentSection = sections.find(section => 
+        currentScrollPosition >= section.start && currentScrollPosition < section.end
+      );
+
+      if (currentSection) {
+        setIsLightBackground(currentSection.isLight);
+      }
+    };
+
+    // Initial detection
+    detectBackgroundColor();
+
+    // Scroll-Event mit Throttling für bessere Performance
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          detectBackgroundColor();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <img 
-      src={useWhiteLogo ? "/lovable-uploads/86dfbf7e-a265-49a1-aea4-a102e38ffe81.png" : "/lovable-uploads/b6fbf84f-f315-49f7-b766-346ab714f8be.png"}
-      alt="CarLogix Logo"
-      className={`h-10 w-auto transition-opacity duration-300 ${className}`}
-    />
+    <div className="relative">
+      <img 
+        src="/lovable-uploads/86dfbf7e-a265-49a1-aea4-a102e38ffe81.png"
+        alt="CarLogix Logo"
+        className={`h-10 w-auto transition-opacity duration-500 ease-in-out ${
+          isLightBackground ? 'opacity-0' : 'opacity-100'
+        } ${className}`}
+      />
+      <img 
+        src="/lovable-uploads/b6fbf84f-f315-49f7-b766-346ab714f8be.png"
+        alt="Car Logo"
+        className={`h-10 w-auto absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
+          isLightBackground ? 'opacity-100' : 'opacity-0'
+        } ${className}`}
+      />
+    </div>
   );
 };
 
