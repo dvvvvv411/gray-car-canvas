@@ -1,7 +1,6 @@
 
 import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 
@@ -115,189 +114,94 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Modern Services Carousel Section */}
-      <section className="relative py-16 px-4 bg-gradient-to-br from-primary via-primary/90 to-accent overflow-hidden" style={{ height: 'calc(100vh / 3)' }}>
-        {/* Orange Background Elements */}
+      {/* Modern Services Section */}
+      <section className="relative py-24 px-4 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
+        {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-glow-pulse"></div>
-          <div className="absolute bottom-1/3 right-1/3 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-white/8 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
+          <div className="absolute top-20 left-1/4 w-24 h-24 bg-primary/5 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-20 right-1/3 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
         
-        <div className="container mx-auto relative z-10 h-full flex flex-col justify-center">
+        <div className="container mx-auto relative z-10">
           {/* Section Header */}
-          <div className="text-center mb-8 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30 mb-4">
-              <Zap className="w-4 h-4 text-white" />
-              <span className="text-white font-medium text-sm">UNSERE EXPERTISE</span>
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
+              <Zap className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">UNSERE EXPERTISE</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-white">MODERNSTE</span>{" "}
-              <span className="text-white/90">FAHRZEUG-SERVICES</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-foreground">MODERNSTE</span>{" "}
+              <span className="text-primary">FAHRZEUG-SERVICES</span>
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Digitale Prozesse, echte Expertise – Ihre Fahrzeuge in den besten Händen
             </p>
           </div>
           
-          {/* Services Carousel */}
-          <div className="flex-1 flex items-center">
-            <Carousel 
-              opts={{ align: "center", loop: true }} 
-              className="w-full max-w-4xl mx-auto"
-            >
-              <CarouselContent className="-ml-2 md:-ml-4">
-                <CarouselItem className="pl-2 md:pl-4">
-                  <div className="bg-black/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 h-64 flex items-center">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                          <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
-                            <Car className="w-6 h-6 text-primary" />
-                          </div>
-                          <h3 className="text-2xl font-bold text-white">PKW-ÜBERFÜHRUNG</h3>
-                        </div>
-                        <p className="text-white/90 leading-relaxed">
-                          Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. 
-                          Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert.
-                        </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Live GPS-Tracking</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Digitale Übergabe-Protokolle</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Flexible Terminplanung</span>
-                          </div>
-                        </div>
-                        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                          Mehr erfahren
-                        </Button>
-                      </div>
-                      <div className="hidden md:block">
-                        <img 
-                          src={pkwService} 
-                          alt="PKW Service" 
-                          className="w-full h-48 object-cover rounded-xl border border-white/10"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-                
-                <CarouselItem className="pl-2 md:pl-4">
-                  <div className="bg-black/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 h-64 flex items-center">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                          <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
-                            <Truck className="w-6 h-6 text-primary" />
-                          </div>
-                          <h3 className="text-2xl font-bold text-white">LKW-ÜBERFÜHRUNG</h3>
-                        </div>
-                        <p className="text-white/90 leading-relaxed">
-                          Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. 
-                          Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf.
-                        </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Spezialisierte LKW-Fahrer</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Schwertransport-Expertise</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Europaweites Netzwerk</span>
-                          </div>
-                        </div>
-                        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                          Jetzt anfragen
-                        </Button>
-                      </div>
-                      <div className="hidden md:block">
-                        <img 
-                          src={lkwService} 
-                          alt="LKW Service" 
-                          className="w-full h-48 object-cover rounded-xl border border-white/10"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-                
-                <CarouselItem className="pl-2 md:pl-4">
-                  <div className="bg-black/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 h-64 flex items-center">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                          <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
-                            <Zap className="w-6 h-6 text-primary" />
-                          </div>
-                          <h3 className="text-2xl font-bold text-white">EXPRESS-LIEFERUNG</h3>
-                        </div>
-                        <p className="text-white/90 leading-relaxed">
-                          Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. 
-                          Sofortiger Start, direkter Transport, garantierte Ankunftszeiten.
-                        </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Sofort-Abholung möglich</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Priority-Behandlung</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-white/80">
-                            <Check className="w-4 h-4 text-primary" />
-                            <span className="text-sm">Zeitgarantie inklusive</span>
-                          </div>
-                        </div>
-                        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                          Express buchen
-                        </Button>
-                      </div>
-                      <div className="hidden md:block">
-                        <img 
-                          src={expressService} 
-                          alt="Express Service" 
-                          className="w-full h-48 object-cover rounded-xl border border-white/10"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-              </CarouselContent>
-              
-              <CarouselPrevious className="bg-black/50 border-white/20 text-white hover:bg-black/70 -left-16" />
-              <CarouselNext className="bg-black/50 border-white/20 text-white hover:bg-black/70 -right-16" />
-            </Carousel>
+          {/* Service Cards Grid */}
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <ServiceCard
+                title="PKW-ÜBERFÜHRUNG"
+                description="Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert."
+                image={pkwService}
+                buttonText="Mehr erfahren"
+                icon={Car}
+                features={[
+                  "Live GPS-Tracking",
+                  "Digitale Übergabe-Protokolle",
+                  "Flexible Terminplanung"
+                ]}
+              />
+            </div>
+            
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <ServiceCard
+                title="LKW-ÜBERFÜHRUNG"
+                description="Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf."
+                image={lkwService}
+                buttonText="Jetzt anfragen"
+                icon={Truck}
+                features={[
+                  "Spezialisierte LKW-Fahrer",
+                  "Schwertransport-Expertise",
+                  "Europaweites Netzwerk"
+                ]}
+              />
+            </div>
+            
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+              <ServiceCard
+                title="EXPRESS-LIEFERUNG"
+                description="Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten."
+                image={expressService}
+                buttonText="Express buchen"
+                icon={Zap}
+                features={[
+                  "Sofort-Abholung möglich",
+                  "Priority-Behandlung",
+                  "Zeitgarantie inklusive"
+                ]}
+              />
+            </div>
           </div>
           
           {/* Call to Action */}
-          <div className="text-center mt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4">
-              <div className="flex items-center gap-2 text-white">
-                <Clock className="w-4 h-4" />
-                <span className="font-semibold text-sm">24/7 verfügbar</span>
+          <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="inline-flex items-center gap-4 bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6">
+              <div className="flex items-center gap-2 text-primary">
+                <Clock className="w-5 h-5" />
+                <span className="font-semibold">24/7 verfügbar</span>
               </div>
-              <div className="w-px h-4 bg-white/30"></div>
-              <div className="flex items-center gap-2 text-white">
-                <Shield className="w-4 h-4" />
-                <span className="font-semibold text-sm">Vollversichert</span>
+              <div className="w-px h-6 bg-border"></div>
+              <div className="flex items-center gap-2 text-primary">
+                <Shield className="w-5 h-5" />
+                <span className="font-semibold">Vollversichert</span>
               </div>
-              <div className="w-px h-4 bg-white/30"></div>
-              <div className="flex items-center gap-2 text-white">
-                <Zap className="w-4 h-4" />
-                <span className="font-semibold text-sm">Express-Service</span>
+              <div className="w-px h-6 bg-border"></div>
+              <div className="flex items-center gap-2 text-primary">
+                <Zap className="w-5 h-5" />
+                <span className="font-semibold">Express-Service</span>
               </div>
             </div>
           </div>
