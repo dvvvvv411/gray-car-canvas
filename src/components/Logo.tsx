@@ -8,15 +8,20 @@ const Logo = () => {
   const [logoType, setLogoType] = useState<'light' | 'dark'>('dark');
   const logoRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout>();
+  const lastLogoType = useRef<'light' | 'dark'>('dark');
 
-  // Debounced logo type update for performance
+  // More stable debounced logo type update
   const debouncedSetLogoType = useCallback((type: 'light' | 'dark') => {
+    // Only update if the type actually changed
+    if (lastLogoType.current === type) return;
+    
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = setTimeout(() => {
+      lastLogoType.current = type;
       setLogoType(type);
-    }, 50);
+    }, 150); // Increased debounce time for more stability
   }, []);
 
   useEffect(() => {
@@ -31,34 +36,33 @@ const Logo = () => {
     const logoElement = logoRef.current;
     if (!logoElement) return;
 
-    // Find the currently intersecting section and determine logo type
+    // Find the section that the logo is most clearly within
     const updateLogoFromIntersection = (entries: IntersectionObserverEntry[]) => {
-      // Find the section with highest intersection ratio
-      let maxIntersection = 0;
-      let currentSection: Element | null = null;
+      // Filter for actually intersecting entries with meaningful intersection
+      const intersectingEntries = entries.filter(entry => 
+        entry.isIntersecting && entry.intersectionRatio > 0.3
+      );
 
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > maxIntersection) {
-          maxIntersection = entry.intersectionRatio;
-          currentSection = entry.target;
-        }
-      });
+      if (intersectingEntries.length === 0) return;
 
-      if (currentSection) {
-        const logoTypeAttr = currentSection.getAttribute('data-logo-type');
-        if (logoTypeAttr === 'light' || logoTypeAttr === 'dark') {
-          debouncedSetLogoType(logoTypeAttr);
-        }
+      // Sort by intersection ratio and get the most intersecting section
+      const mostIntersecting = intersectingEntries.reduce((prev, current) =>
+        current.intersectionRatio > prev.intersectionRatio ? current : prev
+      );
+
+      const logoTypeAttr = mostIntersecting.target.getAttribute('data-logo-type');
+      if (logoTypeAttr === 'light' || logoTypeAttr === 'dark') {
+        debouncedSetLogoType(logoTypeAttr);
       }
     };
 
-    // Primary intersection observer for sections with data-logo-type
+    // More stable intersection observer
     const observer = new IntersectionObserver(
       updateLogoFromIntersection,
       {
         root: null,
-        rootMargin: '-10px 0px -10px 0px', // Small margin to ensure we're well within the section
-        threshold: [0, 0.1, 0.5, 1] // Multiple thresholds for better detection
+        rootMargin: '-20px 0px -20px 0px', // Larger margin to avoid edge cases
+        threshold: [0.3, 0.7] // Only trigger when significantly inside section
       }
     );
 
@@ -68,39 +72,39 @@ const Logo = () => {
       observer.observe(section);
     });
 
-    // Fallback: scroll position based detection
+    // Simplified scroll-based fallback (less aggressive)
     const handleScroll = () => {
+      // Only run if intersection observer might have missed something
       const scrollY = window.scrollY;
-      const viewportHeight = window.innerHeight;
-      const headerHeight = 64; // Approximate header height
-      const logoPosition = scrollY + headerHeight + 20; // Logo position relative to document
-
-      // Find which section the logo is currently over
-      const sections = document.querySelectorAll('[data-logo-type]');
-      for (const section of sections) {
-        const rect = section.getBoundingClientRect();
-        const sectionTop = scrollY + rect.top;
-        const sectionBottom = sectionTop + rect.height;
-
-        if (logoPosition >= sectionTop && logoPosition <= sectionBottom) {
-          const logoTypeAttr = section.getAttribute('data-logo-type');
-          if (logoTypeAttr === 'light' || logoTypeAttr === 'dark') {
-            debouncedSetLogoType(logoTypeAttr);
-            break;
-          }
-        }
+      
+      // Simple zone-based detection
+      if (scrollY < window.innerHeight * 0.8) {
+        // Still in hero area
+        debouncedSetLogoType('dark');
+      } else {
+        // Let intersection observer handle the rest
+        // Don't override with scroll logic beyond hero
       }
     };
 
-    // Initial logo type determination
-    handleScroll();
+    // Initial logo type - start in hero (dark)
+    debouncedSetLogoType('dark');
 
-    // Add scroll listener as fallback
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Less frequent scroll listener
+    let scrollTimeout: NodeJS.Timeout;
+    const throttledScroll = () => {
+      if (scrollTimeout) return;
+      scrollTimeout = setTimeout(() => {
+        handleScroll();
+        scrollTimeout = null as any;
+      }, 200);
+    };
+
+    window.addEventListener('scroll', throttledScroll, { passive: true });
 
     return () => {
       observer.disconnect();
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', throttledScroll);
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
