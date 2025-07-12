@@ -36,10 +36,12 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 20 100% 50%;
 
-    /* Custom gradients for transport theme */
+    /* Custom gradients and effects for transport theme */
     --gradient-hero: linear-gradient(135deg, hsl(20 100% 50%), hsl(32 95% 55%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
     --shadow-card: 0 4px 20px -4px hsl(20 100% 50% / 0.15);
+    --glow-orange: 0 0 40px hsl(20 100% 50% / 0.4);
+    --text-glow: 0 0 20px hsl(20 100% 50% / 0.6);
 
     --radius: 0.5rem;
 

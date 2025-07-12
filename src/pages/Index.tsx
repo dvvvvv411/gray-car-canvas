@@ -53,32 +53,45 @@ const Index = () => {
       </header>
       {/* Hero Section */}
       <section 
-        className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
           backgroundImage: `url(${heroBgNew})`
         }}
       >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          {/* Main overlay */}
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          {/* Floating Orange Glow Orbs */}
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-40 h-40 bg-primary/15 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-accent/20 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
         
         {/* Content */}
         <div className="relative z-10 text-center px-8 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-            <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR</em>
-            <br />
-            <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
-            <br />
-            <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block">
-              IN DEUTSCHLAND UND EUROPA
-            </span>
-          </h1>
-          <div className="mt-8">
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold"
-            >
-              Jetzt anfragen
-            </Button>
+          {/* Background glow behind text */}
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/30 to-accent/20 rounded-3xl blur-2xl animate-glow-pulse"></div>
+          
+          <div className="relative z-10 animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6 animate-text-glow">
+              <em>IHR <span className="text-primary drop-shadow-lg">SPEZIALIST</span> FÜR</em>
+              <br />
+              <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
+              <br />
+              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block">
+                IN DEUTSCHLAND UND EUROPA
+              </span>
+            </h1>
+            <div className="mt-8 animate-scale-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+              <Button 
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-glow-orange hover:shadow-glow-orange transition-all duration-300 transform hover:scale-105"
+              >
+                Jetzt anfragen
+              </Button>
+            </div>
           </div>
         </div>
       </section>
