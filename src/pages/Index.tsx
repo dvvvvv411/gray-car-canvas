@@ -296,7 +296,28 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Additional Services */}
+
+              <div className="pt-4">
+                <Button 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-200"
+                  size="lg"
+                >
+                  Mehr über uns erfahren
+                </Button>
+              </div>
+            </div>
+
+            {/* Image Side */}
+            <div className="relative animate-fade-in-up space-y-8" style={{ animationDelay: '0.4s' }}>
+              <div className="relative w-full">
+                <img 
+                  src={serviceImage} 
+                  alt="TransferCar Service Excellence" 
+                  className="w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                />
+              </div>
+
+              {/* Premium Services Card - moved from left column */}
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6">
                 <h4 className="font-semibold text-white mb-4">Premium-Services:</h4>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -313,29 +334,6 @@ const Index = () => {
                     <span className="text-white/90 text-sm">Platzlogistik</span>
                   </div>
                 </div>
-              </div>
-
-              <div className="pt-4">
-                <Button 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-200"
-                  size="lg"
-                >
-                  Mehr über uns erfahren
-                </Button>
-              </div>
-            </div>
-
-            {/* Image Side */}
-            <div className="relative animate-fade-in-up flex items-center" style={{ animationDelay: '0.4s' }}>
-              <div className="relative w-full">
-                {/* Glowing border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl"></div>
-                
-                <img 
-                  src={serviceImage} 
-                  alt="TransferCar Service Excellence" 
-                  className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
-                />
               </div>
             </div>
           </div>
