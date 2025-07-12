@@ -8,28 +8,48 @@ import Logo from "@/components/Logo";
 import heroBgNew from "@/assets/hero-background-new.webp";
 
 const Kontakt = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navigationItems = [
+    { href: "/", label: "STARTSEITE" },
+    { href: "/unternehmen", label: "UNTERNEHMEN" },
+    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
+    { href: "/karriere", label: "KARRIERE" },
+    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
+    { href: "/kontakt", label: "KONTAKT" }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10" data-logo-type="dark">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-24">
-            {/* Logo */}
-            <Logo />
+            {/* Desktop Logo - Left */}
+            <div className="hidden lg:block">
+              <Logo />
+            </div>
             
-            {/* Navigation */}
+            {/* Mobile Logo - Center */}
+            <div className="lg:hidden flex-1 flex justify-center">
+              <Logo />
+            </div>
+            
+            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <a href="/" className="text-white hover:text-primary transition-colors font-medium">STARTSEITE</a>
-              <a href="/unternehmen" className="text-white hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
-              <a href="/dienstleistungen" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
-              <a href="/karriere" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
-              <a href="/geschaeftskunden" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
-              <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
-              <a href="/kontakt" className="text-primary font-medium">KONTAKT</a>
+              {navigationItems.map((item) => (
+                <a 
+                  key={item.href}
+                  href={item.href} 
+                  className={item.href === "/kontakt" ? "text-primary font-medium" : "text-white hover:text-primary transition-colors font-medium"}
+                >
+                  {item.label}
+                </a>
+              ))}
             </nav>
             
-            {/* Phone Number */}
-            <div className="hidden md:flex items-center">
+            {/* Desktop Phone Number */}
+            <div className="hidden lg:flex items-center">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
                 040 5131580
@@ -37,12 +57,60 @@ const Kontakt = () => {
             </div>
             
             {/* Mobile Menu Button */}
-            <button className="lg:hidden p-2 text-white">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-2 text-white z-50 relative"
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3 }}
+                className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md border-t border-white/10 z-40"
+              >
+                <div className="container mx-auto px-4 py-6">
+                  <nav className="space-y-4 mb-6">
+                    {navigationItems.map((item) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className={`block py-3 px-4 rounded-lg text-lg font-medium transition-colors ${
+                          item.href === "/kontakt" 
+                            ? "text-primary bg-primary/10" 
+                            : "text-white hover:text-primary hover:bg-white/5"
+                        }`}
+                      >
+                        {item.label}
+                      </a>
+                    ))}
+                  </nav>
+                  
+                  <div className="pt-4 border-t border-white/10">
+                    <a 
+                      href="tel:+49405131580"
+                      className="flex items-center justify-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-semibold text-lg"
+                    >
+                      <Phone className="w-5 h-5 mr-3" />
+                      040 5131580
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </header>
 
