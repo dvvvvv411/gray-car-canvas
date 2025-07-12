@@ -168,7 +168,7 @@ const Index = () => {
               <div className="flex flex-wrap items-center justify-center gap-6 mb-6 text-white/80">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse"></div>
-                  <span className="text-sm font-medium">Seit 1994 vertrauenswürdig</span>
+                  <span className="text-sm font-medium">Seit 1984 vertrauenswürdig</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
@@ -325,7 +325,7 @@ const Index = () => {
               <span className="text-primary">FLEXIBILITÄT</span>
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-              Seit 1994 setzen wir Maßstäbe in der Fahrzeuglogistik – mit Innovation und Leidenschaft
+              Seit 1984 setzen wir Maßstäbe in der Fahrzeuglogistik – mit Innovation und Leidenschaft
             </p>
           </div>
 
@@ -336,7 +336,7 @@ const Index = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
                 <p className="text-lg text-white/90 leading-relaxed mb-6">
                   <strong className="text-white">TransferCar GmbH</strong> – Ihr digitaler Vorreiter in der Fahrzeuglogistik. 
-                  Mit über <span className="text-primary font-semibold">29 Jahren Erfahrung</span> kombinieren wir bewährte Expertise 
+                  Mit über <span className="text-primary font-semibold">41 Jahren Erfahrung</span> kombinieren wir bewährte Expertise 
                   mit modernsten Technologien für maximale Effizienz.
                 </p>
                 
@@ -512,15 +512,15 @@ const Index = () => {
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white">info@transfercar.de</div>
+                    <div className="text-white">info@carlogix.de</div>
                     <div className="text-white/60 text-sm">Schnelle Antwort garantiert</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white">Oststr. 42 – 46</div>
-                    <div className="text-white">22844 Norderstedt</div>
+                    <div className="text-white">Beusselstr. 44 N-Q</div>
+                    <div className="text-white">10553 Berlin</div>
                     <div className="text-white/60 text-sm">Deutschland</div>
                   </div>
                 </div>

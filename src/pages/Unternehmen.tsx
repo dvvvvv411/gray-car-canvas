@@ -165,12 +165,12 @@ const Unternehmen = () => {
                 <span className="text-primary font-medium text-sm">ÜBER UNS</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                Seit 1994 <span className="text-primary">vertrauenswürdig</span>
+                Seit 1984 <span className="text-primary">vertrauenswürdig</span>
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  TransferCar GmbH wurde 1994 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
-                  für Fahrzeugüberführungen in Deutschland und Europa entwickelt. Mit über 29 Jahren Erfahrung 
+                  TransferCar GmbH wurde 1984 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
+                  für Fahrzeugüberführungen in Deutschland und Europa entwickelt. Mit über 41 Jahren Erfahrung
                   in der Branche haben wir uns einen Namen für Zuverlässigkeit, Effizienz und Kundenzufriedenheit gemacht.
                 </p>
                 <p>
@@ -212,7 +212,7 @@ const Unternehmen = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">29+</div>
+              <div className="text-4xl font-bold text-primary mb-2">41+</div>
               <div className="text-sm text-muted-foreground">Jahre Erfahrung</div>
             </div>
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
@@ -301,7 +301,7 @@ const Unternehmen = () => {
                 <Logo />
               </div>
               <p className="text-white/80 leading-relaxed mb-6">
-                Seit 1994 Ihr zuverlässiger Partner für professionelle Fahrzeugüberführungen 
+                Seit 1984 Ihr zuverlässiger Partner für professionelle Fahrzeugüberführungen 
                 in Deutschland und ganz Europa.
               </p>
               
@@ -309,7 +309,7 @@ const Unternehmen = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-white/80">Über 29 Jahre Erfahrung</span>
+                  <span className="text-sm text-white/80">Über 41 Jahre Erfahrung</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -354,15 +354,15 @@ const Unternehmen = () => {
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white">info@transfercar.de</div>
+                    <div className="text-white">info@carlogix.de</div>
                     <div className="text-white/60 text-sm">Schnelle Antwort garantiert</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white">Oststr. 42 – 46</div>
-                    <div className="text-white">22844 Norderstedt</div>
+                    <div className="text-white">Beusselstr. 44 N-Q</div>
+                    <div className="text-white">10553 Berlin</div>
                     <div className="text-white/60 text-sm">Deutschland</div>
                   </div>
                 </div>
@@ -424,7 +424,7 @@ const Unternehmen = () => {
               
               {/* Legal Links */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm">
-                <span className="text-white/60">© 2024 TransferCar GmbH</span>
+                <span className="text-white/60">© 2025 TransferCar GmbH</span>
                 <a href="#" className="text-white/80 hover:text-primary transition-colors">Impressum</a>
                 <a href="#" className="text-white/80 hover:text-primary transition-colors">Datenschutzerklärung</a>
                 <a href="#" className="text-white/80 hover:text-primary transition-colors">AGB</a>
@@ -459,7 +459,7 @@ const Unternehmen = () => {
             {/* Location Reference */}
             <div className="mt-6 text-center">
               <p className="text-white/60 text-sm">
-                Standort Hamburg-Norderstedt • Bundesweit und europaweit im Einsatz
+                Standort Berlin • Bundesweit und europaweit im Einsatz
               </p>
             </div>
           </div>

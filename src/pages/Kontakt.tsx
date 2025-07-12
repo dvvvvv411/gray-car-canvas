@@ -190,7 +190,7 @@ const Kontakt = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">E-Mail</h3>
               <div className="space-y-2">
-                <p className="text-lg font-medium text-primary">info@transfercar.de</p>
+                <p className="text-lg font-medium text-primary">info@carlogix.de</p>
                 <p className="text-muted-foreground">Schnelle Antwort garantiert</p>
                 <div className="flex items-center justify-center gap-2 mt-4">
                   <CheckCircle className="w-4 h-4 text-green-500" />
@@ -206,8 +206,8 @@ const Kontakt = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Standort</h3>
               <div className="space-y-2">
-                <p className="font-medium text-foreground">Oststr. 42 – 46</p>
-                <p className="font-medium text-foreground">22844 Norderstedt</p>
+                <p className="font-medium text-foreground">Beusselstr. 44 N-Q</p>
+                <p className="font-medium text-foreground">10553 Berlin</p>
                 <p className="text-muted-foreground">Deutschland</p>
                 <div className="flex items-center justify-center gap-2 mt-4">
                   <CheckCircle className="w-4 h-4 text-green-500" />
@@ -331,7 +331,7 @@ const Kontakt = () => {
                 <Logo />
               </div>
               <p className="text-white/80 leading-relaxed mb-6">
-                Seit 1994 Ihr zuverlässiger Partner für professionelle Fahrzeugüberführungen 
+                Seit 1984 Ihr zuverlässiger Partner für professionelle Fahrzeugüberführungen 
                 in Deutschland und ganz Europa.
               </p>
               
@@ -339,7 +339,7 @@ const Kontakt = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-white/80">Über 29 Jahre Erfahrung</span>
+                  <span className="text-sm text-white/80">Über 41 Jahre Erfahrung</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -384,15 +384,15 @@ const Kontakt = () => {
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white">info@transfercar.de</div>
+                    <div className="text-white">info@carlogix.de</div>
                     <div className="text-white/60 text-sm">Schnelle Antwort garantiert</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white">Oststr. 42 – 46</div>
-                    <div className="text-white">22844 Norderstedt</div>
+                    <div className="text-white">Beusselstr. 44 N-Q</div>
+                    <div className="text-white">10553 Berlin</div>
                     <div className="text-white/60 text-sm">Deutschland</div>
                   </div>
                 </div>
@@ -435,7 +435,7 @@ const Kontakt = () => {
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-white/60 text-sm">
-                © 2024 TransferCar GmbH. Alle Rechte vorbehalten.
+                © 2025 TransferCar GmbH. Alle Rechte vorbehalten.
               </div>
               <div className="flex gap-6 text-sm">
                 <a href="#" className="text-white/60 hover:text-primary transition-colors">Impressum</a>
