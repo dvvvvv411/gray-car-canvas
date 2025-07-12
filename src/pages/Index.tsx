@@ -6,9 +6,11 @@ import { ContactForm } from "@/components/ContactForm";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
-import pkwService from "@/assets/pkw-service.png";
-import lkwService from "@/assets/lkw-service.png";
-import expressService from "@/assets/express-service.png";
+// Force reload by importing with timestamp
+const timestamp = Date.now();
+const pkwService = `/src/assets/pkw-service.png?t=${timestamp}`;
+const lkwService = `/src/assets/lkw-service.png?t=${timestamp}`;
+const expressService = `/src/assets/express-service.png?t=${timestamp}`;
 import serviceImage from "@/assets/car-transfer-service.jpg";
 
 const Index = () => {
