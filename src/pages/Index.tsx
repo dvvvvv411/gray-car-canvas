@@ -334,6 +334,109 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partner Logos Section */}
+      <section className="relative py-20 px-4 bg-gradient-to-br from-muted/50 to-muted overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-40 h-40 bg-primary/3 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border mb-4">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span className="text-muted-foreground font-medium text-sm">VERTRAUENSVOLLE PARTNERSCHAFTEN</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-foreground">UNSERE</span>{" "}
+              <span className="text-primary">PARTNER</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Starke Kooperationen für optimale Lösungen in der Fahrzeuglogistik
+            </p>
+          </div>
+
+          {/* Partners Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            {/* Partner Logo 1 */}
+            <div className="group relative bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=120&fit=crop&crop=center"
+                alt="Technology Partner"
+                className="w-full h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            {/* Partner Logo 2 */}
+            <div className="group relative bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=120&fit=crop&crop=center"
+                alt="Innovation Partner"
+                className="w-full h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            {/* Partner Logo 3 */}
+            <div className="group relative bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=120&fit=crop&crop=center"
+                alt="Software Partner"
+                className="w-full h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            {/* Partner Logo 4 */}
+            <div className="group relative bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=200&h=120&fit=crop&crop=center"
+                alt="Digital Partner"
+                className="w-full h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            {/* Partner Logo 5 */}
+            <div className="group relative bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=200&h=120&fit=crop&crop=center"
+                alt="Development Partner"
+                className="w-full h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            {/* Partner Logo 6 */}
+            <div className="group relative bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=200&h=120&fit=crop&crop=center"
+                alt="Business Partner"
+                className="w-full h-16 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Partnership Benefits */}
+          <div className="mt-16 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="inline-flex flex-wrap items-center justify-center gap-8 bg-background/60 backdrop-blur-sm border border-border rounded-2xl p-8">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                <span className="text-muted-foreground font-medium">Qualitätspartner seit Jahren</span>
+              </div>
+              <div className="hidden md:block w-px h-6 bg-border"></div>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-primary rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <span className="text-muted-foreground font-medium">Gemeinsame Innovationen</span>
+              </div>
+              <div className="hidden md:block w-px h-6 bg-border"></div>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-primary rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+                <span className="text-muted-foreground font-medium">Erweiterte Services</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Comprehensive Footer */}
       <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white border-t border-white/10">
         <div className="container mx-auto px-4 py-16">
