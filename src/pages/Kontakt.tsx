@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle } from "lucide-react";
 import { KontaktForm } from "@/components/KontaktForm";
+import Logo from "@/components/Logo";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -13,7 +14,7 @@ const Kontakt = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
+              <Logo />
             </div>
             
             {/* Navigation */}
