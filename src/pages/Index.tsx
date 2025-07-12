@@ -5,7 +5,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 
 // Import images
-import heroBackground from "@/assets/hero-background.jpg";
+import newHeroBg from "@/assets/new-hero-bg.jpg";
 import pkwService from "@/assets/pkw-service.png";
 import lkwService from "@/assets/lkw-service.png";
 import expressService from "@/assets/express-service.png";
@@ -52,53 +52,34 @@ const Index = () => {
         </div>
       </header>
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        {/* Left Side - White Background */}
-        <div className="w-1/2 h-full bg-white relative z-10 flex items-center justify-end py-20 pr-16 pl-8">
-          <div className="max-w-lg">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground mb-6">
-              <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR</em>
-              <br />
-              <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
-              <br />
-              <span className="text-base md:text-lg lg:text-xl font-normal text-muted-foreground mt-4 block">
-                IN DEUTSCHLAND UND EUROPA
-              </span>
-            </h1>
-            <div className="mt-8">
-              <Button 
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold"
-              >
-                Jetzt anfragen
-              </Button>
-            </div>
+      <section 
+        className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${newHeroBg})`
+        }}
+      >
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        {/* Content */}
+        <div className="relative z-10 text-center px-8 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
+            <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR</em>
+            <br />
+            <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
+            <br />
+            <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block">
+              IN DEUTSCHLAND UND EUROPA
+            </span>
+          </h1>
+          <div className="mt-8">
+            <Button 
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold"
+            >
+              Jetzt anfragen
+            </Button>
           </div>
-        </div>
-
-        {/* Professional Diagonal Transition */}
-        <div className="absolute left-1/2 top-0 w-20 h-full z-20 pointer-events-none">
-          <div 
-            className="absolute -left-10 top-0 w-full h-full"
-            style={{
-              background: 'linear-gradient(120deg, hsl(var(--background)) 0%, hsl(var(--background)) 45%, transparent 50%)',
-              clipPath: 'polygon(0 0, 60% 0, 100% 100%, 0 100%)'
-            }}
-          />
-        </div>
-
-        {/* Right Side - Background Image */}
-        <div 
-          className="absolute right-0 top-0 w-1/2 h-full"
-          style={{
-            backgroundImage: `url(${heroBackground})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          {/* Subtle Dark Overlay for better contrast */}
-          <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </section>
 

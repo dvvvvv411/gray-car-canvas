@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 211 100% 27%;
+    --primary: 20 100% 50%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 32 95% 55%;
@@ -34,12 +34,12 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 211 100% 27%;
+    --ring: 20 100% 50%;
 
     /* Custom gradients for transport theme */
-    --gradient-hero: linear-gradient(135deg, hsl(211 100% 27%), hsl(32 95% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(20 100% 50%), hsl(32 95% 55%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
-    --shadow-card: 0 4px 20px -4px hsl(211 100% 27% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(20 100% 50% / 0.15);
 
     --radius: 0.5rem;
 
@@ -70,7 +70,7 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 211 100% 40%;
+    --primary: 20 100% 55%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 32 95% 45%;
