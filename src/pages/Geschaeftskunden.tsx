@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Building2, BarChart3, Clock, Shield, CheckCircle, Users, Zap, Target, TrendingUp, FileText, Bell, Award, Globe2, Headphones, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/Logo";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -12,9 +13,7 @@ const Geschaeftskunden = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
-            </div>
+            <Logo />
             
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">

@@ -103,7 +103,7 @@ const Logo = () => {
       <img 
         src={logoType === 'light' ? logoDark : logoLight}
         alt="CarLogix Logo"
-        className="h-8 w-auto transition-all duration-300 ease-in-out"
+        className="h-12 w-auto transition-all duration-300 ease-in-out"
         loading="eager"
         onError={(e) => {
           console.warn('Logo failed to load:', e.currentTarget.src);
