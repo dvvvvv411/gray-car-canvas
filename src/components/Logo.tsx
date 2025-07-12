@@ -36,8 +36,8 @@ const Logo = ({ className = "" }: LogoProps) => {
 
   return (
     <img 
-      src={useWhiteLogo ? "/lovable-uploads/a1638340-f7b5-4e2b-8800-e9928561dd9a.png" : "/lovable-uploads/bd9a4a58-5afa-479b-ac59-cf309a375c59.png"}
-      alt="CarDelivery Logo"
+      src={useWhiteLogo ? "/lovable-uploads/86dfbf7e-a265-49a1-aea4-a102e38ffe81.png" : "/lovable-uploads/b6fbf84f-f315-49f7-b766-346ab714f8be.png"}
+      alt="CarLogix Logo"
       className={`h-10 w-auto transition-opacity duration-300 ${className}`}
     />
   );
