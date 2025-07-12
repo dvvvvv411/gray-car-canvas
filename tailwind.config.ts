@@ -123,10 +123,10 @@ export default {
 				},
 				'specialist-glow': {
 					'0%, 100%': {
-						textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 15px hsl(20 100% 50% / 0.7)'
+						textShadow: '2px 2px 4px rgba(255,255,255,0.8), 0 0 15px hsl(20 100% 50% / 0.7)'
 					},
 					'50%': {
-						textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 25px hsl(20 100% 50% / 0.9), 0 0 35px hsl(20 100% 50% / 0.5)'
+						textShadow: '2px 2px 4px rgba(255,255,255,0.8), 0 0 25px hsl(20 100% 50% / 0.9), 0 0 35px hsl(20 100% 50% / 0.5)'
 					}
 				}
 			},
