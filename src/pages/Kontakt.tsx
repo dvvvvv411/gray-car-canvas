@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle } from "lucide-react";
 import { KontaktForm } from "@/components/KontaktForm";
+import Logo from "@/components/Logo";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -8,13 +9,11 @@ const Kontakt = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10">
+      <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10" data-logo-type="dark">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
-            </div>
+            <Logo />
             
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
@@ -51,6 +50,7 @@ const Kontakt = () => {
         style={{
           backgroundImage: `url(${heroBgNew})`
         }}
+        data-logo-type="dark"
       >
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
@@ -80,7 +80,7 @@ const Kontakt = () => {
       </section>
 
       {/* Contact Header Section */}
-      <section className="bg-background py-16 px-4">
+      <section className="bg-background py-16 px-4" data-logo-type="light">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
             WIR SIND FÜR SIE DA
@@ -94,7 +94,7 @@ const Kontakt = () => {
       </section>
 
       {/* Quick Contact Cards */}
-      <section className="bg-muted/30 py-16 px-4">
+      <section className="bg-muted/30 py-16 px-4" data-logo-type="light">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Telefon */}
@@ -150,7 +150,7 @@ const Kontakt = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="bg-background py-16 px-4">
+      <section className="bg-background py-16 px-4" data-logo-type="light">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
@@ -173,7 +173,7 @@ const Kontakt = () => {
       </section>
 
       {/* Business Hours & Additional Info */}
-      <section className="bg-muted/30 py-16 px-4">
+      <section className="bg-muted/30 py-16 px-4" data-logo-type="light">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Opening Hours */}
@@ -244,7 +244,7 @@ const Kontakt = () => {
       </section>
 
       {/* Footer */}
-      <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 px-4 overflow-hidden">
+      <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 px-4 overflow-hidden" data-logo-type="dark">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-glow-pulse"></div>

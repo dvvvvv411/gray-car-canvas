@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10">
+      <header className="border-b border-white/20 sticky top-0 z-50 backdrop-blur-sm bg-black/10" data-logo-type="dark">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -59,6 +59,7 @@ const Index = () => {
         style={{
           backgroundImage: `url(${heroBgNew})`
         }}
+        data-logo-type="dark"
       >
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
@@ -121,7 +122,7 @@ const Index = () => {
       </section>
 
       {/* Modern Services Carousel Section */}
-      <section className="relative py-16 px-4 bg-white overflow-hidden">
+      <section className="relative py-16 px-4 bg-white overflow-hidden" data-logo-type="light">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-1/4 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-glow-pulse"></div>
@@ -228,7 +229,7 @@ const Index = () => {
       </section>
 
       {/* Modern Service & Flexibility Section */}
-      <section className="relative py-24 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+      <section className="relative py-24 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden" data-logo-type="dark">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-glow-pulse"></div>
@@ -352,7 +353,7 @@ const Index = () => {
       </section>
 
       {/* Partner Logos Section */}
-      <section className="relative py-12 px-4 bg-white overflow-hidden">
+      <section className="relative py-12 px-4 bg-white overflow-hidden" data-logo-type="light">
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center mb-12 animate-fade-in-up">
@@ -374,7 +375,7 @@ const Index = () => {
       </section>
 
       {/* Comprehensive Footer */}
-      <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white border-t border-white/10">
+      <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white border-t border-white/10" data-logo-type="dark">
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
