@@ -109,36 +109,36 @@ export function PartnersCarousel() {
         </div>
       </div>
 
+      {/* Modern Navigation Arrows */}
       {maxIndex > 0 && (
         <>
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white shadow-lg border-gray-200 hover:bg-gray-50"
+          <button
             onClick={prevSlide}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-xl rounded-2xl flex items-center justify-center border border-white/30 hover:bg-white transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl group"
           >
-            <ChevronLeft className="h-4 w-4" />
-          </Button>
+            <ChevronLeft className="w-5 h-5 text-gray-700 group-hover:text-primary transition-colors duration-300" />
+          </button>
 
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white shadow-lg border-gray-200 hover:bg-gray-50"
+          <button
             onClick={nextSlide}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-xl rounded-2xl flex items-center justify-center border border-white/30 hover:bg-white transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl group"
           >
-            <ChevronRight className="h-4 w-4" />
-          </Button>
+            <ChevronRight className="w-5 h-5 text-gray-700 group-hover:text-primary transition-colors duration-300" />
+          </button>
         </>
       )}
 
-      <div className="flex justify-center mt-6 space-x-2">
+      {/* Modern Dot Indicators */}
+      <div className="flex justify-center space-x-3 mt-8">
         {Array.from({ length: maxIndex + 1 }).map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${
-              index === currentIndex ? 'bg-primary' : 'bg-gray-300'
-            }`}
             onClick={() => setCurrentIndex(index)}
+            className={`relative transition-all duration-300 ${
+              index === currentIndex
+                ? 'w-8 h-3 bg-gradient-to-r from-primary to-accent rounded-full'
+                : 'w-3 h-3 bg-gray-300 hover:bg-gray-400 rounded-full hover:scale-125'
+            }`}
           />
         ))}
       </div>
