@@ -6,20 +6,22 @@ import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
 const Karriere = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navigationItems = [
-    { href: "/", label: "STARTSEITE" },
-    { href: "/unternehmen", label: "UNTERNEHMEN" },
-    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
-    { href: "/karriere", label: "KARRIERE" },
-    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
-    { href: "/kontakt", label: "KONTAKT" }
+    { href: "/", label: t('nav.home') },
+    { href: "/unternehmen", label: t('nav.company') },
+    { href: "/dienstleistungen", label: t('nav.services') },
+    { href: "/karriere", label: t('nav.career') },
+    { href: "/geschaeftskunden", label: t('nav.business') },
+    { href: "/kontakt", label: t('nav.contact') }
   ];
 
   return (
@@ -143,7 +145,7 @@ const Karriere = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>KARRIERE BEI <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>CARLOGIX</span></em>
+              <em>{t('career.hero.title')} <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>{t('career.hero.highlight')}</span></em>
             </h1>
           </div>
         </div>
@@ -152,19 +154,17 @@ const Karriere = () => {
       {/* Main Intro Section */}
       <section className="bg-background py-16 px-4">
         <div className="container mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-8">
-            <UserPlus className="w-4 h-4 text-primary" />
-            <span className="text-primary font-medium text-sm">VERSTÄRKUNG GESUCHT</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            WERDE TEIL UNSERES <span className="text-primary">TEAMS</span>
-          </h2>
-          <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Bei CarLogix suchen wir kontinuierlich motivierte Menschen, die unser Team verstärken möchten. 
-            Ob als Fahrer auf der Straße oder im Büro – bei uns findest du spannende Karrieremöglichkeiten 
-            in einem dynamischen und wachsenden Unternehmen.
-          </p>
+            <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-8">
+              <UserPlus className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">{t('career.join.badge')}</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+              {t('career.join.title')} <span className="text-primary">{t('career.join.highlight')}</span>
+            </h2>
+            <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              {t('career.join.text')}
+            </p>
         </div>
       </section>
 
@@ -174,10 +174,10 @@ const Karriere = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <Briefcase className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">KARRIERECHANCEN</span>
+              <span className="text-primary font-medium text-sm">{t('career.opportunities.badge')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Vielfältige <span className="text-primary">Möglichkeiten</span>
+              {t('career.opportunities.title')} <span className="text-primary">{t('career.opportunities.highlight')}</span>
             </h3>
           </div>
           
@@ -187,10 +187,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Car className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Fahrerteam</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">{t('career.driver.title')}</h4>
               <p className="text-muted-foreground text-center leading-relaxed">
-                Professionelle Fahrer für PKW- und LKW-Überführungen. Mit verschiedenen Führerscheinklassen 
-                und flexiblen Arbeitszeiten europaweit unterwegs.
+                {t('career.driver.text')}
               </p>
               <div className="mt-6 flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Führerschein CE</span>
@@ -204,10 +203,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Administration</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">{t('career.administration.title')}</h4>
               <p className="text-muted-foreground text-center leading-relaxed">
-                Disposition, Kundenbetreuung, Buchhaltung und Management. Organisiere Touren, 
-                betreue Kunden und sorge für reibungslose Abläufe.
+                {t('career.administration.text')}
               </p>
               <div className="mt-6 flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Disposition</span>
@@ -221,10 +219,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Technischer Bereich</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">{t('career.technical.title')}</h4>
               <p className="text-muted-foreground text-center leading-relaxed">
-                Fahrzeugkontrolle, Wartung und technische Prüfungen. Stelle sicher, 
-                dass alle Fahrzeuge sicher und ordnungsgemäß überführt werden.
+                {t('career.technical.text')}
               </p>
               <div className="mt-6 flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Kontrolle</span>
@@ -242,10 +239,10 @@ const Karriere = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <Heart className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">DEINE VORTEILE</span>
+              <span className="text-primary font-medium text-sm">{t('career.benefits.badge')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Warum <span className="text-primary">CarLogix?</span>
+              {t('career.benefits.title')} <span className="text-primary">{t('career.benefits.highlight')}</span>
             </h3>
           </div>
           
@@ -254,9 +251,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Wachstum</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('career.growth.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Seit 1984 kontinuierliches Wachstum und stabile Arbeitsplätze in einem zukunftssicheren Markt.
+                {t('career.growth.text')}
               </p>
             </div>
             
@@ -264,9 +261,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Teamgeist</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('career.team.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Familiäres Arbeitsklima mit über 250 Fahrern und einem engagierten Team im Büro.
+                {t('career.team.text')}
               </p>
             </div>
             
@@ -274,9 +271,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GraduationCap className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Weiterbildung</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('career.education.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Regelmäßige Schulungen und Fortbildungen für alle Bereiche und Führerscheinklassen.
+                {t('career.education.text')}
               </p>
             </div>
             
@@ -284,9 +281,9 @@ const Karriere = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Flexibilität</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('career.flexibility.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Flexible Arbeitszeiten und die Möglichkeit, europaweit interessante Orte kennenzulernen.
+                {t('career.flexibility.text')}
               </p>
             </div>
           </div>
@@ -300,40 +297,36 @@ const Karriere = () => {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-primary font-medium text-sm">BEWERBUNG</span>
+                <span className="text-primary font-medium text-sm">{t('career.application.badge')}</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                Starte deine <span className="text-primary">Karriere</span> bei uns
+                {t('career.application.title')} <span className="text-primary">{t('career.application.highlight')}</span> {t('career.application.subtitle')}
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Du möchtest Teil unseres erfolgreichen Teams werden? Dann freuen wir uns auf deine Bewerbung! 
-                  Egal ob als erfahrener Profi oder Quereinsteiger – wir bieten dir die Chance, 
-                  in einem dynamischen Umfeld zu wachsen.
+                  {t('career.application.text1')}
                 </p>
                 <p>
-                  Sende uns einfach eine kurze Nachricht über das Kontaktformular und erzähle uns, 
-                  für welchen Bereich du dich interessierst. Wir melden uns zeitnah bei dir zurück 
-                  und besprechen die weiteren Schritte.
+                  {t('career.application.text2')}
                 </p>
                 <div className="bg-background p-6 rounded-lg border border-border">
-                  <h4 className="font-semibold text-foreground mb-3">Was wir bieten:</h4>
+                  <h4 className="font-semibold text-foreground mb-3">{t('career.offer.title')}</h4>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Sichere Arbeitsplätze in einem wachsenden Unternehmen</span>
+                      <span>{t('career.offer.1')}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Faire Bezahlung und attraktive Sozialleistungen</span>
+                      <span>{t('career.offer.2')}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Moderne Arbeitsplätze und professionelle Ausstattung</span>
+                      <span>{t('career.offer.3')}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                      <span>Kollegiales Arbeitsklima und flache Hierarchien</span>
+                      <span>{t('career.offer.4')}</span>
                     </li>
                   </ul>
                 </div>
@@ -341,7 +334,7 @@ const Karriere = () => {
             </div>
             
             <div className="bg-background p-8 rounded-2xl shadow-xl border border-border">
-              <h4 className="text-2xl font-bold text-foreground mb-6 text-center">Kontakt aufnehmen</h4>
+              <h4 className="text-2xl font-bold text-foreground mb-6 text-center">{t('career.contact.title')}</h4>
               <ContactForm />
             </div>
           </div>

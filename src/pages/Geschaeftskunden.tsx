@@ -5,20 +5,22 @@ import { Phone, Mail, MapPin, Building2, BarChart3, Clock, Shield, CheckCircle, 
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/Logo";
 import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
 const Geschaeftskunden = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navigationItems = [
-    { href: "/", label: "STARTSEITE" },
-    { href: "/unternehmen", label: "UNTERNEHMEN" },
-    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
-    { href: "/karriere", label: "KARRIERE" },
-    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
-    { href: "/kontakt", label: "KONTAKT" }
+    { href: "/", label: t('nav.home') },
+    { href: "/unternehmen", label: t('nav.company') },
+    { href: "/dienstleistungen", label: t('nav.services') },
+    { href: "/karriere", label: t('nav.career') },
+    { href: "/geschaeftskunden", label: t('nav.business') },
+    { href: "/kontakt", label: t('nav.contact') }
   ];
 
   return (
@@ -142,7 +144,7 @@ const Geschaeftskunden = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>BUSINESS <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>LÖSUNGEN</span></em>
+              <em>{t('business.hero.title')} <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>{t('business.hero.highlight')}</span></em>
             </h1>
           </div>
         </div>
@@ -153,16 +155,14 @@ const Geschaeftskunden = () => {
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-8">
             <Building2 className="w-4 h-4 text-primary" />
-            <span className="text-primary font-medium text-sm">FÜR UNTERNEHMEN</span>
+            <span className="text-primary font-medium text-sm">{t('business.main.badge')}</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            PROFESSIONELLE <span className="text-primary">GESCHÄFTSLÖSUNGEN</span>
+            {t('business.main.title')} <span className="text-primary">{t('business.main.highlight')}</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Als B2B-Partner bieten wir Ihnen maßgeschneiderte Lösungen für alle Ihre Fahrzeugüberführungen. 
-            Von Einzelaufträgen bis hin zu umfassenden Fuhrpark-Services – wir optimieren Ihre Logistikprozesse 
-            und sorgen für höchste Effizienz in Ihrem Unternehmen.
+            {t('business.main.text')}
           </p>
         </div>
       </section>
@@ -173,10 +173,10 @@ const Geschaeftskunden = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <BarChart3 className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">IHRE VORTEILE</span>
+              <span className="text-primary font-medium text-sm">{t('business.advantages.badge')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Modernste <span className="text-primary">Business-Features</span>
+              {t('business.advantages.title')} <span className="text-primary">{t('business.advantages.highlight')}</span>
             </h3>
           </div>
           
@@ -184,16 +184,14 @@ const Geschaeftskunden = () => {
             {/* Automatische Status Updates - Featured Card */}
             <div className="relative bg-gradient-to-br from-primary to-primary/80 p-8 rounded-2xl shadow-xl border border-primary/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 lg:col-span-2">
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
-                <span className="text-white text-xs font-semibold">PREMIUM</span>
+                <span className="text-white text-xs font-semibold">{t('business.liveUpdates.badge')}</span>
               </div>
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                 <Bell className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-2xl font-bold text-white mb-4">Live Status-Updates</h4>
+              <h4 className="text-2xl font-bold text-white mb-4">{t('business.liveUpdates.title')}</h4>
               <p className="text-white/90 leading-relaxed mb-6">
-                Erhalten Sie automatische Benachrichtigungen über den aktuellen Status Ihrer Überführungen 
-                in Echtzeit via E-Mail, SMS oder über unser Business-Portal. Mit GPS-Tracking und 
-                voraussichtlichen Ankunftszeiten.
+                {t('business.liveUpdates.text')}
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full backdrop-blur-sm">Real-time</span>
@@ -207,10 +205,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-white mb-4 text-center">Detaillierte Berichte</h4>
+              <h4 className="text-xl font-semibold text-white mb-4 text-center">{t('business.reports.title')}</h4>
               <p className="text-gray-300 text-center leading-relaxed mb-4">
-                Umfassende Analysen und Reports über Ihre Transportkosten, Zeiten und Effizienz. 
-                Exportierbar in verschiedene Formate für Ihre Buchhaltung.
+                {t('business.reports.text')}
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">Analytics</span>
@@ -223,10 +220,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                 <Headphones className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Persönlicher Ansprechpartner</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">{t('business.manager.title')}</h4>
               <p className="text-muted-foreground text-center leading-relaxed mb-4">
-                Ihr dedizierter Account Manager kennt Ihre Anforderungen und steht Ihnen jederzeit 
-                mit Rat und Tat zur Seite – persönlich und kompetent.
+                {t('business.manager.text')}
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Persönlich</span>
@@ -239,10 +235,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Settings className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">System-Integration</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">{t('business.integration.title')}</h4>
               <p className="text-muted-foreground text-center leading-relaxed mb-4">
-                Nahtlose Integration in Ihre bestehenden ERP- und CRM-Systeme über moderne 
-                REST-APIs für vollautomatisierte Prozesse.
+                {t('business.integration.text')}
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-sm rounded-full">API</span>
@@ -255,10 +250,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Target className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">Flexible Konditionen</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-4 text-center">{t('business.conditions.title')}</h4>
               <p className="text-muted-foreground text-center leading-relaxed mb-4">
-                Individuelle Preismodelle nach Volumen, Rahmenverträge und Sonderkonditionen 
-                für regelmäßige Aufträge. Transparent und planbar.
+                {t('business.conditions.text')}
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Individuell</span>
@@ -276,10 +270,10 @@ const Geschaeftskunden = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <Shield className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">SERVICE EXCELLENCE</span>
+              <span className="text-primary font-medium text-sm">{t('business.excellence.badge')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Professioneller <span className="text-primary">Enterprise Service</span>
+              {t('business.excellence.title')} <span className="text-primary">{t('business.excellence.highlight')}</span>
             </h3>
           </div>
           
@@ -288,10 +282,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Express-Service</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('business.express.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Eilaufträge werden priorisiert behandelt und binnen 24 Stunden abgewickelt. 
-                Für zeitkritische Geschäftsprozesse.
+                {t('business.express.text')}
               </p>
             </div>
             
@@ -299,10 +292,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe2 className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Europaweites Netzwerk</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('business.network.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Grenzüberschreitende Logistik mit lokalen Partnern in allen EU-Ländern. 
-                Alle Zollformalitäten inklusive.
+                {t('business.network.text')}
               </p>
             </div>
             
@@ -310,10 +302,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Qualitätssicherung</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('business.quality.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                ISO 9001 zertifizierte Prozesse, regelmäßige Audits und kontinuierliche 
-                Qualitätsverbesserung nach Six Sigma.
+                {t('business.quality.text')}
               </p>
             </div>
             
@@ -321,10 +312,9 @@ const Geschaeftskunden = () => {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground mb-3">Skalierbare Kapazitäten</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-3">{t('business.capacity.title')}</h4>
               <p className="text-muted-foreground text-sm">
-                Flexible Ressourcen für Spitzenzeiten, Großprojekte und saisonale 
-                Schwankungen. Immer ausreichend Kapazität.
+                {t('business.capacity.text')}
               </p>
             </div>
           </div>
@@ -336,23 +326,22 @@ const Geschaeftskunden = () => {
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-8">
             <TrendingUp className="w-4 h-4 text-primary" />
-            <span className="text-primary font-medium text-sm">JETZT STARTEN</span>
+            <span className="text-primary font-medium text-sm">{t('business.cta.badge')}</span>
           </div>
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Bereit für die <span className="text-primary">nächste Stufe?</span>
+            {t('business.cta.title')} <span className="text-primary">{t('business.cta.highlight')}</span>
           </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-            Optimieren Sie Ihre Fahrzeuglogistik mit unserem professionellen Business-Service. 
-            Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und maßgeschneidertes Angebot.
+            {t('business.cta.text')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3">
               <Phone className="w-5 h-5 mr-2" />
-              Jetzt anrufen: 040 5131580
+              {t('business.cta.button')}
             </Button>
             <Button variant="outline" size="lg" className="px-8 py-3">
               <Mail className="w-5 h-5 mr-2" />
-              E-Mail senden
+              {t('business.contact.title')}
             </Button>
           </div>
         </div>

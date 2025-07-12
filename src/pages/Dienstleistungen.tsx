@@ -6,20 +6,22 @@ import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
 const Dienstleistungen = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navigationItems = [
-    { href: "/", label: "STARTSEITE" },
-    { href: "/unternehmen", label: "UNTERNEHMEN" },
-    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
-    { href: "/karriere", label: "KARRIERE" },
-    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
-    { href: "/kontakt", label: "KONTAKT" }
+    { href: "/", label: t('nav.home') },
+    { href: "/unternehmen", label: t('nav.company') },
+    { href: "/dienstleistungen", label: t('nav.services') },
+    { href: "/karriere", label: t('nav.career') },
+    { href: "/geschaeftskunden", label: t('nav.business') },
+    { href: "/kontakt", label: t('nav.contact') }
   ];
 
   return (
@@ -143,7 +145,7 @@ const Dienstleistungen = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>UNSERE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>DIENSTLEISTUNGEN</span></em>
+              <em>{t('services.hero.title')}</em>
             </h1>
           </div>
         </div>
@@ -158,14 +160,11 @@ const Dienstleistungen = () => {
               <span className="text-primary font-medium text-sm">UNSER SERVICE</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              UNSERE DIENSTLEISTUNGEN
+              {t('services.main.title')}
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                Der Motor unserer Dienstleistungen sind unsere Fahrer. Ihnen vertrauen wir Ihre Fahrzeuge an – und Ihre wertvollen Kundenbeziehungen. Unser Ziel ist es, Ihren Kunden die Fahrzeuge vor Ort so zuvorkommend und gut instruiert zu übergeben, als täten Sie es selbst.
-              </p>
-              <p>
-                Dabei stützen wir uns auf einen sorgfältig ausgewählten Fahrerpool von rund 250 Fahrern. Technisches Know-how, Verlässlichkeit und Verantwortungsgefühl, angenehmes Auftreten und Freude am Kundenkontakt – das sind die Eigenschaften, die wir von unseren Fahrern erwarten.
+                {t('services.main.text')}
               </p>
             </div>
           </div>
@@ -182,17 +181,11 @@ const Dienstleistungen = () => {
                 <span className="text-primary font-medium text-sm">PKW SERVICE</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                PKW-ÜBERFÜHRUNG
+                {t('services.pkw.title')}
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Als professioneller Anbieter für Fahrzeugüberführungen per Achse bieten wir Ihnen an, Ihre Fahraufträge schnell, kompetent und zuverlässig zu übernehmen. Logistische Herausforderungen spornen uns an, eine individuelle Anpassung an unsere Kunden und hohe Flexibilität zeichnen uns aus!
-                </p>
-                <p>
-                  Wir sind immer für Sie erreichbar! Ihr persönlicher Kundenbetreuer ist werktags von 08:00 bis 17:00 Uhr für Sie da. Außerhalb dieser Zeiten erreichen Sie über seine Durchwahl unseren Notdienst, der sich ebenso lösungsorientiert für Sie einsetzt. Natürlich erreichen Sie uns auch per Email oder über das Kontaktformular.
-                </p>
-                <p>
-                  Unsere Leistungen umfassen die Auslieferung von Fahrzeugen an Geschäftskunden, die Überführung an einen anderen Firmenstandort, einen Fahrzeugtausch bei Leasingfahrzeugen, Ihr Fuhrpark-Management sowie die Platzlogistik.
+                  {t('services.pkw.text')}
                 </p>
               </div>
             </div>
@@ -224,17 +217,11 @@ const Dienstleistungen = () => {
                 <span className="text-primary font-medium text-sm">LKW SERVICE</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                LKW-ÜBERFÜHRUNG
+                {t('services.lkw.title')}
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Alle Fahrer sind im Besitz der Fahrerlaubnis C1E (LKW mit Anhänger und Gesamtgewicht von bis zu 12t). Ein Großteil der Fahrer darf LKWs ohne Begrenzung des Gesamtgewichtes (Fahrerlaubnis CE) fahren. Darüber hinaus verfügen die meisten unserer Fahrer über Fahrerkarten für die digitalen EG-Kontrollgeräte.
-                </p>
-                <p>
-                  Unsere Leistungen umfassen zuverlässige europaweite LKW-Überführung auf eigener Achse, die Auslieferung von LKWs ab Werk, die Überführung an einen anderen Firmenstandort und die Überführung von LKWs mit Überführungskennzeichen.
-                </p>
-                <p>
-                  Wir sind immer für Sie erreichbar! Ihr persönlicher Kundenbetreuer ist werktags von 08:00 bis 17:00 Uhr für Sie da. Außerhalb dieser Zeiten erreichen Sie über seine Durchwahl unseren Notdienst, der sich ebenso lösungsorientiert für Sie einsetzt. Natürlich erreichen Sie uns auch per Email oder über das Kontaktformular.
+                  {t('services.lkw.text')}
                 </p>
               </div>
             </div>
@@ -252,23 +239,11 @@ const Dienstleistungen = () => {
                 <span className="text-primary font-medium text-sm">EXPRESS SERVICE</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                EXPRESS-SERVICE & EXTRAS
+                {t('services.express.title')}
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Die Auftragserfüllung erfolgt nach Zeitvorgabe unserer Kunden. Expressaufträge werden, je nach Kapazität, umgehend ausgeführt. Auf Wunsch fahren wir sofort oder auch über Nacht.
-                </p>
-                <p>
-                  Ob Einzelauftrag oder regelmäßiges Auftragsvolumen, wir richten uns individuell auf Ihre Wünsche ein.
-                </p>
-                <p>
-                  Außerdem bieten wir einen Hol- und Bringservice von Fahrzeugen und andere Extras wie bspw. Fahrzeugreinigung und Betankung an.
-                </p>
-                <p>
-                  Ist Ihr Auftrag erfasst, sorgen unsere innovativen Mobilitätslösungen für die termingerechte, professionelle Umsetzung. Hierfür haben wir eine eigene Software entwickelt.
-                </p>
-                <p>
-                  Durch die Zusammenarbeit mit unserem Partnerunternehmen sind wir auch zu Spitzenzeiten in der Lage, Ihre Anfrage problemlos abwickeln zu können.
+                  {t('services.express.text')}
                 </p>
               </div>
             </div>
@@ -300,17 +275,11 @@ const Dienstleistungen = () => {
                 <span className="text-primary font-medium text-sm">FREMDACHSE</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                Fahrzeugüberführung auf Fremdachse
+                {t('services.foreignAxis.title')}
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Für spezielle Transportanforderungen bieten wir auch die Überführung von Fahrzeugen auf Fremdachse an. Diese besondere Dienstleistung ermöglicht es uns, auch Fahrzeuge zu transportieren, die nicht eigenständig gefahren werden können oder sollen.
-                </p>
-                <p>
-                  Unsere erfahrenen Fahrer sind speziell für diese Art des Transports geschult und verfügen über die erforderlichen Lizenzen und Qualifikationen. Mit modernster Ausrüstung und höchsten Sicherheitsstandards gewährleisten wir einen schonenden und zuverlässigen Transport.
-                </p>
-                <p>
-                  Ob Luxusfahrzeuge, Oldtimer, Unfallfahrzeuge oder Fahrzeuge ohne gültige Zulassung – wir finden die passende Lösung für Ihren Transportbedarf.
+                  {t('services.foreignAxis.text')}
                 </p>
               </div>
             </div>
