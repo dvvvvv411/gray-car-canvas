@@ -214,24 +214,6 @@ const Unternehmen = () => {
       </section>
 
 
-      {/* Contact Form Section */}
-      <section className="bg-muted/30 py-16 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Kontaktieren Sie uns
-            </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Haben Sie Fragen zu unseren Services oder möchten Sie ein individuelles Angebot erhalten? 
-              Wir sind gerne für Sie da.
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 px-4 overflow-hidden">
