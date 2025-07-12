@@ -1,4 +1,6 @@
-import { Phone, Mail, MapPin, Building2, BarChart3, Clock, Shield, CheckCircle, Users, Zap, Target, TrendingUp, FileText, Bell, Award, Globe2, Headphones, Settings } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Phone, Mail, MapPin, Building2, BarChart3, Clock, Shield, CheckCircle, Users, Zap, Target, TrendingUp, FileText, Bell, Award, Globe2, Headphones, Settings, X, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/Logo";
 

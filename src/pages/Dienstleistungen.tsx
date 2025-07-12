@@ -1,4 +1,6 @@
-import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target, X, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import Logo from "@/components/Logo";

@@ -1,4 +1,6 @@
-import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Phone, Mail, MapPin, MessageSquare, Clock, HeadphonesIcon, Globe2, CheckCircle, X, Menu } from "lucide-react";
 import { KontaktForm } from "@/components/KontaktForm";
 import Logo from "@/components/Logo";
 
