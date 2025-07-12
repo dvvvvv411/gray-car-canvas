@@ -461,17 +461,17 @@ const Index = () => {
                 <div className="mb-4">
                   <Logo />
                 </div>
-                <p className="text-white/80 leading-relaxed">
-                  Ihr vertrauensvoller Partner für Fahrzeugüberführungen seit 1994. 
-                  Professionell, zuverlässig und europaweit für Sie im Einsatz.
-                </p>
+                 <p className="text-white/80 leading-relaxed">
+                   Ihr vertrauensvoller Partner für Fahrzeugüberführungen seit 1984. 
+                   Professionell, zuverlässig und europaweit für Sie im Einsatz.
+                 </p>
               </div>
               
               {/* Trust Indicators */}
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-white/80">Seit 29 Jahren im Geschäft</span>
+                  <span className="text-sm text-white/80">Seit 41 Jahren im Geschäft</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
