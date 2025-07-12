@@ -8,6 +8,8 @@ import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
 import { PartnersCarousel } from "@/components/PartnersCarousel";
 import Logo from "@/components/Logo";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -21,18 +23,19 @@ const transferService = "/lovable-uploads/7b4b99bf-4817-4336-8a94-b32ba65768eb.p
 
 const Index = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const navigationItems = [
-    { href: "/", label: "STARTSEITE" },
-    { href: "/unternehmen", label: "UNTERNEHMEN" },
-    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
-    { href: "/karriere", label: "KARRIERE" },
-    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
-    { href: "/kontakt", label: "KONTAKT" }
+    { href: "/", label: t('nav.home') },
+    { href: "/unternehmen", label: t('nav.company') },
+    { href: "/dienstleistungen", label: t('nav.services') },
+    { href: "/karriere", label: t('nav.career') },
+    { href: "/geschaeftskunden", label: t('nav.business') },
+    { href: "/kontakt", label: t('nav.contact') }
   ];
   return (
     <div className="min-h-screen bg-background">
@@ -63,8 +66,9 @@ const Index = () => {
               ))}
             </nav>
             
-            {/* Desktop Phone Number */}
-            <div className="hidden lg:flex items-center">
+            {/* Desktop Phone Number & Language Selector */}
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
                 040 5131580
@@ -114,8 +118,11 @@ const Index = () => {
                     ))}
                   </nav>
                   
-                  {/* Phone Number */}
-                  <div className="pt-4 border-t border-white/10">
+                  {/* Language Selector & Phone Number */}
+                  <div className="pt-4 border-t border-white/10 space-y-4">
+                    <div className="flex justify-center">
+                      <LanguageSelector />
+                    </div>
                     <a 
                       href="tel:+49405131580"
                       className="flex items-center justify-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-semibold text-lg"
@@ -156,12 +163,12 @@ const Index = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>IHRE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>WAHL</span> FÜR</em>
+              <em>{t('hero.title1')} <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>{t('hero.title2')}</span> {t('hero.title3')}</em>
               <br />
-              <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
+              <em>{t('hero.title4')}</em>
               <br />
               <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)' }}>
-                IN DEUTSCHLAND UND EUROPA
+                {t('hero.subtitle')}
               </span>
             </h1>
             <div className="mt-8 animate-scale-in" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
@@ -169,19 +176,19 @@ const Index = () => {
               <div className="flex flex-wrap items-center justify-center gap-6 mb-6 text-white/80">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse"></div>
-                  <span className="text-sm font-medium">Seit 1984 vertrauenswürdig</span>
+                  <span className="text-sm font-medium">{t('hero.trust1')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
-                  <span className="text-sm font-medium">24/7 Service</span>
+                  <span className="text-sm font-medium">{t('hero.trust2')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
-                  <span className="text-sm font-medium">Vollversichert</span>
+                  <span className="text-sm font-medium">{t('hero.trust3')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
-                  <span className="text-sm font-medium">Transfer auf Fremdachse</span>
+                  <span className="text-sm font-medium">{t('hero.trust4')}</span>
                 </div>
               </div>
               
@@ -190,10 +197,10 @@ const Index = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-glow-orange hover:shadow-glow-orange transition-all duration-300 transform hover:scale-105"
                 asChild
               >
-                <Link to="/kontakt">Jetzt anfragen</Link>
+                <Link to="/kontakt">{t('hero.cta')}</Link>
               </Button>
               
-              <p className="text-white/60 text-sm mt-4">Kostenlose Beratung • Schnelle Antwort • Faire Preise</p>
+              <p className="text-white/60 text-sm mt-4">{t('hero.benefits')}</p>
             </div>
           </div>
         </div>
@@ -213,14 +220,14 @@ const Index = () => {
           <div className="text-center mb-12 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <Zap className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">UNSERE EXPERTISE</span>
+              <span className="text-primary font-medium text-sm">{t('services.badge')}</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-foreground">MODERNSTE</span>{" "}
-              <span className="text-primary">FAHRZEUG-SERVICES</span>
+              <span className="text-foreground">{t('services.title1')}</span>{" "}
+              <span className="text-primary">{t('services.title2')}</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Digitale Prozesse, echte Expertise – Ihre Fahrzeuge in den besten Händen
+              {t('services.subtitle')}
             </p>
           </div>
           
@@ -230,58 +237,58 @@ const Index = () => {
               services={[
                 {
                   id: 1,
-                  title: "PKW-ÜBERFÜHRUNG",
-                  description: "Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert.",
+                  title: t('service.pkw.title'),
+                  description: t('service.pkw.description'),
                   image: pkwService,
-                  buttonText: "Mehr erfahren",
+                  buttonText: t('service.pkw.button'),
                   buttonLink: "/dienstleistungen",
                   icon: Car,
                   features: [
-                    "Live GPS-Tracking",
-                    "Digitale Übergabe-Protokolle", 
-                    "Flexible Terminplanung"
+                    t('service.pkw.feature1'),
+                    t('service.pkw.feature2'), 
+                    t('service.pkw.feature3')
                   ]
                 },
                 {
                   id: 2,
-                  title: "LKW-ÜBERFÜHRUNG",
-                  description: "Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf.",
+                  title: t('service.lkw.title'),
+                  description: t('service.lkw.description'),
                   image: lkwService,
-                  buttonText: "Jetzt anfragen",
+                  buttonText: t('service.lkw.button'),
                   buttonLink: "/kontakt",
                   icon: Truck,
                   features: [
-                    "Spezialisierte LKW-Fahrer",
-                    "Schwertransport-Expertise",
-                    "Europaweites Netzwerk"
+                    t('service.lkw.feature1'),
+                    t('service.lkw.feature2'),
+                    t('service.lkw.feature3')
                   ]
                 },
                 {
                   id: 3,
-                  title: "EXPRESS-LIEFERUNG",
-                  description: "Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten.",
+                  title: t('service.express.title'),
+                  description: t('service.express.description'),
                   image: expressService,
-                  buttonText: "Express buchen",
+                  buttonText: t('service.express.button'),
                   buttonLink: "/kontakt",
                   icon: Zap,
                   features: [
-                    "Sofort-Abholung möglich",
-                    "Priority-Behandlung",
-                    "Zeitgarantie inklusive"
+                    t('service.express.feature1'),
+                    t('service.express.feature2'),
+                    t('service.express.feature3')
                   ]
                 },
                 {
                   id: 4,
-                  title: "ÜBERFÜHRUNG AUF FREMDACHSE",
-                  description: "Professioneller Transport mit speziellen Transportern und Anhängern. Sichere Verladung und schonender Transport für Fahrzeuge aller Art.",
+                  title: t('service.transfer.title'),
+                  description: t('service.transfer.description'),
                   image: transferService,
-                  buttonText: "Service anfragen",
+                  buttonText: t('service.transfer.button'),
                   buttonLink: "/kontakt",
                   icon: ArrowLeftRight,
                   features: [
-                    "Spezial-Transporter verfügbar",
-                    "Sichere Fahrzeugverladung",
-                    "Schadensfreier Transport"
+                    t('service.transfer.feature1'),
+                    t('service.transfer.feature2'),
+                    t('service.transfer.feature3')
                   ]
                 }
               ]}
@@ -293,17 +300,17 @@ const Index = () => {
             <div className="inline-flex items-center gap-4 bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 text-foreground">
                 <Clock className="w-5 h-5" />
-                <span className="font-semibold">24/7 verfügbar</span>
+                <span className="font-semibold">{t('features.available')}</span>
               </div>
               <div className="w-px h-6 bg-border"></div>
               <div className="flex items-center gap-2 text-foreground">
                 <Shield className="w-5 h-5" />
-                <span className="font-semibold">Vollversichert</span>
+                <span className="font-semibold">{t('features.insured')}</span>
               </div>
               <div className="w-px h-6 bg-border"></div>
               <div className="flex items-center gap-2 text-foreground">
                 <Zap className="w-5 h-5" />
-                <span className="font-semibold">Express-Service</span>
+                <span className="font-semibold">{t('features.express')}</span>
               </div>
             </div>
           </div>
@@ -324,14 +331,14 @@ const Index = () => {
           <div className="text-center mb-16 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-4">
               <Zap className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">FAHRZEUGÜBERFÜHRUNGEN MIT</span>
+              <span className="text-primary font-medium text-sm">{t('company.badge')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-white">SERVICE &</span>{" "}
-              <span className="text-primary">FLEXIBILITÄT</span>
+              <span className="text-white">{t('company.title1')}</span>{" "}
+              <span className="text-primary">{t('company.title2')}</span>
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-              Seit 1984 setzen wir Maßstäbe in der Fahrzeuglogistik – mit Innovation und Leidenschaft
+              {t('company.subtitle')}
             </p>
           </div>
 
@@ -341,23 +348,21 @@ const Index = () => {
               {/* Company Description */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
                 <p className="text-lg text-white/90 leading-relaxed mb-6">
-                  <strong className="text-white">CarLogix</strong> – Ihr digitaler Vorreiter in der Fahrzeuglogistik. 
-                  Mit über <span className="text-primary font-semibold">41 Jahren Erfahrung</span> kombinieren wir bewährte Expertise 
-                  mit modernsten Technologien für maximale Effizienz.
+                  <strong className="text-white">CarLogix</strong> – {t('company.description')}
                 </p>
                 
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
                     <div className="text-2xl font-bold text-primary mb-1">24/7</div>
-                    <div className="text-xs text-white/70">Service</div>
+                    <div className="text-xs text-white/70">{t('company.stats.service')}</div>
                   </div>
                   <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
                     <div className="text-2xl font-bold text-primary mb-1">365</div>
-                    <div className="text-xs text-white/70">Tage/Jahr</div>
+                    <div className="text-xs text-white/70">{t('company.stats.days')}</div>
                   </div>
                   <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
                     <div className="text-2xl font-bold text-primary mb-1">EU</div>
-                    <div className="text-xs text-white/70">Weit</div>
+                    <div className="text-xs text-white/70">{t('company.stats.eu')}</div>
                   </div>
                 </div>
               </div>
