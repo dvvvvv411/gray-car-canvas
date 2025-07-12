@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, X, Menu } from "lucide-react";
 import Logo from "@/components/Logo";
+import LanguageSelector from "@/components/LanguageSelector";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -42,7 +43,8 @@ const Impressum = () => {
                 </Link>
               ))}
             </nav>
-            <div className="hidden lg:flex items-center">
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
                 040 5131580

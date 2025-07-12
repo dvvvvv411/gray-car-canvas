@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, Building2, BarChart3, Clock, Shield, CheckCircle, Users, Zap, Target, TrendingUp, FileText, Bell, Award, Globe2, Headphones, Settings, X, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/Logo";
+import LanguageSelector from "@/components/LanguageSelector";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -49,8 +50,9 @@ const Geschaeftskunden = () => {
               ))}
             </nav>
             
-            {/* Desktop Phone Number */}
-            <div className="hidden lg:flex items-center">
+            {/* Desktop Language Selector & Phone Number */}
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
                 040 5131580

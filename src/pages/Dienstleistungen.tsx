@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRi
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import Logo from "@/components/Logo";
+import LanguageSelector from "@/components/LanguageSelector";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -50,8 +51,9 @@ const Dienstleistungen = () => {
               ))}
             </nav>
             
-            {/* Desktop Phone Number */}
-            <div className="hidden lg:flex items-center">
+            {/* Desktop Language Selector & Phone Number */}
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
                 040 5131580
