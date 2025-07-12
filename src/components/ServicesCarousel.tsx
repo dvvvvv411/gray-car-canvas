@@ -37,7 +37,7 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
   return (
     <div className="relative w-full max-w-5xl mx-auto">
       {/* Main Card */}
-      <Card className="relative overflow-hidden bg-black/90 backdrop-blur-sm border border-white/10 shadow-2xl">
+      <Card className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-accent backdrop-blur-sm border border-primary/20 shadow-2xl">
         <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/5"></div>
         
         <CardContent className="p-0">
@@ -53,8 +53,8 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
               
               {/* Icon Badge */}
               <div className="absolute top-4 left-4">
-                <div className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20">
-                  <currentService.icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30">
+                  <currentService.icon className="w-7 h-7 text-white" />
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
                 {currentService.title}
               </h3>
               
-              <p className="text-white/80 leading-relaxed mb-6 text-lg">
+              <p className="text-white/90 leading-relaxed mb-6 text-lg">
                 {currentService.description}
               </p>
               
@@ -73,8 +73,8 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
               <div className="space-y-3 mb-8">
                 {currentService.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-white/70 text-sm">{feature}</span>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white/80 text-sm">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -82,7 +82,7 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
               {/* CTA Button */}
               <Button 
                 size="lg"
-                className="w-full lg:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 hover:scale-105"
+                className="w-full lg:w-auto bg-white hover:bg-white/90 text-primary font-semibold transition-all duration-300 hover:scale-105"
               >
                 {currentService.buttonText}
               </Button>
@@ -94,14 +94,14 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-110"
       >
         <ChevronLeft className="w-6 h-6 text-white" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-110"
       >
         <ChevronRight className="w-6 h-6 text-white" />
       </button>
@@ -114,8 +114,8 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'bg-primary scale-125'
-                : 'bg-white/30 hover:bg-white/50'
+                ? 'bg-white scale-125'
+                : 'bg-white/40 hover:bg-white/60'
             }`}
           />
         ))}
