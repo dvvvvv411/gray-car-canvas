@@ -1,10 +1,8 @@
 
-import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ChevronLeft, ChevronRight } from "lucide-react";
+import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
-import { useState } from "react";
-import React from "react";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -14,55 +12,6 @@ import expressService from "@/assets/express-service.png";
 import serviceImage from "@/assets/car-transfer-service.jpg";
 
 const Index = () => {
-  const [currentService, setCurrentService] = useState(0);
-  
-  const services = [
-    {
-      title: "PKW-ÜBERFÜHRUNG",
-      description: "Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert.",
-      image: pkwService,
-      buttonText: "Mehr erfahren",
-      icon: Car,
-      features: [
-        "Live GPS-Tracking",
-        "Digitale Übergabe-Protokolle", 
-        "Flexible Terminplanung"
-      ]
-    },
-    {
-      title: "LKW-ÜBERFÜHRUNG",
-      description: "Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf.",
-      image: lkwService,
-      buttonText: "Jetzt anfragen",
-      icon: Truck,
-      features: [
-        "Spezialisierte LKW-Fahrer",
-        "Schwertransport-Expertise",
-        "Europaweites Netzwerk"
-      ]
-    },
-    {
-      title: "EXPRESS-LIEFERUNG",
-      description: "Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten.",
-      image: expressService,
-      buttonText: "Express buchen",
-      icon: Zap,
-      features: [
-        "Sofort-Abholung möglich",
-        "Priority-Behandlung",
-        "Zeitgarantie inklusive"
-      ]
-    }
-  ];
-
-  const nextService = () => {
-    setCurrentService((prev) => (prev + 1) % services.length);
-  };
-
-  const prevService = () => {
-    setCurrentService((prev) => (prev - 1 + services.length) % services.length);
-  };
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -165,126 +114,94 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Modern Services Carousel Section */}
-      <section className="relative py-12 px-4 bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 overflow-hidden" style={{ minHeight: '50vh' }}>
+      {/* Modern Services Section */}
+      <section className="relative py-24 px-4 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-1/4 w-24 h-24 bg-white/10 rounded-full blur-3xl animate-glow-pulse"></div>
-          <div className="absolute bottom-20 right-1/3 w-32 h-32 bg-white/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-white/8 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-20 left-1/4 w-24 h-24 bg-primary/5 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-20 right-1/3 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
         
-        <div className="container mx-auto relative z-10 h-full flex flex-col justify-center">
+        <div className="container mx-auto relative z-10">
           {/* Section Header */}
-          <div className="text-center mb-12 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30 mb-4">
-              <Zap className="w-4 h-4 text-white" />
-              <span className="text-white font-medium text-sm">UNSERE EXPERTISE</span>
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
+              <Zap className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">UNSERE EXPERTISE</span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              <span className="text-white">MODERNSTE</span>{" "}
-              <span className="text-black">FAHRZEUG-SERVICES</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-foreground">MODERNSTE</span>{" "}
+              <span className="text-primary">FAHRZEUG-SERVICES</span>
             </h2>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Digitale Prozesse, echte Expertise – Ihre Fahrzeuge in den besten Händen
             </p>
           </div>
           
-          {/* Service Carousel */}
-          <div className="relative max-w-4xl mx-auto">
-            {/* Navigation Buttons */}
-            <button 
-              onClick={prevService}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/80 hover:bg-black border border-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            
-            <button 
-              onClick={nextService}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/80 hover:bg-black border border-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-
-            {/* Service Card */}
-            <div className="bg-black/90 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-2xl">
-              <div className="grid lg:grid-cols-2 gap-0">
-                {/* Image Section */}
-                <div className="relative h-64 lg:h-auto">
-                  <img 
-                    src={services[currentService].image} 
-                    alt={services[currentService].title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/20"></div>
-                </div>
-
-                {/* Content Section */}
-                <div className="p-8 lg:p-10 flex flex-col justify-center">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center border border-orange-500/30">
-                      {React.createElement(services[currentService].icon, { className: "w-6 h-6 text-orange-400" })}
-                    </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white">
-                      {services[currentService].title}
-                    </h3>
-                  </div>
-                  
-                  <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-                    {services[currentService].description}
-                  </p>
-                  
-                  <div className="space-y-3 mb-6">
-                    {services[currentService].features.map((feature, index) => (
-                      <div key={index} className="flex items-center gap-3">
-                        <Check className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                        <span className="text-white/90 text-sm">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <Button 
-                    className="bg-orange-500 hover:bg-orange-600 text-white border-0 shadow-lg"
-                  >
-                    {services[currentService].buttonText}
-                  </Button>
-                </div>
-              </div>
+          {/* Service Cards Grid */}
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <ServiceCard
+                title="PKW-ÜBERFÜHRUNG"
+                description="Intelligente Routenplanung und GPS-Tracking für maximale Effizienz. Jeder Transport wird digital dokumentiert und Sie bleiben jederzeit informiert."
+                image={pkwService}
+                buttonText="Mehr erfahren"
+                icon={Car}
+                features={[
+                  "Live GPS-Tracking",
+                  "Digitale Übergabe-Protokolle",
+                  "Flexible Terminplanung"
+                ]}
+              />
             </div>
-
-            {/* Dots Indicator */}
-            <div className="flex justify-center gap-2 mt-6">
-              {services.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentService(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentService 
-                      ? 'bg-white scale-125' 
-                      : 'bg-white/40 hover:bg-white/60'
-                  }`}
-                />
-              ))}
+            
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <ServiceCard
+                title="LKW-ÜBERFÜHRUNG"
+                description="Professionelle Überführung schwerer Fahrzeuge mit modernster Technik. Speziell geschulte Fahrer und adaptive Logistiklösungen für jeden Bedarf."
+                image={lkwService}
+                buttonText="Jetzt anfragen"
+                icon={Truck}
+                features={[
+                  "Spezialisierte LKW-Fahrer",
+                  "Schwertransport-Expertise",
+                  "Europaweites Netzwerk"
+                ]}
+              />
+            </div>
+            
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+              <ServiceCard
+                title="EXPRESS-LIEFERUNG"
+                description="Wenn es wirklich eilig ist – unser Highspeed-Service macht's möglich. Sofortiger Start, direkter Transport, garantierte Ankunftszeiten."
+                image={expressService}
+                buttonText="Express buchen"
+                icon={Zap}
+                features={[
+                  "Sofort-Abholung möglich",
+                  "Priority-Behandlung",
+                  "Zeitgarantie inklusive"
+                ]}
+              />
             </div>
           </div>
           
           {/* Call to Action */}
-          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="inline-flex items-center gap-4 bg-black/60 backdrop-blur-sm border border-white/20 rounded-2xl p-4 lg:p-6">
-              <div className="flex items-center gap-2 text-white">
+          <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="inline-flex items-center gap-4 bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6">
+              <div className="flex items-center gap-2 text-primary">
                 <Clock className="w-5 h-5" />
-                <span className="font-semibold text-sm lg:text-base">24/7 verfügbar</span>
+                <span className="font-semibold">24/7 verfügbar</span>
               </div>
-              <div className="w-px h-6 bg-white/30"></div>
-              <div className="flex items-center gap-2 text-white">
+              <div className="w-px h-6 bg-border"></div>
+              <div className="flex items-center gap-2 text-primary">
                 <Shield className="w-5 h-5" />
-                <span className="font-semibold text-sm lg:text-base">Vollversichert</span>
+                <span className="font-semibold">Vollversichert</span>
               </div>
-              <div className="w-px h-6 bg-white/30"></div>
-              <div className="flex items-center gap-2 text-white">
+              <div className="w-px h-6 bg-border"></div>
+              <div className="flex items-center gap-2 text-primary">
                 <Zap className="w-5 h-5" />
-                <span className="font-semibold text-sm lg:text-base">Express-Service</span>
+                <span className="font-semibold">Express-Service</span>
               </div>
             </div>
           </div>
