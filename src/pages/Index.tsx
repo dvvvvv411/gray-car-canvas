@@ -233,9 +233,9 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
             {/* Content Side */}
-            <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="space-y-8 animate-fade-in-up flex flex-col justify-center" style={{ animationDelay: '0.2s' }}>
               {/* Company Description */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
                 <p className="text-lg text-white/90 leading-relaxed mb-6">
@@ -326,8 +326,8 @@ const Index = () => {
             </div>
 
             {/* Image Side */}
-            <div className="relative animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <div className="relative">
+            <div className="relative animate-fade-in-up flex items-center" style={{ animationDelay: '0.4s' }}>
+              <div className="relative w-full">
                 {/* Glowing border effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl"></div>
                 
@@ -336,17 +336,6 @@ const Index = () => {
                   alt="TransferCar Service Excellence" 
                   className="relative w-full h-auto rounded-2xl shadow-2xl border border-white/10"
                 />
-                
-                {/* Floating Stats Cards */}
-                <div className="absolute -top-6 -left-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 animate-glow-pulse">
-                  <div className="text-2xl font-bold text-primary">1994</div>
-                  <div className="text-xs text-white/80">Gegründet</div>
-                </div>
-                
-                <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 animate-glow-pulse" style={{ animationDelay: '1s' }}>
-                  <div className="text-2xl font-bold text-primary">100%</div>
-                  <div className="text-xs text-white/80">Versichert</div>
-                </div>
               </div>
             </div>
           </div>
