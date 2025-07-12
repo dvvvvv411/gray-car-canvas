@@ -1,11 +1,10 @@
-import { Phone, Mail, MapPin, Car, Truck, Zap, Check, Clock, Shield, ArrowLeftRight, Users, Star, Award, Globe2, TrendingUp, Target } from "lucide-react";
+import { Phone, Mail, MapPin, Car, Truck, Zap, Users, Clock, Shield, ArrowLeftRight, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ContactForm";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
-const Unternehmen = () => {
+const Dienstleistungen = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -20,8 +19,8 @@ const Unternehmen = () => {
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <a href="/" className="text-white hover:text-primary transition-colors font-medium">STARTSEITE</a>
-              <a href="/unternehmen" className="text-primary font-medium">UNTERNEHMEN</a>
-              <a href="/dienstleistungen" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
+              <a href="/unternehmen" className="text-white hover:text-primary transition-colors font-medium">UNTERNEHMEN</a>
+              <a href="/dienstleistungen" className="text-primary font-medium">DIENSTLEISTUNGEN</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
               <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
@@ -71,57 +70,41 @@ const Unternehmen = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>IHRE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>WAHL</span></em>
+              <em>UNSERE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>DIENSTLEISTUNGEN</span></em>
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Company Header Section */}
-      <section className="bg-background py-16 px-4">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            TRANSFERCAR – IHR EXPERTE FÜR FAHRZEUGÜBERFÜHRUNGEN
-          </h2>
-          <div className="w-24 h-1 bg-primary mx-auto"></div>
-        </div>
-      </section>
-
-      {/* Über uns Section */}
+      {/* Intro Section */}
       <section className="bg-background py-16 px-4">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
                 <Users className="w-4 h-4 text-primary" />
-                <span className="text-primary font-medium text-sm">ÜBER UNS</span>
+                <span className="text-primary font-medium text-sm">UNSERE EXPERTISE</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                Seit 1994 <span className="text-primary">vertrauenswürdig</span>
+                Der Motor unserer <span className="text-primary">Dienstleistungen</span>
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  TransferCar GmbH wurde 1994 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
-                  für Fahrzeugüberführungen in Deutschland und Europa entwickelt. Mit über 29 Jahren Erfahrung 
-                  in der Branche haben wir uns einen Namen für Zuverlässigkeit, Effizienz und Kundenzufriedenheit gemacht.
+                  Der Motor unserer Dienstleistungen sind unsere Fahrer. Ihnen vertrauen wir Ihre Fahrzeuge an – 
+                  und Ihre wertvollen Kundenbeziehungen. Unser Ziel ist es, Ihren Kunden die Fahrzeuge vor Ort 
+                  so zuvorkommend und gut instruiert zu übergeben, als täten Sie es selbst.
                 </p>
                 <p>
-                  Unser Unternehmen hat sich von einem kleinen lokalen Dienstleister zu einem deutschlandweit 
-                  agierenden Marktführer entwickelt. Heute beschäftigen wir über 150 professionelle Fahrer 
-                  und verfügen über eine moderne Fahrzeugflotte, die es uns ermöglicht, auch die anspruchsvollsten 
-                  Transportaufgaben zu bewältigen.
-                </p>
-                <p>
-                  Innovation und Tradition gehen bei uns Hand in Hand. Während wir auf bewährte Methoden 
-                  und jahrzehntelange Erfahrung setzen, integrieren wir kontinuierlich neue Technologien 
-                  und Prozesse, um unseren Service stetig zu verbessern.
+                  Dabei stützen wir uns auf einen sorgfältig ausgewählten Fahrerpool von rund 250 Fahrern. 
+                  Technisches Know-how, Verlässlichkeit und Verantwortungsgefühl, angenehmes Auftreten und 
+                  Freude am Kundenkontakt – das sind die Eigenschaften, die wir von unseren Fahrern erwarten.
                 </p>
               </div>
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/eb283bb3-4863-4839-acbf-940dd5ac8213.png" 
-                alt="Professioneller Fahrer" 
+                src="/lovable-uploads/7138162b-9422-4df7-8dd5-15f37e4e19b9.png" 
+                alt="Professioneller Fahrer im Fahrzeug" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
             </div>
@@ -129,91 +112,193 @@ const Unternehmen = () => {
         </div>
       </section>
 
-      {/* Zahlen Section */}
+      {/* PKW-Überführung Section */}
+      <section className="bg-muted/30 py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/ae1d760c-1c43-4ac5-841b-32d7fe1563ea.png" 
+                alt="PKW Fahrt auf der Autobahn" 
+                className="w-full h-auto rounded-2xl shadow-2xl border border-border"
+              />
+            </div>
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
+                <Car className="w-4 h-4 text-primary" />
+                <span className="text-primary font-medium text-sm">PKW-SERVICE</span>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                PKW-<span className="text-primary">ÜBERFÜHRUNG</span>
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Als professioneller Anbieter für Fahrzeugüberführungen per Achse bieten wir Ihnen an, 
+                  Ihre Fahraufträge schnell, kompetent und zuverlässig zu übernehmen. Logistische 
+                  Herausforderungen spornen uns an, eine individuelle Anpassung an unsere Kunden und 
+                  hohe Flexibilität zeichnen uns aus!
+                </p>
+                <p>
+                  Wir sind immer für Sie erreichbar! Ihr persönlicher Kundenbetreuer ist werktags von 
+                  08:00 bis 17:00 Uhr für Sie da. Außerhalb dieser Zeiten erreichen Sie über seine 
+                  Durchwahl unseren Notdienst, der sich ebenso lösungsorientiert für Sie einsetzt.
+                </p>
+                <p>
+                  Unsere Leistungen umfassen die Auslieferung von Fahrzeugen an Geschäftskunden, die 
+                  Überführung an einen anderen Firmenstandort, einen Fahrzeugtausch bei Leasingfahrzeugen, 
+                  Ihr Fuhrpark-Management sowie die Platzlogistik.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LKW-Überführung Section */}
+      <section className="bg-background py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
+                <Truck className="w-4 h-4 text-primary" />
+                <span className="text-primary font-medium text-sm">LKW-SERVICE</span>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                LKW-<span className="text-primary">ÜBERFÜHRUNG</span>
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Alle Fahrer sind im Besitz der Fahrerlaubnis C1E (LKW mit Anhänger und Gesamtgewicht 
+                  von bis zu 12t). Ein Großteil der Fahrer darf LKWs ohne Begrenzung des Gesamtgewichtes 
+                  (Fahrerlaubnis CE) fahren. Darüber hinaus verfügen die meisten unserer Fahrer über 
+                  Fahrerkarten für die digitalen EG-Kontrollgeräte.
+                </p>
+                <p>
+                  Unsere Leistungen umfassen zuverlässige europaweite LKW-Überführung auf eigener Achse, 
+                  die Auslieferung von LKWs ab Werk, die Überführung an einen anderen Firmenstandort und 
+                  die Überführung von LKWs mit Überführungskennzeichen.
+                </p>
+                <p>
+                  Wir sind immer für Sie erreichbar! Ihr persönlicher Kundenbetreuer ist werktags von 
+                  08:00 bis 17:00 Uhr für Sie da. Außerhalb dieser Zeiten erreichen Sie über seine 
+                  Durchwahl unseren Notdienst.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/98ca2032-be50-470c-aa79-9683d44ac2a8.png" 
+                alt="LKW auf der Autobahn bei Sonnenuntergang" 
+                className="w-full h-auto rounded-2xl shadow-2xl border border-border"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Express-Service Section */}
       <section className="bg-muted/30 py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
-              <TrendingUp className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">ZAHLEN & FAKTEN</span>
-            </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-              Unsere <span className="text-primary">Erfolgsgeschichte</span>
-            </h3>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">29+</div>
-              <div className="text-sm text-muted-foreground">Jahre Erfahrung</div>
-            </div>
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">150+</div>
-              <div className="text-sm text-muted-foreground">Professionelle Fahrer</div>
-            </div>
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">3K+</div>
-              <div className="text-sm text-muted-foreground">Überführungen/Jahr</div>
-            </div>
-            <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">99%</div>
-              <div className="text-sm text-muted-foreground">Kundenzufriedenheit</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service-Philosophie Section */}
-      <section className="bg-background py-16 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
-              <Target className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">UNSERE PHILOSOPHIE</span>
+              <Zap className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium text-sm">PREMIUM-SERVICE</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Service & <span className="text-primary">Qualität</span> im Fokus
+              EXPRESS-SERVICE & <span className="text-primary">EXTRAS</span>
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-primary" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-background p-6 rounded-2xl shadow-lg border border-border">
+              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                <Clock className="w-6 h-6 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Sicherheit</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-3">Express-Aufträge</h4>
               <p className="text-muted-foreground">
-                Jeder Transport wird vollversichert durchgeführt. Unsere Fahrer sind speziell geschult 
-                und verfügen über jahrelange Erfahrung im sicheren Transport von Fahrzeugen.
+                Die Auftragserfüllung erfolgt nach Zeitvorgabe unserer Kunden. Expressaufträge werden, 
+                je nach Kapazität, umgehend ausgeführt. Auf Wunsch fahren wir sofort oder auch über Nacht.
               </p>
             </div>
             
-            <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-primary" />
+            <div className="bg-background p-6 rounded-2xl shadow-lg border border-border">
+              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Pünktlichkeit</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-3">Individuelle Anpassung</h4>
               <p className="text-muted-foreground">
-                Termine werden eingehalten. Durch intelligente Routenplanung und GPS-Tracking 
-                können wir präzise Ankunftszeiten garantieren und Sie jederzeit informieren.
+                Ob Einzelauftrag oder regelmäßiges Auftragsvolumen, wir richten uns individuell auf 
+                Ihre Wünsche ein. Persönliche Betreuung steht bei uns im Mittelpunkt.
               </p>
             </div>
             
-            <div className="text-center p-6 bg-muted/20 rounded-2xl border border-border">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="w-8 h-8 text-primary" />
+            <div className="bg-background p-6 rounded-2xl shadow-lg border border-border">
+              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                <Award className="w-6 h-6 text-primary" />
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Exzellenz</h4>
+              <h4 className="text-xl font-semibold text-foreground mb-3">Zusätzliche Services</h4>
               <p className="text-muted-foreground">
-                Höchste Qualitätsstandards in allen Bereichen. Von der ersten Anfrage bis zur 
-                Übergabe des Fahrzeugs – wir setzen auf Perfektion in jedem Detail.
+                Außerdem bieten wir einen Hol- und Bringservice von Fahrzeugen und andere Extras wie 
+                bspw. Fahrzeugreinigung und Betankung an.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="max-w-3xl mx-auto bg-background p-8 rounded-2xl shadow-lg border border-border">
+              <h4 className="text-xl font-semibold text-foreground mb-4">Innovative Mobilitätslösungen</h4>
+              <p className="text-muted-foreground mb-4">
+                Ist Ihr Auftrag erfasst, sorgen unsere innovativen Mobilitätslösungen für die termingerechte, 
+                professionelle Umsetzung. Hierfür haben wir eine eigene Software entwickelt.
+              </p>
+              <p className="text-muted-foreground">
+                Durch die Zusammenarbeit mit unserem Partnerunternehmen sind wir auch zu Spitzenzeiten in 
+                der Lage, Ihre Anfrage problemlos abwickeln zu können.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-
+      {/* Überführung auf Fremdachse Section */}
+      <section className="bg-background py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/6b89eecf-63f1-44b9-98ed-1a297a087d1d.png" 
+                alt="Fahrzeugüberführung auf Fremdachse" 
+                className="w-full h-auto rounded-2xl shadow-2xl border border-border"
+              />
+            </div>
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
+                <ArrowLeftRight className="w-4 h-4 text-primary" />
+                <span className="text-primary font-medium text-sm">SPEZIAL-TRANSPORT</span>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                Überführung auf <span className="text-primary">FREMDACHSE</span>
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Für besonders wertvolle, empfindliche oder nicht fahrbereite Fahrzeuge bieten wir den 
+                  schonenden Transport auf speziellen Transportern und Anhängern an. Diese Methode eignet 
+                  sich besonders für Luxusfahrzeuge, Oldtimer oder Fahrzeuge mit technischen Problemen.
+                </p>
+                <p>
+                  Unsere speziell ausgerüsteten Transporter gewährleisten einen sicheren und beschädigungsfreien 
+                  Transport. Professionelle Verladung und Sicherung durch erfahrene Fahrer garantieren, dass 
+                  Ihr Fahrzeug unbeschädigt am Zielort ankommt.
+                </p>
+                <p>
+                  Von Einzeltransporten bis hin zu größeren Aufträgen – wir haben die passende Lösung für 
+                  Ihre Anforderungen und bieten diesen Service deutschlandweit und europaweit an.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 px-4 overflow-hidden">
@@ -400,4 +485,4 @@ const Unternehmen = () => {
   );
 };
 
-export default Unternehmen;
+export default Dienstleistungen;
