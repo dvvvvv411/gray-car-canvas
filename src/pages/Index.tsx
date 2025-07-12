@@ -54,8 +54,8 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         {/* Left Side - White Background */}
-        <div className="w-1/2 h-full bg-white relative z-10 flex items-center justify-center py-20 px-8">
-          <div className="max-w-xl">
+        <div className="w-1/2 h-full bg-white relative z-10 flex items-center justify-end py-20 pr-16 pl-8">
+          <div className="max-w-lg">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground mb-6">
               <em>IHR <span className="text-primary">SPEZIALIST</span> FÜR</em>
               <br />
@@ -76,8 +76,20 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Gradient Transition Overlay */}
-        <div className="absolute left-1/2 top-0 w-32 h-full bg-gradient-to-r from-white via-white/70 to-transparent z-20"></div>
+        {/* Organic Wave Transition */}
+        <div className="absolute left-1/2 top-0 w-64 h-full z-20 overflow-hidden">
+          <svg 
+            className="absolute -left-32 top-0 w-full h-full" 
+            viewBox="0 0 200 800" 
+            fill="none" 
+            preserveAspectRatio="none"
+          >
+            <path 
+              d="M0,0 C50,100 20,200 80,300 C140,400 30,500 90,600 C150,700 40,800 200,800 L200,0 Z" 
+              fill="white"
+            />
+          </svg>
+        </div>
 
         {/* Right Side - Background Image */}
         <div 
