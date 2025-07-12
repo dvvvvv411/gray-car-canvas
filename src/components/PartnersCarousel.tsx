@@ -25,7 +25,7 @@ const partners = [
   },
   {
     name: "Toyota Material Handling",
-    logo: "/lovable-uploads/a1638340-f7b5-4e2b-8800-e9928561dd9a.png"
+    logo: "/lovable-uploads/36ef3be7-5e0e-42e3-ba0b-e14e82faf60b.png"
   },
   {
     name: "Deutsche Leasing",
@@ -95,11 +95,11 @@ export function PartnersCarousel() {
               className="flex-shrink-0 px-4"
               style={{ width: `${100 / itemsPerView}%` }}
             >
-              <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition-shadow">
+              <div className="h-24 flex items-center justify-center hover:scale-105 transition-transform duration-300">
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-16 max-w-full object-contain"
                 />
               </div>
             </div>
