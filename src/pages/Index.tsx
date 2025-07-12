@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
 import { PartnersCarousel } from "@/components/PartnersCarousel";
-import Logo from "@/components/Logo";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -25,7 +24,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Logo />
+              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
             </div>
             
             {/* Navigation */}
@@ -123,7 +122,7 @@ const Index = () => {
       </section>
 
       {/* Modern Services Carousel Section */}
-      <section id="services-section" className="relative py-16 px-4 bg-white overflow-hidden">
+      <section className="relative py-16 px-4 bg-white overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-1/4 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-glow-pulse"></div>
@@ -354,7 +353,7 @@ const Index = () => {
       </section>
 
       {/* Partner Logos Section */}
-      <section id="partners-section" className="relative py-12 px-4 bg-white overflow-hidden">
+      <section className="relative py-12 px-4 bg-white overflow-hidden">
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center mb-12 animate-fade-in-up">
@@ -383,7 +382,7 @@ const Index = () => {
             {/* Company Information */}
             <div className="space-y-6">
               <div>
-                <Logo className="mb-4" />
+                <h3 className="text-2xl font-bold text-primary mb-4">CarDelivery</h3>
                 <p className="text-white/80 leading-relaxed">
                   Ihr vertrauensvoller Partner für Fahrzeugüberführungen seit 1994. 
                   Professionell, zuverlässig und europaweit für Sie im Einsatz.
