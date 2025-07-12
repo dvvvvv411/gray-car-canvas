@@ -69,8 +69,7 @@ export const ServicesCarousel = ({ services }: ServicesCarouselProps) => {
                 </div>
               </div>
 
-              {/* Overlay with subtle pattern */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,transparent_0%,rgba(0,0,0,0.1)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Overlay removed to keep orange effect visible */}
             </div>
             
             {/* Content Side */}
