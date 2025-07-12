@@ -84,6 +84,7 @@ const Index = () => {
             fill="none" 
             preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ transform: 'scaleX(-1)' }}
           >
             <path 
               d="M0,0 C25,15 35,25 30,40 C25,55 35,65 40,80 C45,95 55,100 100,100 L100,0 Z" 
