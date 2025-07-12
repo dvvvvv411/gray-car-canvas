@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactForm } from "@/components/ContactForm";
 import { PartnersCarousel } from "@/components/PartnersCarousel";
+import Logo from "@/components/Logo";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
@@ -23,9 +24,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white">CarDelivery</h1>
-            </div>
+            <Logo />
             
             {/* Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
