@@ -6,20 +6,22 @@ import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import images
 import heroBgNew from "@/assets/hero-background-new.webp";
 
 const Unternehmen = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navigationItems = [
-    { href: "/", label: "STARTSEITE" },
-    { href: "/unternehmen", label: "UNTERNEHMEN" },
-    { href: "/dienstleistungen", label: "DIENSTLEISTUNGEN" },
-    { href: "/karriere", label: "KARRIERE" },
-    { href: "/geschaeftskunden", label: "GESCHÄFTSKUNDEN" },
-    { href: "/kontakt", label: "KONTAKT" }
+    { href: "/", label: t('nav.home') },
+    { href: "/unternehmen", label: t('nav.company') },
+    { href: "/dienstleistungen", label: t('nav.services') },
+    { href: "/karriere", label: t('nav.career') },
+    { href: "/geschaeftskunden", label: t('nav.business') },
+    { href: "/kontakt", label: t('nav.contact') }
   ];
   return (
     <div className="min-h-screen bg-background">
@@ -142,7 +144,7 @@ const Unternehmen = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>ÜBER UNSER <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>UNTERNEHMEN</span></em>
+              <em>{t('company.hero.title')} <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>{t('company.hero.highlight')}</span></em>
             </h1>
           </div>
         </div>
@@ -152,7 +154,7 @@ const Unternehmen = () => {
       <section className="bg-background py-16 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            CARLOGIX – IHR EXPERTE FÜR FAHRZEUGÜBERFÜHRUNGEN
+            {t('company.header.title')}
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
@@ -165,27 +167,20 @@ const Unternehmen = () => {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
                 <Users className="w-4 h-4 text-primary" />
-                <span className="text-primary font-medium text-sm">ÜBER UNS</span>
+                <span className="text-primary font-medium text-sm">{t('company.about.badge')}</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                Seit 1984 <span className="text-primary">vertrauenswürdig</span>
+                {t('company.about.title')} <span className="text-primary">{t('company.about.highlight')}</span>
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  CarLogix wurde 1984 gegründet und hat sich seitdem zu einem der führenden Unternehmen 
-                  für Fahrzeugüberführungen in Deutschland und Europa entwickelt. Mit über 41 Jahren Erfahrung
-                  in der Branche haben wir uns einen Namen für Zuverlässigkeit, Effizienz und Kundenzufriedenheit gemacht.
+                  {t('company.about.text1')}
                 </p>
                 <p>
-                  Unser Unternehmen hat sich von einem kleinen lokalen Dienstleister zu einem deutschlandweit 
-                  agierenden Marktführer entwickelt. Heute beschäftigen wir über 150 professionelle Fahrer 
-                  und verfügen über eine moderne Fahrzeugflotte, die es uns ermöglicht, auch die anspruchsvollsten 
-                  Transportaufgaben zu bewältigen.
+                  {t('company.about.text2')}
                 </p>
                 <p>
-                  Innovation und Tradition gehen bei uns Hand in Hand. Während wir auf bewährte Methoden 
-                  und jahrzehntelange Erfahrung setzen, integrieren wir kontinuierlich neue Technologien 
-                  und Prozesse, um unseren Service stetig zu verbessern.
+                  {t('company.about.text3')}
                 </p>
               </div>
             </div>
@@ -206,29 +201,29 @@ const Unternehmen = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 mb-4">
               <TrendingUp className="w-4 h-4 text-primary" />
-              <span className="text-primary font-medium text-sm">ZAHLEN & FAKTEN</span>
+              <span className="text-primary font-medium text-sm">{t('company.stats.badge')}</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-              Unsere <span className="text-primary">Erfolgsgeschichte</span>
+              {t('company.stats.title')} <span className="text-primary">{t('company.stats.highlight')}</span>
             </h3>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
               <div className="text-4xl font-bold text-primary mb-2">41+</div>
-              <div className="text-sm text-muted-foreground">Jahre Erfahrung</div>
+              <div className="text-sm text-muted-foreground">{t('company.stats.years')}</div>
             </div>
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
               <div className="text-4xl font-bold text-primary mb-2">150+</div>
-              <div className="text-sm text-muted-foreground">Professionelle Fahrer</div>
+              <div className="text-sm text-muted-foreground">{t('company.stats.drivers')}</div>
             </div>
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
               <div className="text-4xl font-bold text-primary mb-2">3K+</div>
-              <div className="text-sm text-muted-foreground">Überführungen/Jahr</div>
+              <div className="text-sm text-muted-foreground">{t('company.stats.transfers')}</div>
             </div>
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
               <div className="text-4xl font-bold text-primary mb-2">99%</div>
-              <div className="text-sm text-muted-foreground">Kundenzufriedenheit</div>
+              <div className="text-sm text-muted-foreground">{t('company.stats.satisfaction')}</div>
             </div>
           </div>
         </div>
