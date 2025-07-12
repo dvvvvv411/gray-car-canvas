@@ -76,25 +76,19 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Abstract Organic Wave Transition */}
-        <div className="absolute left-1/2 top-0 w-48 h-full z-20 pointer-events-none">
+        {/* Organic Wave Transition */}
+        <div className="absolute left-1/2 top-0 w-32 h-full z-20 pointer-events-none">
           <svg 
-            className="absolute -left-24 top-0 w-full h-full" 
-            viewBox="0 0 150 100" 
+            className="absolute -left-16 top-0 w-full h-full" 
+            viewBox="0 0 100 100" 
             fill="none" 
             preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
             style={{ transform: 'scaleX(-1)' }}
           >
             <path 
-              d="M0,0 C15,8 45,12 35,25 C25,38 55,35 45,50 C35,65 25,58 40,75 C55,92 85,85 75,100 L150,100 L150,0 Z" 
+              d="M0,0 C25,15 35,25 30,40 C25,55 35,65 40,80 C45,95 55,100 100,100 L100,0 Z" 
               fill="hsl(var(--background))"
-              className="drop-shadow-lg"
-            />
-            <path 
-              d="M0,0 C25,5 55,18 40,30 C25,42 45,48 35,65 C25,82 50,88 60,100 L150,100 L150,0 Z" 
-              fill="hsl(var(--background))"
-              fillOpacity="0.7"
               className="drop-shadow-sm"
             />
           </svg>
