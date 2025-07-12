@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Progress } from "@/components/ui/progress";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
+import { CheckCircle, Loader2 } from "lucide-react";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -18,9 +21,13 @@ export const ContactForm = () => {
     consent: false
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadingProgress, setLoadingProgress] = useState(0);
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
+
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.consent) {
       toast({
@@ -31,10 +38,25 @@ export const ContactForm = () => {
       return;
     }
     
-    toast({
-      title: "Nachricht gesendet",
-      description: "Vielen Dank für Ihre Anfrage. Wir melden uns zeitnah bei Ihnen.",
-    });
+    setIsLoading(true);
+    setLoadingProgress(0);
+    
+    // Simulate loading with progress
+    const progressInterval = setInterval(() => {
+      setLoadingProgress(prev => {
+        if (prev >= 100) {
+          clearInterval(progressInterval);
+          return 100;
+        }
+        return prev + 2;
+      });
+    }, 100);
+    
+    // Wait for 5 seconds
+    await new Promise(resolve => setTimeout(resolve, 5000));
+    
+    setIsLoading(false);
+    setShowSuccessDialog(true);
     
     setFormData({
       name: "",
@@ -47,6 +69,16 @@ export const ContactForm = () => {
       consent: false
     });
   };
+
+  // Auto-close dialog after 3 seconds
+  useEffect(() => {
+    if (showSuccessDialog) {
+      const timer = setTimeout(() => {
+        setShowSuccessDialog(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccessDialog]);
 
   const handleInputChange = (field: string, value: string | boolean) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -154,18 +186,52 @@ export const ContactForm = () => {
         </div>
       </div>
       
+      {/* Loading Progress */}
+      {isLoading && (
+        <div className="space-y-3">
+          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <Loader2 className="h-4 w-4 animate-spin" />
+            Bewerbung wird versendet...
+          </div>
+          <Progress value={loadingProgress} className="h-2" />
+        </div>
+      )}
+
       {/* Submit Button */}
       <Button 
         type="submit" 
-        className="w-full h-11 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+        disabled={isLoading}
+        className="w-full h-11 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold disabled:opacity-50"
         size="lg"
       >
-        Bewerbung absenden
+        {isLoading ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Wird gesendet...
+          </>
+        ) : (
+          "Bewerbung absenden"
+        )}
       </Button>
 
       <p className="text-xs text-muted-foreground text-center">
         Wir melden uns innerhalb von 2-3 Werktagen bei Ihnen zurück.
       </p>
+
+      {/* Success Dialog */}
+      <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader className="text-center">
+            <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+              <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
+            </div>
+            <DialogTitle className="text-xl font-semibold">Bewerbung erfolgreich versendet!</DialogTitle>
+            <DialogDescription className="text-center text-muted-foreground">
+              Vielen Dank für Ihre Bewerbung. Wir haben Ihre Unterlagen erhalten und melden uns innerhalb von 2-3 Werktagen bei Ihnen zurück.
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
     </form>
   );
 };
