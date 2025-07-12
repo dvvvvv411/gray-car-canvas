@@ -75,12 +75,12 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/30 to-accent/20 rounded-3xl blur-2xl animate-glow-pulse"></div>
           
           <div className="relative z-10 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6 animate-text-glow">
-              <em>IHR <span className="text-primary drop-shadow-lg">SPEZIALIST</span> FÜR</em>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              <em>IHR <span className="text-primary animate-specialist-glow">SPEZIALIST</span> FÜR</em>
               <br />
               <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
               <br />
-              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block">
+              <span className="text-lg md:text-xl lg:text-2xl font-normal text-white/90 mt-4 block" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                 IN DEUTSCHLAND UND EUROPA
               </span>
             </h1>
