@@ -24,7 +24,6 @@ const Unternehmen = () => {
               <a href="/dienstleistungen" className="text-white hover:text-primary transition-colors font-medium">DIENSTLEISTUNGEN</a>
               <a href="/karriere" className="text-white hover:text-primary transition-colors font-medium">KARRIERE</a>
               <a href="/geschaeftskunden" className="text-white hover:text-primary transition-colors font-medium">GESCHÄFTSKUNDEN</a>
-              <a href="#" className="text-white hover:text-primary transition-colors font-medium">AKTUELLES</a>
               <a href="/kontakt" className="text-white hover:text-primary transition-colors font-medium">KONTAKT</a>
             </nav>
             
@@ -71,7 +70,7 @@ const Unternehmen = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>IHRE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>WAHL</span></em>
+              <em>ÜBER UNSER <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.5)' }}>UNTERNEHMEN</span></em>
             </h1>
           </div>
         </div>
@@ -260,13 +259,13 @@ const Unternehmen = () => {
             <div>
               <h4 className="font-semibold text-white mb-6">Unsere Services</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Express-Service</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">PKW-Überführung</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">LKW-Überführung</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Express-Service</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Überführung auf Fremdachse</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Hol- und Bringservice</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Fuhrpark-Management</a></li>
+                <li><a href="/dienstleistungen" className="text-white/80 hover:text-primary transition-colors">Platzlogistik</a></li>
               </ul>
             </div>
 
@@ -322,10 +321,9 @@ const Unternehmen = () => {
             <div>
               <h4 className="font-semibold text-white mb-6">Quick Links</h4>
               <ul className="space-y-3 mb-8">
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Über uns</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Karriere</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</a></li>
-                <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Aktuelles</a></li>
+                <li><a href="/unternehmen" className="text-white/80 hover:text-primary transition-colors">Über uns</a></li>
+                <li><a href="/karriere" className="text-white/80 hover:text-primary transition-colors">Karriere</a></li>
+                <li><a href="/geschaeftskunden" className="text-white/80 hover:text-primary transition-colors">Geschäftskunden</a></li>
                 <li><a href="#" className="text-white/80 hover:text-primary transition-colors">FAQ</a></li>
               </ul>
 
