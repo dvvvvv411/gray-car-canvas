@@ -76,7 +76,7 @@ const Index = () => {
           
           <div className="relative z-10 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
-              <em>IHRE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(255,255,255,0.3)' }}>WAHL</span> FÜR</em>
+              <em>IHRE <span className="text-primary" style={{ textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.6)' }}>WAHL</span> FÜR</em>
               <br />
               <em>FAHRZEUG-ÜBERFÜHRUNGEN</em>
               <br />
