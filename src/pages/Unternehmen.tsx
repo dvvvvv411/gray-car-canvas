@@ -120,7 +120,7 @@ const Unternehmen = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/36ef3be7-5e0e-42e3-ba0b-e14e82faf60b.png" 
+                src="/lovable-uploads/bd9a4a58-5afa-479b-ac59-cf309a375c59.png" 
                 alt="Professioneller Fahrer" 
                 className="w-full h-auto rounded-2xl shadow-2xl border border-border"
               />
@@ -152,7 +152,7 @@ const Unternehmen = () => {
               <div className="text-sm text-muted-foreground">Professionelle Fahrer</div>
             </div>
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
-              <div className="text-4xl font-bold text-primary mb-2">50K+</div>
+              <div className="text-4xl font-bold text-primary mb-2">3K+</div>
               <div className="text-sm text-muted-foreground">Überführungen/Jahr</div>
             </div>
             <div className="text-center bg-background rounded-2xl p-6 shadow-lg border border-border">
