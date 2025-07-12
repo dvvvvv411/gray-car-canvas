@@ -62,16 +62,13 @@ const Index = () => {
       >
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
-          {/* Main overlay with gradient transition */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/40"></div>
-          
-          {/* Bottom gradient for smooth transition to next section */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary/30 via-primary/20 to-transparent"></div>
+          {/* Main overlay */}
+          <div className="absolute inset-0 bg-black/80"></div>
           
           {/* Floating Orange Glow Orbs */}
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-floating"></div>
-          <div className="absolute bottom-1/3 right-1/3 w-40 h-40 bg-primary/15 rounded-full blur-3xl animate-floating" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-accent/20 rounded-full blur-2xl animate-floating" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-glow-pulse"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-40 h-40 bg-primary/15 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-accent/20 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
         
         {/* Content */}
@@ -121,9 +118,6 @@ const Index = () => {
 
       {/* Modern Services Carousel Section */}
       <section className="relative py-16 px-4 bg-gradient-to-br from-primary via-primary/90 to-accent overflow-hidden">
-        {/* Top gradient transition from hero */}
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary/60 via-primary/80 to-transparent"></div>
-        
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-1/4 w-32 h-32 bg-white/5 rounded-full blur-3xl animate-glow-pulse"></div>
@@ -131,12 +125,9 @@ const Index = () => {
           <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
         </div>
         
-        {/* Bottom gradient transition to next section */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-900/60 via-gray-900/30 to-transparent"></div>
-        
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
-          <div className="text-center mb-12 animate-section-fade">
+          <div className="text-center mb-12 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-4">
               <Zap className="w-4 h-4 text-white" />
               <span className="text-white font-medium text-sm">UNSERE EXPERTISE</span>
@@ -151,7 +142,7 @@ const Index = () => {
           </div>
           
           {/* Services Carousel */}
-          <div className="animate-section-fade" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <ServicesCarousel 
               services={[
                 {
@@ -198,7 +189,7 @@ const Index = () => {
           </div>
           
           {/* Call to Action */}
-          <div className="text-center mt-12 animate-section-fade" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
+          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 text-white">
                 <Clock className="w-5 h-5" />
@@ -221,18 +212,12 @@ const Index = () => {
 
       {/* Modern Service & Flexibility Section */}
       <section className="relative py-24 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
-        {/* Top gradient transition from previous section */}
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-accent/40 via-gray-900/60 to-transparent"></div>
-        
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-glow-pulse"></div>
           <div className="absolute bottom-1/3 right-1/3 w-32 h-32 bg-accent/8 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1.5s' }}></div>
           <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-primary/8 rounded-full blur-2xl animate-glow-pulse" style={{ animationDelay: '3s' }}></div>
         </div>
-        
-        {/* Bottom gradient transition to next section */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background/80 via-background/40 to-transparent"></div>
         
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
@@ -351,11 +336,6 @@ const Index = () => {
 
       {/* Partner Logos Section */}
       <section className="relative py-12 px-4 bg-gradient-to-br from-muted/30 to-muted/50 overflow-hidden">
-        {/* Top gradient transition from previous section */}
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-background/60 via-muted/40 to-transparent"></div>
-        
-        {/* Bottom gradient transition to footer */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-900/60 via-gray-800/30 to-transparent"></div>
         <div className="container mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center mb-12 animate-fade-in-up">
@@ -429,9 +409,7 @@ const Index = () => {
       </section>
 
       {/* Comprehensive Footer */}
-      <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white border-t border-white/10 overflow-hidden">
-        {/* Top gradient transition from previous section */}
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-muted/40 via-gray-900/60 to-transparent"></div>
+      <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white border-t border-white/10">
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
