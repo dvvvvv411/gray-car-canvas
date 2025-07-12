@@ -9,7 +9,7 @@ import heroBgNew from "@/assets/hero-background-new.webp";
 import pkwService from "@/assets/pkw-service.png";
 import lkwService from "@/assets/lkw-service.png";
 import expressService from "@/assets/express-service.png";
-import serviceImage from "@/assets/service-image.jpg";
+import serviceImage from "@/assets/car-transfer-service.jpg";
 
 const Index = () => {
   return (
@@ -233,9 +233,9 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Content Side */}
-            <div className="space-y-8 animate-fade-in-up flex flex-col justify-center" style={{ animationDelay: '0.2s' }}>
+            <div className="space-y-8 animate-fade-in-up h-full flex flex-col justify-between" style={{ animationDelay: '0.2s' }}>
               {/* Company Description */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
                 <p className="text-lg text-white/90 leading-relaxed mb-6">
@@ -297,23 +297,15 @@ const Index = () => {
               </div>
 
 
-              <div className="pt-4">
-                <Button 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-200"
-                  size="lg"
-                >
-                  Mehr über uns erfahren
-                </Button>
-              </div>
             </div>
 
             {/* Image Side */}
-            <div className="relative animate-fade-in-up space-y-8" style={{ animationDelay: '0.4s' }}>
-              <div className="relative w-full">
+            <div className="relative animate-fade-in-up space-y-8 h-full flex flex-col" style={{ animationDelay: '0.4s' }}>
+              <div className="relative w-full flex-1">
                 <img 
                   src={serviceImage} 
-                  alt="TransferCar Service Excellence" 
-                  className="w-full h-auto rounded-2xl shadow-2xl border border-white/10"
+                  alt="Car Transfer Service" 
+                  className="w-full h-full object-cover rounded-2xl shadow-2xl border border-white/10"
                 />
               </div>
 
