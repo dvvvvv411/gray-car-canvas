@@ -61,7 +61,7 @@ const Index = () => {
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           {/* Main overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/80"></div>
           
           {/* Floating Orange Glow Orbs */}
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-glow-pulse"></div>
