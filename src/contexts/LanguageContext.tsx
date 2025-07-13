@@ -143,7 +143,7 @@ const translations = {
     'footer.services.logistics': 'Platzlogistik',
     
     'footer.contact.title': 'Kontakt',
-    'footer.contact.hotline': '24/7 Hotline',
+    'footer.contact.hotline': 'Hotline 8:00 - 18:00',
     'footer.contact.email.response': 'Schnelle Antwort garantiert',
     'footer.contact.address': 'Deutschland',
     
@@ -306,7 +306,7 @@ const translations = {
     'contact.header.title': 'WIR SIND FÜR SIE DA',
     'contact.header.text': 'Haben Sie Fragen zu unseren Dienstleistungen oder benötigen Sie ein individuelles Angebot? Unser erfahrenes Team steht Ihnen gerne zur Verfügung.',
     'contact.phone.title': 'Telefon',
-    'contact.phone.subtitle': '24/7 Hotline',
+    'contact.phone.subtitle': 'Hotline 8:00 - 18:00',
     'contact.phone.feature': 'Sofortige Beratung',
     'contact.email.title': 'E-Mail',
     'contact.email.subtitle': 'Schnelle Antwort garantiert',
@@ -500,7 +500,7 @@ const translations = {
     'footer.services.logistics': 'Location logistics',
     
     'footer.contact.title': 'Contact',
-    'footer.contact.hotline': '24/7 Hotline',
+    'footer.contact.hotline': 'Hotline 8:00 - 18:00',
     'footer.contact.email.response': 'Quick response guaranteed',
     'footer.contact.address': 'Germany',
     
@@ -663,7 +663,7 @@ const translations = {
     'contact.header.title': 'WE ARE HERE FOR YOU',
     'contact.header.text': 'Do you have questions about our services or need an individual quote? Our experienced team is happy to help you.',
     'contact.phone.title': 'Phone',
-    'contact.phone.subtitle': '24/7 Hotline',
+    'contact.phone.subtitle': 'Hotline 8:00 - 18:00',
     'contact.phone.feature': 'Immediate consultation',
     'contact.email.title': 'Email',
     'contact.email.subtitle': 'Quick response guaranteed',
@@ -1928,7 +1928,7 @@ const translations = {
      'footer.services.logistics': 'Locatie logistiek',
 
      'footer.contact.title': 'Contact',
-     'footer.contact.hotline': '24/7 Hotline',
+     'footer.contact.hotline': 'Hotline 8:00 - 18:00',
      'footer.contact.email.response': 'Snelle reactie gegarandeerd',
      'footer.contact.address': 'Duitsland',
 
@@ -2091,7 +2091,7 @@ const translations = {
      'contact.header.title': 'WE ZIJN ER VOOR U',
      'contact.header.text': 'Heeft u vragen over onze diensten of heeft u een individuele offerte nodig? Ons ervaren team staat graag voor u klaar.',
      'contact.phone.title': 'Telefoon',
-     'contact.phone.subtitle': '24/7 Hotline',
+     'contact.phone.subtitle': 'Hotline 8:00 - 18:00',
      'contact.phone.feature': 'Onmiddellijk advies',
      'contact.email.title': 'E-mail',
      'contact.email.subtitle': 'Snelle reactie gegarandeerd',

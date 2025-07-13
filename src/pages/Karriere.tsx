@@ -406,7 +406,7 @@ const Karriere = () => {
                   <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-white font-medium">030 75420223</div>
-                    <div className="text-white/60 text-sm">24/7 Hotline</div>
+                    <div className="text-white/60 text-sm">Hotline 8:00 - 18:00</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
