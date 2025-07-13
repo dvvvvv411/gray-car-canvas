@@ -14,6 +14,7 @@ import AGB from "./pages/AGB";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import { CookieConsentManager } from "./components/CookieConsentManager";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <CookieConsentManager />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/unternehmen" element={<Unternehmen />} />
