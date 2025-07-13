@@ -166,7 +166,7 @@ const translations = {
     'footer.newsletter.placeholder': 'Ihre E-Mail',
     
     'footer.social.follow': 'Folgen Sie uns:',
-    'footer.location': 'Standort Hamburg-Norderstedt • Bundesweit und europaweit im Einsatz',
+    'footer.location': 'Standort Berlin-Norderstedt • Bundesweit und europaweit im Einsatz',
     
     'footer.legal.company': '© 2025 Golze & Michel OHG',
     'footer.legal.imprint': 'Impressum',
@@ -523,7 +523,7 @@ const translations = {
     'footer.newsletter.placeholder': 'Your email',
     
     'footer.social.follow': 'Follow us:',
-    'footer.location': 'Location Hamburg-Norderstedt • Nationwide and European operations',
+    'footer.location': 'Location Berlin-Norderstedt • Nationwide and European operations',
     
     'footer.legal.company': '© 2025 Golze & Michel OHG',
     'footer.legal.imprint': 'Imprint',
@@ -880,7 +880,7 @@ const translations = {
      'footer.newsletter.placeholder': 'Votre email',
 
      'footer.social.follow': 'Suivez-nous:',
-     'footer.location': 'Emplacement Hambourg-Norderstedt • Opérations nationales et européennes',
+     'footer.location': 'Emplacement Berlin-Norderstedt • Opérations nationales et européennes',
 
      'footer.legal.company': '© 2025 Golze & Michel OHG',
      'footer.legal.imprint': 'Mentions légales',
@@ -1237,7 +1237,7 @@ const translations = {
      'footer.newsletter.placeholder': 'Su email',
 
      'footer.social.follow': 'Síguenos:',
-     'footer.location': 'Ubicación Hamburgo-Norderstedt • Operaciones nacionales y europeas',
+     'footer.location': 'Ubicación Berlín-Norderstedt • Operaciones nacionales y europeas',
 
      'footer.legal.company': '© 2025 Golze & Michel OHG',
      'footer.legal.imprint': 'Aviso legal',
@@ -1594,7 +1594,7 @@ const translations = {
      'footer.newsletter.placeholder': 'La vostra email',
 
      'footer.social.follow': 'Seguiteci:',
-     'footer.location': 'Sede Amburgo-Norderstedt • Operazioni nazionali ed europee',
+     'footer.location': 'Sede Berlino-Norderstedt • Operazioni nazionali ed europee',
 
      'footer.legal.company': '© 2025 Golze & Michel OHG',
      'footer.legal.imprint': 'Impressum',
@@ -1951,7 +1951,7 @@ const translations = {
      'footer.newsletter.placeholder': 'Uw email',
 
      'footer.social.follow': 'Volg ons:',
-     'footer.location': 'Locatie Hamburg-Norderstedt • Landelijke en Europese activiteiten',
+     'footer.location': 'Locatie Berlin-Norderstedt • Landelijke en Europese activiteiten',
 
      'footer.legal.company': '© 2025 Golze & Michel OHG',
      'footer.legal.imprint': 'Impressum',
