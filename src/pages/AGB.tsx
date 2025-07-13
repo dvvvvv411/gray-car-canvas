@@ -47,7 +47,7 @@ const AGB = () => {
               <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
-                040 5131580
+                030 75420223
               </div>
             </div>
             <button 
@@ -76,7 +76,7 @@ const AGB = () => {
                   <div className="pt-4 border-t border-white/10">
                     <a href="tel:+49405131580" className="flex items-center justify-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-semibold text-lg">
                       <Phone className="w-5 h-5 mr-3" />
-                      040 5131580
+                      030 75420223
                     </a>
                   </div>
                 </div>
@@ -212,7 +212,7 @@ const AGB = () => {
             10553 Berlin<br />
             Deutschland<br />
             <br />
-            Telefon: 040 5131580<br />
+            Telefon: 030 75420223<br />
             E-Mail: info@carlogix.de<br />
             <br />
             
@@ -244,7 +244,7 @@ const AGB = () => {
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white font-medium">040 5131580</div>
+                    <div className="text-white font-medium">030 75420223</div>
                     <div className="text-white/60 text-sm">24/7 Hotline</div>
                   </div>
                 </div>

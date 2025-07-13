@@ -58,7 +58,7 @@ const Karriere = () => {
               <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
-                040 5131580
+                030 75420223
               </div>
             </div>
             
@@ -110,7 +110,7 @@ const Karriere = () => {
                       className="flex items-center justify-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-semibold text-lg"
                     >
                       <Phone className="w-5 h-5 mr-3" />
-                      040 5131580
+                      030 75420223
                     </a>
                   </div>
                 </div>
@@ -405,7 +405,7 @@ const Karriere = () => {
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white font-medium">040 5131580</div>
+                    <div className="text-white font-medium">030 75420223</div>
                     <div className="text-white/60 text-sm">24/7 Hotline</div>
                   </div>
                 </div>

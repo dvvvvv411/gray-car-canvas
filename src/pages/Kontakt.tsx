@@ -57,7 +57,7 @@ const Kontakt = () => {
               <LanguageSelector />
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold">
                 <Phone className="w-4 h-4 inline mr-2" />
-                040 5131580
+                030 75420223
               </div>
             </div>
             
@@ -109,7 +109,7 @@ const Kontakt = () => {
                       className="flex items-center justify-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-semibold text-lg"
                     >
                       <Phone className="w-5 h-5 mr-3" />
-                      040 5131580
+                      030 75420223
                     </a>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ const Kontakt = () => {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">{t('contact.phone.title')}</h3>
               <div className="space-y-2">
-                <p className="text-2xl font-bold text-primary">040 5131580</p>
+                <p className="text-2xl font-bold text-primary">030 75420223</p>
                 <p className="text-muted-foreground">{t('contact.phone.subtitle')}</p>
                 <div className="flex items-center justify-center gap-2 mt-4">
                   <CheckCircle className="w-4 h-4 text-green-500" />
@@ -381,7 +381,7 @@ const Kontakt = () => {
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-white font-medium">040 5131580</div>
+                    <div className="text-white font-medium">030 75420223</div>
                     <div className="text-white/60 text-sm">24/7 Hotline</div>
                   </div>
                 </div>
